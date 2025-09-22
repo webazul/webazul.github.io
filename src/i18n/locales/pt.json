@@ -1,0 +1,341 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "process": "Processo",
+    "portfolio": "Portfolio",
+    "testimonials": "Testemunhos",
+    "about": "Sobre",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "brandText": "web",
+    "brandHighlight": "azul",
+    "brandSubtitle": "CREATIVE STUDIO",
+    "subtitle": "Transformamos ideias em experiências digitais inovadoras",
+    "description": "Agência portuguesa especializada em desenvolvimento web, social media, hosting e SEO. Criamos soluções digitais que geram resultados.",
+    "stats": {
+      "projects": "100+",
+      "projectsLabel": "Projetos",
+      "clients": "50+",
+      "clientsLabel": "Clientes",
+      "satisfaction": "99%",
+      "satisfactionLabel": "Satisfação"
+    },
+    "cta": {
+      "primary": "Começar Projeto",
+      "secondary": "Ver Portfolio"
+    }
+  },
+  "services": {
+    "badge": "Serviços",
+    "title": "Soluções digitais completas para",
+    "titleHighlight": "transformar o seu negócio",
+    "webDev": {
+      "title": "Web Development",
+      "description": "Websites que destacam o seu negócio e convertem visitantes em clientes. Design profissional que funciona em todos os dispositivos.",
+      "features": ["Desenvolvimento moderno", "Design responsivo", "Otimização SEO", "Performance alta"],
+      "badge": "Popular"
+    },
+    "socialMedia": {
+      "title": "Social Media",
+      "description": "Gestão completa das suas redes sociais com estratégia, conteúdo e análise de resultados.",
+      "features": ["Estratégia digital", "Criação de conteúdo", "Gestão diária", "Relatórios mensais"]
+    },
+    "hosting": {
+      "title": "Hosting",
+      "description": "Hospedagem profissional com SSL, backups automáticos e suporte 24/7 para o seu website.",
+      "features": ["SSL incluído", "Backups diários", "Suporte 24/7", "99.9% uptime"]
+    },
+    "seo": {
+      "title": "SEO",
+      "description": "Otimização para motores de busca. Aumente a visibilidade do seu site no Google.",
+      "features": ["Análise técnica", "Palavras-chave", "Link building", "Relatórios mensais"],
+      "badge": "Popular"
+    },
+    "customTitle": "Precisa de algo personalizado?",
+    "customDescription": "Contacte-nos para discutir as suas necessidades específicas",
+    "customButton": "Falar Connosco"
+  },
+  "process": {
+    "badge": "Processo",
+    "title": "Como trabalhamos para garantir",
+    "titleHighlight": "resultados excepcionais",
+    "hubTitle": "webazul",
+    "hubSubtitle": "HUB CENTRAL",
+    "steps": {
+      "research": {
+        "title": "Pesquisa",
+        "description": "Análise profunda do seu negócio, público-alvo e concorrência",
+        "duration": "1-2 semanas",
+        "deliverables": ["Análise de mercado", "Personas", "Estratégia"]
+      },
+      "development": {
+        "title": "Desenvolvimento",
+        "description": "Criação da solução usando as melhores tecnologias e práticas",
+        "duration": "3-8 semanas",
+        "deliverables": ["Design UI/UX", "Desenvolvimento", "Testes"]
+      },
+      "launch": {
+        "title": "Lançamento",
+        "description": "Publicação online, otimização e configuração final do projeto",
+        "duration": "1 semana",
+        "deliverables": ["Publicação", "Configuração", "Treino"]
+      },
+      "maintenance": {
+        "title": "Manutenção",
+        "description": "Suporte contínuo, atualizações e melhorias",
+        "duration": "Contínuo",
+        "deliverables": ["Suporte", "Updates", "Melhorias"]
+      }
+    },
+    "timeline": {
+      "start": "Início",
+      "end": "Entrega"
+    }
+  },
+  "portfolio": {
+    "badge": "Portfolio",
+    "title": "Projetos que fizeram a",
+    "titleHighlight": "diferença",
+    "subtitle": "Descubra alguns dos nossos trabalhos mais recentes e os resultados que alcançámos para os nossos clientes.",
+    "filters": {
+      "all": "Todos",
+      "websites": "Websites",
+      "ecommerce": "E-commerce",
+      "apps": "Apps",
+      "branding": "Branding"
+    },
+    "projects": {
+      "projeto1": {
+        "title": "E-commerce Fashion",
+        "category": "E-commerce",
+        "description": "Loja online moderna com sistema de pagamentos e gestão de stock",
+        "tech": ["React", "Node.js", "Stripe", "MongoDB"],
+        "year": "2024",
+        "views": "15.2K",
+        "url": "https://exemplo1.pt"
+      },
+      "projeto2": {
+        "title": "App Fitness",
+        "category": "Apps",
+        "description": "Aplicação mobile para treinos personalizados e acompanhamento",
+        "tech": ["React Native", "Firebase", "Redux"],
+        "year": "2024",
+        "views": "8.7K",
+        "url": "https://exemplo2.pt"
+      },
+      "projeto3": {
+        "title": "Website Corporativo",
+        "category": "Websites",
+        "description": "Site institucional com sistema de gestão de conteúdo",
+        "tech": ["Next.js", "Prisma", "PostgreSQL"],
+        "year": "2023",
+        "views": "12.1K",
+        "url": "https://exemplo3.pt"
+      },
+      "projeto4": {
+        "title": "Plataforma Educativa",
+        "category": "Apps",
+        "description": "Sistema de ensino à distância com videoconferência",
+        "tech": ["Vue.js", "Laravel", "WebRTC"],
+        "year": "2023",
+        "views": "22.5K",
+        "url": "https://exemplo4.pt"
+      },
+      "projeto5": {
+        "title": "Brand Identity Tech",
+        "category": "Branding",
+        "description": "Identidade visual completa para startup tecnológica",
+        "tech": ["Adobe Creative", "Figma", "Brand Guidelines"],
+        "year": "2024",
+        "views": "6.3K",
+        "url": "https://exemplo5.pt"
+      },
+      "projeto6": {
+        "title": "Marketplace Local",
+        "category": "E-commerce",
+        "description": "Plataforma de comércio local com geolocalização",
+        "tech": ["Angular", "Django", "PostgreSQL"],
+        "year": "2023",
+        "views": "18.9K",
+        "url": "https://exemplo6.pt"
+      },
+      "projeto7": {
+        "title": "Portal Notícias",
+        "category": "Websites",
+        "description": "Sistema de notícias com painel administrativo",
+        "tech": ["WordPress", "PHP", "MySQL"],
+        "year": "2024",
+        "views": "31.2K",
+        "url": "https://exemplo7.pt"
+      },
+      "projeto8": {
+        "title": "SaaS Analytics",
+        "category": "Apps",
+        "description": "Ferramenta de análise de dados para empresas",
+        "tech": ["Python", "Django", "React", "D3.js"],
+        "year": "2024",
+        "views": "9.8K",
+        "url": "https://exemplo8.pt"
+      }
+    },
+    "buttons": {
+      "viewSite": "Ver Site",
+      "preview": "Preview"
+    }
+  },
+  "testimonials": {
+    "badge": "Testemunhos",
+    "title": "O que dizem os nossos",
+    "titleHighlight": "clientes",
+    "subtitle": "Histórias reais de transformação digital e sucesso empresarial.",
+    "stats": {
+      "clients": "50+",
+      "clientsLabel": "Clientes",
+      "satisfaction": "98%",
+      "satisfactionLabel": "Satisfação",
+      "projects": "120+",
+      "projectsLabel": "Projetos",
+      "awards": "15",
+      "awardsLabel": "Prémios"
+    },
+    "videoInterface": {
+      "play": "▶",
+      "pause": "⏸",
+      "timeline": "Testemunho",
+      "quality": "HD",
+      "fullscreen": "⛶"
+    },
+    "clients": {
+      "client1": {
+        "name": "João Silva",
+        "company": "TechStart Lda",
+        "role": "CEO",
+        "text": "A WebAzul transformou completamente a nossa presença digital. O website que criaram aumentou as nossas vendas em 150% em apenas 6 meses.",
+        "project": "Website E-commerce",
+        "duration": "3 meses",
+        "result": "+150% vendas",
+        "verified": true
+      },
+      "client2": {
+        "name": "Maria Santos",
+        "company": "Fashion Store",
+        "role": "Diretora",
+        "text": "Profissionalismo excecional! A equipa entendeu perfeitamente a nossa visão e entregou um resultado que superou todas as expectativas.",
+        "project": "Loja Online",
+        "duration": "2 meses",
+        "result": "+200% tráfego",
+        "verified": true
+      },
+      "client3": {
+        "name": "Carlos Mendes",
+        "company": "Consultoria PM",
+        "role": "Sócio-Gerente",
+        "text": "O investimento em SEO com a WebAzul foi o melhor que fizemos. Estamos agora na primeira página do Google para todas as palavras-chave importantes.",
+        "project": "SEO Strategy",
+        "duration": "6 meses",
+        "result": "1ª página Google",
+        "verified": true
+      },
+      "client4": {
+        "name": "Ana Rodrigues",
+        "company": "Fitness Club",
+        "role": "Fundadora",
+        "text": "A aplicação mobile que desenvolveram revolucionou a forma como os nossos clientes interagem connosco. Interface intuitiva e funcionalidades perfeitas.",
+        "project": "App Mobile",
+        "duration": "4 meses",
+        "result": "5000+ downloads",
+        "verified": true
+      }
+    }
+  },
+  "contact": {
+    "badge": "Contacto",
+    "title": "Pronto para transformar",
+    "titleHighlight": "o seu negócio?",
+    "subtitle": "Conte-nos sobre o seu projeto e vamos criar algo incrível juntos.",
+    "form": {
+      "name": "Nome *",
+      "email": "Email *",
+      "phone": "Telemóvel",
+      "company": "Empresa",
+      "service": "Serviço *",
+      "serviceOptions": {
+        "select": "Selecione um serviço",
+        "website": "Website",
+        "ecommerce": "E-commerce",
+        "app": "Aplicação",
+        "seo": "SEO",
+        "social": "Social Media",
+        "hosting": "Hosting",
+        "branding": "Branding",
+        "other": "Outro"
+      },
+      "budget": "Orçamento",
+      "budgetOptions": {
+        "select": "Selecione um orçamento",
+        "under5k": "Até 5.000€",
+        "5k10k": "5.000€ - 10.000€",
+        "10k25k": "10.000€ - 25.000€",
+        "25k50k": "25.000€ - 50.000€",
+        "over50k": "Mais de 50.000€"
+      },
+      "timeline": "Prazo desejado",
+      "timelineOptions": {
+        "select": "Selecione um prazo",
+        "asap": "O mais rápido possível",
+        "1month": "1 mês",
+        "3months": "3 meses",
+        "6months": "6 meses",
+        "flexible": "Flexível"
+      },
+      "message": "Mensagem *",
+      "messagePlaceholder": "Conte-nos sobre o seu projeto, objetivos e requisitos específicos...",
+      "submit": "Iniciar Projeto",
+      "submitting": "A enviar..."
+    },
+    "info": {
+      "title": "Informações de Contacto",
+      "email": "info@webazul.pt",
+      "phone": "+351 913 428 377",
+      "address": "Braga, Portugal",
+      "hours": "Seg-Sex: 9h-18h"
+    }
+  },
+  "footer": {
+    "description": "WebAzul Creative Studio - Agência portuguesa especializada em desenvolvimento web e soluções digitais inovadoras.",
+    "navigation": "Navegação",
+    "home": "Início",
+    "services": "Serviços",
+    "portfolio": "Portfolio",
+    "process": "Processo",
+    "testimonials": "Testemunhos",
+    "contact": "Contacto",
+    "contactInfo": "Informações de Contacto",
+    "rights": "Todos os direitos reservados.",
+    "madeIn": "Feito com ❤️ em Portugal",
+    "privacyPolicy": "Política de Privacidade",
+    "termsService": "Termos de Serviço",
+    "cookies": "Cookies",
+    "backToTop": "Voltar ao Topo"
+  },
+  "whatsapp": {
+    "greeting": "Olá! 👋",
+    "howHelp": "Como podemos ajudar com o seu projeto digital?",
+    "services": "Os nossos serviços incluem:",
+    "webDev": "Desenvolvimento Web",
+    "socialMedia": "Social Media",
+    "hosting": "Hosting",
+    "seo": "SEO",
+    "startConversation": "Iniciar Conversa",
+    "defaultMessage": "Olá! Gostaria de saber mais sobre os vossos serviços de desenvolvimento web."
+  },
+  "cookies": {
+    "title": "Privacidade e Cookies",
+    "text": "Utilizamos cookies essenciais para garantir o funcionamento do website e cookies analíticos para melhorar a sua experiência.",
+    "acceptAll": "Aceitar Todos",
+    "essentialOnly": "Apenas Essenciais",
+    "privacyPolicy": "Política de Privacidade"
+  }
+}

@@ -1,0 +1,162 @@
+/* ========================================
+   SONHOS EM LINHA - VARIÁVEIS DE DESIGN
+   ======================================== */
+
+:root {
+  /* ========================================
+     CORES DA MARCA
+     ======================================== */
+
+  /* Cor principal - Dourado */
+  --color-primary: #d4af37;
+  --color-primary-light: #f4e4a1;
+  --color-primary-dark: #b8941f;
+
+  /* Cores neutras */
+  --color-dark: #2c2c2c;
+  --color-dark-light: #1a1a1a;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-text-muted: #888888;
+  --color-text-subtle: #aaa;
+
+  /* Cores de fundo */
+  --color-bg-primary: #ffffff;
+  --color-bg-light: #faf9f7;
+  --color-bg-light-alt: #f3f1ec;
+  --color-bg-cream: #f8f6f3;
+  --color-bg-cream-alt: #f0ede8;
+
+  /* Cores de borda */
+  --color-border: #e8e5e0;
+  --color-border-light: #f0ede8;
+  --color-border-dark: #e0ddd8;
+
+  /* Cores funcionais */
+  --color-success: #d4edda;
+  --color-success-text: #155724;
+  --color-success-border: #c3e6cb;
+
+  /* ========================================
+     TIPOGRAFIA
+     ======================================== */
+
+  /* Fontes principais */
+  --font-display: 'Kaushan Script', cursive;     /* Títulos principais */
+  --font-hero: 'Dancing Script', cursive;        /* Título hero */
+  --font-accent: 'Caveat', cursive;              /* Subtítulos */
+  --font-handwritten: 'Handlee', cursive;        /* Textos descritivos */
+  --font-casual: 'Patrick Hand', cursive;        /* Botões e labels */
+  --font-elegant: 'Satisfy', cursive;            /* Badges e detalhes */
+
+  /* Fallback fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  /* ========================================
+     TAMANHOS DE FONTE
+     ======================================== */
+
+  /* Títulos */
+  --font-size-hero: 4rem;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.8rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.4rem;
+
+  /* Texto base */
+  --font-size-base: 1rem;
+  --font-size-lg: 1.2rem;
+  --font-size-sm: 0.9rem;
+  --font-size-xs: 0.8rem;
+
+  /* Elementos específicos */
+  --font-size-badge: 1rem;
+  --font-size-btn: 1.1rem;
+  --font-size-caption: 0.85rem;
+
+  /* ========================================
+     ESPAÇAMENTOS
+     ======================================== */
+
+  --spacing-xs: 0.25rem;    /* 4px */
+  --spacing-sm: 0.5rem;     /* 8px */
+  --spacing-md: 1rem;       /* 16px */
+  --spacing-lg: 1.5rem;     /* 24px */
+  --spacing-xl: 2rem;       /* 32px */
+  --spacing-xxl: 3rem;      /* 48px */
+  --spacing-xxxl: 4rem;     /* 64px */
+  --spacing-section: 6rem;  /* 96px */
+
+  /* ========================================
+     BORDAS E SOMBRAS
+     ======================================== */
+
+  --border-radius-sm: 6px;
+  --border-radius: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 20px;
+  --border-radius-round: 25px;
+  --border-radius-full: 50%;
+
+  /* Sombras */
+  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
+  --shadow-primary: 0 4px 15px rgba(212, 175, 55, 0.3);
+  --shadow-primary-hover: 0 6px 20px rgba(212, 175, 55, 0.4);
+
+  /* ========================================
+     GRADIENTES
+     ======================================== */
+
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  --gradient-bg-light: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg-light-alt) 100%);
+  --gradient-bg-cream: linear-gradient(135deg, var(--color-bg-cream), var(--color-bg-cream-alt));
+  --gradient-dark: linear-gradient(135deg, var(--color-dark), var(--color-dark-light));
+  --gradient-highlight: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+
+  /* ========================================
+     TRANSIÇÕES
+     ======================================== */
+
+  --transition-fast: 0.2s ease;
+  --transition: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-bounce: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* ========================================
+     BREAKPOINTS (para uso em JavaScript)
+     ======================================== */
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+}
+
+/* ========================================
+   RESPONSIVIDADE - MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-hero: 3rem;
+    --font-size-h1: 2.2rem;
+    --font-size-h2: 2.2rem;
+    --font-size-h3: 1.6rem;
+    --font-size-h4: 1.2rem;
+    --spacing-section: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-hero: 2.5rem;
+    --font-size-h1: 2rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.4rem;
+    --spacing-section: 3rem;
+  }
+}
