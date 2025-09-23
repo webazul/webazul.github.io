@@ -207,6 +207,12 @@
       "quality": "HD",
       "fullscreen": "⛶"
     },
+    "labels": {
+      "verified": "Verificado",
+      "project": "Projeto:",
+      "duration": "Duração:",
+      "result": "Resultado:"
+    },
     "clients": {
       "client1": {
         "name": "João Silva",
@@ -293,14 +299,26 @@
       "message": "Mensagem *",
       "messagePlaceholder": "Conte-nos sobre o seu projeto, objetivos e requisitos específicos...",
       "submit": "Iniciar Projeto",
-      "submitting": "A enviar..."
+      "submitting": "A enviar...",
+      "namePlaceholder": "O seu nome completo",
+      "emailPlaceholder": "seuemail@exemplo.com",
+      "phonePlaceholder": "+351 900 000 000",
+      "companyPlaceholder": "Nome da empresa"
     },
     "info": {
       "title": "Informações de Contacto",
       "email": "info@webazul.pt",
       "phone": "+351 913 428 377",
       "address": "Braga, Portugal",
-      "hours": "Seg-Sex: 9h-18h"
+      "hours": "Seg-Sex: 9h-18h",
+      "phoneLabel": "Telemóvel",
+      "locationLabel": "Localização",
+      "hoursLabel": "Horário"
+    },
+    "features": {
+      "fastResponse": "Resposta rápida",
+      "freeConsultation": "Consulta gratuita",
+      "meetDeadlines": "Prazos cumpridos"
     }
   },
   "footer": {
@@ -329,13 +347,18 @@
     "hosting": "Hosting",
     "seo": "SEO",
     "startConversation": "Iniciar Conversa",
-    "defaultMessage": "Olá! Gostaria de saber mais sobre os vossos serviços de desenvolvimento web."
+    "defaultMessage": "Olá! Gostaria de saber mais sobre os vossos serviços de desenvolvimento web.",
+    "contactLabel": "Contactar via WhatsApp"
   },
   "cookies": {
     "title": "Privacidade e Cookies",
     "text": "Utilizamos cookies essenciais para garantir o funcionamento do website e cookies analíticos para melhorar a sua experiência.",
     "acceptAll": "Aceitar Todos",
     "essentialOnly": "Apenas Essenciais",
-    "privacyPolicy": "Política de Privacidade"
+    "privacyPolicy": "Política de Privacidade",
+    "note": "Para mais informações, consulte a nossa",
+    "and": "e",
+    "cookiePolicy": "Política de Cookies",
+    "closeLabel": "Fechar banner de cookies"
   }
 }

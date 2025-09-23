@@ -125,7 +125,7 @@ function TestimonialsSection() {
                     <p className="client-role">{current.role}, {current.company}</p>
                     {current.verified && (
                       <div className="verified-badge">
-                        <FaCheck /> Verificado
+                        <FaCheck /> {t('testimonials.labels.verified')}
                       </div>
                     )}
                   </div>
@@ -137,13 +137,13 @@ function TestimonialsSection() {
 
                 <div className="project-metrics">
                   <div className="metric">
-                    <strong>Projeto:</strong> {current.project}
+                    <strong>{t('testimonials.labels.project')}</strong> {current.project}
                   </div>
                   <div className="metric">
-                    <strong>Duração:</strong> {current.duration}
+                    <strong>{t('testimonials.labels.duration')}</strong> {current.duration}
                   </div>
                   <div className="metric">
-                    <strong>Resultado:</strong> {current.result}
+                    <strong>{t('testimonials.labels.result')}</strong> {current.result}
                   </div>
                 </div>
               </div>

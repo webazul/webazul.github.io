@@ -1,163 +1,364 @@
 {
   "nav": {
     "home": "Accueil",
-    "about": "À Propos",
     "services": "Services",
+    "process": "Processus",
     "portfolio": "Portfolio",
     "testimonials": "Témoignages",
+    "about": "À propos",
     "contact": "Contact"
   },
   "hero": {
-    "title": "Vêtements Sur Mesure qui",
-    "titleHighlight": "Réalisent les Rêves",
-    "subtitle": "Spécialisée en robes de mariée et vêtements exclusifs. Chaque pièce est unique, créée spécialement pour vous.",
-    "bookConsultation": "Prendre Rendez-vous",
-    "knowAtelier": "Connaître l'Atelier"
-  },
-  "about": {
-    "badge": "À Propos de l'Atelier",
-    "title": "Transformer les tissus en",
-    "titleHighlight": "œuvres d'art",
-    "description": "Avec une formation spécialisée en haute couture, je me consacre à créer des pièces uniques qui reflètent la personnalité et les rêves de chaque cliente. Chaque robe de mariée, chaque vêtement sur mesure est pensé dans le moindre détail.",
-    "feature1Title": "Formation Spécialisée",
-    "feature1Text": "Techniques traditionnelles de haute couture",
-    "feature2Title": "Spécialisation",
-    "feature2Text": "Robes de mariée et vêtements d'occasion",
-    "feature3Title": "Qualité Premium",
-    "feature3Text": "Seulement les meilleurs tissus et finitions"
+    "brandText": "web",
+    "brandHighlight": "azul",
+    "brandSubtitle": "CREATIVE STUDIO",
+    "subtitle": "Nous transformons les idées en expériences numériques innovantes",
+    "description": "Agence portugaise spécialisée en développement web, réseaux sociaux, hébergement et SEO. Nous créons des solutions numériques qui génèrent des résultats.",
+    "stats": {
+      "projects": "100+",
+      "projectsLabel": "Projets",
+      "clients": "50+",
+      "clientsLabel": "Clients",
+      "satisfaction": "99%",
+      "satisfactionLabel": "Satisfaction"
+    },
+    "cta": {
+      "primary": "Commencer un Projet",
+      "secondary": "Voir Portfolio"
+    }
   },
   "services": {
-    "badge": "Nos Services",
-    "title": "Nous créons des pièces uniques pour",
-    "titleHighlight": "chaque occasion spéciale",
-    "subtitle": "Des robes de rêve aux vêtements du quotidien, chaque pièce est créée avec passion et attention aux détails.",
-    "weddingDress": "Robes de Mariée",
-    "weddingDressDesc": "Création exclusive pour le plus beau jour de votre vie. Chaque robe est unique et faite sur mesure selon vos rêves.",
-    "customClothing": "Vêtements Sur Mesure",
-    "customClothingDesc": "Pièces uniques pour toutes les occasions. Des vêtements de soirée aux robes de fête, nous créons ce que vous imaginez.",
-    "alterations": "Retouches et Réformes",
-    "alterationsDesc": "Nous transformons vos pièces favorites. Retouches de taille, modernisation de modèles anciens et réparations.",
-    "feature1": "Consultation personnalisée",
-    "feature2": "Tissus premium",
-    "feature3": "Plusieurs essayages",
-    "feature4": "Finitions luxueuses",
-    "feature5": "Modélisation exclusive",
-    "feature6": "Choix des tissus",
-    "feature7": "Retouches parfaites",
-    "feature8": "Style personnalisé",
-    "feature9": "Retouches de taille",
-    "feature10": "Modernisation",
-    "feature11": "Réparations",
-    "feature12": "Modifications de style"
+    "badge": "Services",
+    "title": "Solutions numériques complètes pour",
+    "titleHighlight": "transformer votre entreprise",
+    "webDev": {
+      "title": "Développement Web",
+      "description": "Sites web qui mettent en valeur votre entreprise et convertissent les visiteurs en clients. Design professionnel qui fonctionne sur tous les appareils.",
+      "features": ["Développement moderne", "Design responsive", "Optimisation SEO", "Haute performance"],
+      "badge": "Populaire"
+    },
+    "socialMedia": {
+      "title": "Réseaux Sociaux",
+      "description": "Gestion complète de vos réseaux sociaux avec stratégie, contenu et analyse des résultats.",
+      "features": ["Stratégie digitale", "Création de contenu", "Gestion quotidienne", "Rapports mensuels"]
+    },
+    "hosting": {
+      "title": "Hébergement",
+      "description": "Hébergement professionnel avec SSL, sauvegardes automatiques et support 24/7 pour votre site web.",
+      "features": ["SSL inclus", "Sauvegardes quotidiennes", "Support 24/7", "99.9% uptime"]
+    },
+    "seo": {
+      "title": "SEO",
+      "description": "Optimisation pour les moteurs de recherche. Augmentez la visibilité de votre site sur Google.",
+      "features": ["Analyse technique", "Mots-clés", "Link building", "Rapports mensuels"],
+      "badge": "Populaire"
+    },
+    "customTitle": "Besoin de quelque chose de personnalisé ?",
+    "customDescription": "Contactez-nous pour discuter de vos besoins spécifiques",
+    "customButton": "Nous Parler"
+  },
+  "process": {
+    "badge": "Processus",
+    "title": "Comment nous travaillons pour garantir",
+    "titleHighlight": "des résultats exceptionnels",
+    "hubTitle": "webazul",
+    "hubSubtitle": "HUB CENTRAL",
+    "steps": {
+      "research": {
+        "title": "Recherche",
+        "description": "Analyse approfondie de votre entreprise, public cible et concurrence",
+        "duration": "1-2 semaines",
+        "deliverables": ["Analyse de marché", "Personas", "Stratégie"]
+      },
+      "development": {
+        "title": "Développement",
+        "description": "Création de la solution utilisant les meilleures technologies et pratiques",
+        "duration": "3-8 semaines",
+        "deliverables": ["Design UI/UX", "Développement", "Tests"]
+      },
+      "launch": {
+        "title": "Lancement",
+        "description": "Publication en ligne, optimisation et configuration finale du projet",
+        "duration": "1 semaine",
+        "deliverables": ["Publication", "Configuration", "Formation"]
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "description": "Support continu, mises à jour et améliorations",
+        "duration": "Continu",
+        "deliverables": ["Support", "Mises à jour", "Améliorations"]
+      }
+    },
+    "timeline": {
+      "start": "Début",
+      "end": "Livraison"
+    }
   },
   "portfolio": {
     "badge": "Portfolio",
-    "title": "Quelques-unes de nos",
-    "titleHighlight": "créations spéciales",
-    "subtitle": "Chaque pièce raconte une histoire unique. Découvrez quelques-uns de nos travaux les plus chers.",
-    "filterWedding": "Robes de Mariée",
-    "filterParty": "Robes de Soirée",
-    "filterFormal": "Vêtements Formels",
-    "filterCasual": "Vêtements Casual",
-    "weddingClassic": "Robe de Mariée Classique",
-    "weddingModern": "Robe de Mariée Moderne",
-    "weddingBoho": "Robe de Mariée Boho",
-    "partyElegant": "Robe de Soirée Élégante",
-    "partyGala": "Robe de Gala",
-    "formalSuit": "Ensemble Formel Féminin",
-    "formalBlazer": "Blazer Sur Mesure",
-    "casualChic": "Robe Casual Chic",
-    "casualBlouse": "Blouse Personnalisée",
-    "ctaText": "Vous aimez ce que vous voyez ? Nous créons quelque chose de spécial pour vous aussi !",
-    "ctaButton": "Demander un Devis"
+    "title": "Projets qui ont fait la",
+    "titleHighlight": "différence",
+    "subtitle": "Découvrez quelques-uns de nos travaux les plus récents et les résultats que nous avons obtenus pour nos clients.",
+    "filters": {
+      "all": "Tous",
+      "websites": "Sites Web",
+      "ecommerce": "E-commerce",
+      "apps": "Apps",
+      "branding": "Branding"
+    },
+    "projects": {
+      "projeto1": {
+        "title": "E-commerce Mode",
+        "category": "E-commerce",
+        "description": "Boutique en ligne moderne avec système de paiement et gestion d'inventaire",
+        "tech": ["React", "Node.js", "Stripe", "MongoDB"],
+        "year": "2024",
+        "views": "15.2K",
+        "url": "https://exemple1.fr"
+      },
+      "projeto2": {
+        "title": "App Fitness",
+        "category": "Apps",
+        "description": "Application mobile pour entraînements personnalisés et suivi",
+        "tech": ["React Native", "Firebase", "Redux"],
+        "year": "2024",
+        "views": "8.7K",
+        "url": "https://exemple2.fr"
+      },
+      "projeto3": {
+        "title": "Site Web Corporatif",
+        "category": "Sites Web",
+        "description": "Site institutionnel avec système de gestion de contenu",
+        "tech": ["Next.js", "Prisma", "PostgreSQL"],
+        "year": "2023",
+        "views": "12.1K",
+        "url": "https://exemple3.fr"
+      },
+      "projeto4": {
+        "title": "Plateforme Éducative",
+        "category": "Apps",
+        "description": "Système d'enseignement à distance avec visioconférence",
+        "tech": ["Vue.js", "Laravel", "WebRTC"],
+        "year": "2023",
+        "views": "22.5K",
+        "url": "https://exemple4.fr"
+      },
+      "projeto5": {
+        "title": "Identité de Marque Tech",
+        "category": "Branding",
+        "description": "Identité visuelle complète pour startup technologique",
+        "tech": ["Adobe Creative", "Figma", "Brand Guidelines"],
+        "year": "2024",
+        "views": "6.3K",
+        "url": "https://exemple5.fr"
+      },
+      "projeto6": {
+        "title": "Marketplace Local",
+        "category": "E-commerce",
+        "description": "Plateforme de commerce local avec géolocalisation",
+        "tech": ["Angular", "Django", "PostgreSQL"],
+        "year": "2023",
+        "views": "18.9K",
+        "url": "https://exemple6.fr"
+      },
+      "projeto7": {
+        "title": "Portail d'Actualités",
+        "category": "Sites Web",
+        "description": "Système d'actualités avec panneau administratif",
+        "tech": ["WordPress", "PHP", "MySQL"],
+        "year": "2024",
+        "views": "31.2K",
+        "url": "https://exemple7.fr"
+      },
+      "projeto8": {
+        "title": "SaaS Analytics",
+        "category": "Apps",
+        "description": "Outil d'analyse de données pour entreprises",
+        "tech": ["Python", "Django", "React", "D3.js"],
+        "year": "2024",
+        "views": "9.8K",
+        "url": "https://exemple8.fr"
+      }
+    },
+    "buttons": {
+      "viewSite": "Voir le Site",
+      "preview": "Aperçu"
+    }
   },
   "testimonials": {
     "badge": "Témoignages",
     "title": "Ce que disent nos",
-    "titleHighlight": "clientes spéciales",
-    "subtitle": "Chaque histoire est unique, mais toutes partagent le même bonheur. Découvrez ce qu'elles disent de notre travail.",
-    "ctaTitle": "Voulez-vous être la prochaine cliente heureuse ?",
-    "ctaText": "Rejoignez les femmes qui font confiance à notre travail pour réaliser leurs rêves !",
-    "ctaButton": "Commencer Mon Projet",
-    "client1Name": "Sofia M.",
-    "client1Service": "Robe de Mariée",
-    "client1Text": "Ma robe de mariée était absolument parfaite ! Chaque détail a été pensé minutieusement et le résultat a dépassé toutes mes attentes. Je me suis sentie comme une princesse le jour de mon mariage.",
-    "client2Name": "Beatriz R.",
-    "client2Service": "Robe de Soirée",
-    "client2Text": "J'avais besoin d'une robe spéciale pour une occasion importante. Le service était exceptionnel et la robe était impeccable. J'ai reçu tant de compliments ! Je recommande vivement.",
-    "client3Name": "Inês L.",
-    "client3Service": "Vêtements Formels",
-    "client3Text": "J'ai commandé un ensemble pour une réunion importante. La qualité des tissus et la coupe sur mesure ont fait toute la différence. Je me suis sentie très confiante et élégante."
+    "titleHighlight": "clients",
+    "subtitle": "Histoires réelles de transformation numérique et de succès commercial.",
+    "stats": {
+      "clients": "50+",
+      "clientsLabel": "Clients",
+      "satisfaction": "98%",
+      "satisfactionLabel": "Satisfaction",
+      "projects": "120+",
+      "projectsLabel": "Projets",
+      "awards": "15",
+      "awardsLabel": "Prix"
+    },
+    "videoInterface": {
+      "play": "▶",
+      "pause": "⏸",
+      "timeline": "Témoignage",
+      "quality": "HD",
+      "fullscreen": "⛶"
+    },
+    "labels": {
+      "verified": "Vérifié",
+      "project": "Projet :",
+      "duration": "Durée :",
+      "result": "Résultat :"
+    },
+    "clients": {
+      "client1": {
+        "name": "João Silva",
+        "company": "TechStart Lda",
+        "role": "PDG",
+        "text": "WebAzul a complètement transformé notre présence numérique. Le site web qu'ils ont créé a augmenté nos ventes de 150% en seulement 6 mois.",
+        "project": "Site Web E-commerce",
+        "duration": "3 mois",
+        "result": "+150% ventes",
+        "verified": true
+      },
+      "client2": {
+        "name": "Maria Santos",
+        "company": "Fashion Store",
+        "role": "Directrice",
+        "text": "Professionnalisme exceptionnel ! L'équipe a parfaitement compris notre vision et a livré un résultat qui a dépassé toutes les attentes.",
+        "project": "Boutique en Ligne",
+        "duration": "2 mois",
+        "result": "+200% trafic",
+        "verified": true
+      },
+      "client3": {
+        "name": "Carlos Mendes",
+        "company": "Conseil PM",
+        "role": "Associé-Gérant",
+        "text": "L'investissement SEO avec WebAzul a été le meilleur que nous ayons fait. Nous sommes maintenant en première page de Google pour tous les mots-clés importants.",
+        "project": "Stratégie SEO",
+        "duration": "6 mois",
+        "result": "1ère page Google",
+        "verified": true
+      },
+      "client4": {
+        "name": "Ana Rodrigues",
+        "company": "Fitness Club",
+        "role": "Fondatrice",
+        "text": "L'application mobile qu'ils ont développée a révolutionné la façon dont nos clients interagissent avec nous. Interface intuitive et fonctionnalités parfaites.",
+        "project": "App Mobile",
+        "duration": "4 mois",
+        "result": "5000+ téléchargements",
+        "verified": true
+      }
+    }
   },
   "contact": {
     "badge": "Contact",
-    "title": "Donnons vie à vos",
-    "titleHighlight": "rêves de mode",
-    "subtitle": "Remplissez le formulaire et nous vous contacterons pour programmer votre consultation gratuite.",
-    "whyChooseTitle": "Pourquoi choisir notre atelier ?",
-    "freeConsultation": "Consultation Gratuite",
-    "freeConsultationDesc": "La première consultation est toujours gratuite et sans engagement",
-    "exactMeasures": "Mesures Exactes",
-    "exactMeasuresDesc": "Nous garantissons un ajustement parfait avec une prise de mesures professionnelle",
-    "customDesign": "Design Personnalisé",
-    "customDesignDesc": "Chaque pièce est unique et créée spécialement pour vous",
-    "deadlinesMet": "Délais Respectés",
-    "deadlinesMetDesc": "Nous respectons toujours les délais convenus, surtout pour les événements spéciaux",
-    "nameLabel": "Nom Complet *",
-    "namePlaceholder": "Votre nom complet",
-    "phoneLabel": "Mobile/WhatsApp *",
-    "emailLabel": "Email *",
-    "emailPlaceholder": "votreemail@exemple.com",
-    "serviceLabel": "Type de Service *",
-    "serviceDefault": "Sélectionnez un service",
-    "serviceWedding": "Robe de Mariée",
-    "serviceFormal": "Vêtements Formels",
-    "serviceParty": "Robe de Soirée",
-    "serviceCasual": "Vêtements Casual",
-    "serviceAlterations": "Retouches et Réformes",
-    "serviceOther": "Autre",
-    "occasionLabel": "Occasion",
-    "occasionPlaceholder": "Ex: Mariage, baptême, événement d'entreprise...",
-    "dateLabel": "Date de l'Événement (si applicable)",
-    "descriptionLabel": "Description du Projet",
-    "descriptionPlaceholder": "Parlez-nous de votre vision : style préféré, couleurs, tissus, inspirations...",
-    "submitButton": "Demander une Consultation Gratuite",
-    "submitting": "Envoi en cours...",
-    "requiredNote": "* Champs obligatoires. Vos données seront traitées en toute confidentialité.",
-    "successMessage": "Merci pour votre intérêt ! Nous vous contacterons bientôt."
+    "title": "Prêt à transformer",
+    "titleHighlight": "votre entreprise ?",
+    "subtitle": "Parlez-nous de votre projet et créons quelque chose d'incroyable ensemble.",
+    "form": {
+      "name": "Nom *",
+      "email": "Email *",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "service": "Service *",
+      "serviceOptions": {
+        "select": "Sélectionnez un service",
+        "website": "Site Web",
+        "ecommerce": "E-commerce",
+        "app": "Application",
+        "seo": "SEO",
+        "social": "Réseaux Sociaux",
+        "hosting": "Hébergement",
+        "branding": "Branding",
+        "other": "Autre"
+      },
+      "budget": "Budget",
+      "budgetOptions": {
+        "select": "Sélectionnez un budget",
+        "under5k": "Jusqu'à 5 000€",
+        "5k10k": "5 000€ - 10 000€",
+        "10k25k": "10 000€ - 25 000€",
+        "25k50k": "25 000€ - 50 000€",
+        "over50k": "Plus de 50 000€"
+      },
+      "timeline": "Délai souhaité",
+      "timelineOptions": {
+        "select": "Sélectionnez un délai",
+        "asap": "Le plus tôt possible",
+        "1month": "1 mois",
+        "3months": "3 mois",
+        "6months": "6 mois",
+        "flexible": "Flexible"
+      },
+      "message": "Message *",
+      "messagePlaceholder": "Parlez-nous de votre projet, objectifs et exigences spécifiques...",
+      "submit": "Commencer le Projet",
+      "submitting": "Envoi en cours...",
+      "namePlaceholder": "Votre nom complet",
+      "emailPlaceholder": "votreemail@exemple.com",
+      "phonePlaceholder": "+351 900 000 000",
+      "companyPlaceholder": "Nom de l'entreprise"
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "email": "info@webazul.pt",
+      "phone": "+351 913 428 377",
+      "address": "Braga, Portugal",
+      "hours": "Lun-Ven : 9h-18h",
+      "phoneLabel": "Téléphone",
+      "locationLabel": "Localisation",
+      "hoursLabel": "Horaires"
+    },
+    "features": {
+      "fastResponse": "Réponse rapide",
+      "freeConsultation": "Consultation gratuite",
+      "meetDeadlines": "Délais respectés"
+    }
   },
   "footer": {
-    "description": "Atelier de couture spécialisé en robes de mariée et vêtements sur mesure. Nous transformons les rêves en réalité.",
-    "contactTitle": "Contact",
-    "followTitle": "Suivez-nous",
-    "madeWith": "Fait avec ❤️ au Portugal par WebAzul",
-    "backToTop": "↑ Haut",
+    "description": "WebAzul Creative Studio - Agence portugaise spécialisée en développement web et solutions numériques innovantes.",
+    "navigation": "Navigation",
+    "home": "Accueil",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "process": "Processus",
+    "testimonials": "Témoignages",
+    "contact": "Contact",
+    "contactInfo": "Informations de Contact",
     "rights": "Tous droits réservés.",
+    "madeIn": "Fait avec ❤️ au Portugal",
     "privacyPolicy": "Politique de Confidentialité",
     "termsService": "Conditions de Service",
-    "cookies": "Cookies"
+    "cookies": "Cookies",
+    "backToTop": "Retour en Haut"
   },
   "whatsapp": {
-    "normalResponse": "Répond normalement en quelques heures",
     "greeting": "Bonjour ! 👋",
-    "howHelp": "Comment puis-je vous aider aujourd'hui ? Je suis là pour clarifier les questions sur :",
-    "weddingDresses": "Robes de mariée",
-    "customClothing": "Vêtements sur mesure",
-    "alterations": "Retouches et réformes",
-    "pricesDeadlines": "Prix et délais",
+    "howHelp": "Comment pouvons-nous vous aider avec votre projet numérique ?",
+    "services": "Nos services incluent :",
+    "webDev": "Développement Web",
+    "socialMedia": "Réseaux Sociaux",
+    "hosting": "Hébergement",
+    "seo": "SEO",
     "startConversation": "Commencer la Conversation",
-    "closeChat": "Fermer le chat",
-    "contactWhatsApp": "Contacter via WhatsApp",
-    "defaultMessage": "Bonjour ! J'aimerais en savoir plus sur les services de couture sur mesure."
+    "defaultMessage": "Bonjour ! J'aimerais en savoir plus sur vos services de développement web.",
+    "contactLabel": "Contacter via WhatsApp"
   },
   "cookies": {
     "title": "Confidentialité et Cookies",
-    "text": "Nous utilisons des cookies essentiels pour garantir le fonctionnement de notre site web. Nous pouvons également utiliser des cookies analytiques pour améliorer votre expérience. Vous pouvez gérer vos préférences à tout moment.",
-    "note": "En continuant à naviguer, vous acceptez notre",
-    "and": "et",
-    "privacyPolicy": "Politique de Confidentialité",
-    "cookiePolicy": "Politique de Cookies",
+    "text": "Nous utilisons des cookies essentiels pour garantir le fonctionnement du site web et des cookies analytiques pour améliorer votre expérience.",
+    "acceptAll": "Accepter Tous",
     "essentialOnly": "Essentiels Seulement",
-    "acceptAll": "Accepter Tous"
+    "privacyPolicy": "Politique de Confidentialité",
+    "note": "Pour plus d'informations, consultez notre",
+    "and": "et",
+    "cookiePolicy": "Politique de Cookies",
+    "closeLabel": "Fermer la bannière de cookies"
   }
 }

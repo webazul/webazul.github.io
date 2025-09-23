@@ -107,7 +107,7 @@ function ContactForm() {
                   <FaPhone />
                 </div>
                 <div className="info-text">
-                  <span className="info-label">Telemóvel</span>
+                  <span className="info-label">{t('contact.info.phoneLabel')}</span>
                   <span className="info-value">{t('contact.info.phone')}</span>
                 </div>
               </div>
@@ -117,7 +117,7 @@ function ContactForm() {
                   <FaMapMarkerAlt />
                 </div>
                 <div className="info-text">
-                  <span className="info-label">Localização</span>
+                  <span className="info-label">{t('contact.info.locationLabel')}</span>
                   <span className="info-value">{t('contact.info.address')}</span>
                 </div>
               </div>
@@ -127,7 +127,7 @@ function ContactForm() {
                   <FaClock />
                 </div>
                 <div className="info-text">
-                  <span className="info-label">Horário</span>
+                  <span className="info-label">{t('contact.info.hoursLabel')}</span>
                   <span className="info-value">{t('contact.info.hours')}</span>
                 </div>
               </div>
@@ -136,15 +136,15 @@ function ContactForm() {
             <div className="contact-features">
               <div className="feature-item">
                 <FaRocket className="feature-icon" />
-                <span>Resposta rápida</span>
+                <span>{t('contact.features.fastResponse')}</span>
               </div>
               <div className="feature-item">
                 <FaUsers className="feature-icon" />
-                <span>Consulta gratuita</span>
+                <span>{t('contact.features.freeConsultation')}</span>
               </div>
               <div className="feature-item">
                 <FaClock className="feature-icon" />
-                <span>Prazos cumpridos</span>
+                <span>{t('contact.features.meetDeadlines')}</span>
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@ function ContactForm() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder="O seu nome completo"
+                  placeholder={t('contact.form.namePlaceholder')}
                 />
               </div>
               <div className="form-group">
@@ -178,7 +178,7 @@ function ContactForm() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="seuemail@exemplo.com"
+                  placeholder={t('contact.form.emailPlaceholder')}
                 />
               </div>
             </div>
@@ -192,7 +192,7 @@ function ContactForm() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="+351 900 000 000"
+                  placeholder={t('contact.form.phonePlaceholder')}
                 />
               </div>
               <div className="form-group">
@@ -203,7 +203,7 @@ function ContactForm() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  placeholder="Nome da empresa"
+                  placeholder={t('contact.form.companyPlaceholder')}
                 />
               </div>
             </div>

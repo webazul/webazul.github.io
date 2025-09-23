@@ -20,7 +20,7 @@ function WhatsAppWidget() {
       <button
         className="whatsapp-float-button"
         onClick={openWhatsApp}
-        aria-label="Contactar via WhatsApp"
+        aria-label={t('whatsapp.contactLabel')}
       >
         <RiWhatsappLine className="whatsapp-svg" />
       </button>

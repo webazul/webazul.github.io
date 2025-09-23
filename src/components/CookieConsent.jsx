@@ -58,7 +58,7 @@ function CookieConsent() {
           <button
             className="cookie-close"
             onClick={closeBanner}
-            aria-label="Fechar banner de cookies"
+            aria-label={t('cookies.closeLabel')}
           >
             <FaTimes />
           </button>
@@ -74,7 +74,7 @@ function CookieConsent() {
             <button onClick={() => openModal('privacy')} className="cookie-link">
               {t('cookies.privacyPolicy')}
             </button>
-            {t('cookies.and')}
+            {' '}{t('cookies.and')}{' '}
             <button onClick={() => openModal('cookies')} className="cookie-link">
               {t('cookies.cookiePolicy')}
             </button>
