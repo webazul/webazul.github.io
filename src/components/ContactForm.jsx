@@ -50,25 +50,46 @@ function ContactForm() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simular envio do formulário
-    setTimeout(() => {
-      setSubmitMessage('Mensagem enviada com sucesso! Entraremos em contacto em breve.')
-      setIsSubmitting(false)
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        service: '',
-        budget: '',
-        timeline: '',
-        message: ''
+    try {
+      const response = await fetch('https://form.webazul.pt', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Token': 'token-webazul-0e781asv'
+        },
+        body: JSON.stringify({
+          nome: formData.name,
+          email: formData.email,
+          telefone: formData.phone || '',
+          empresa: formData.company || '',
+          mensagem: formData.message
+        })
       })
 
+      if (response.ok) {
+        setSubmitMessage('Mensagem enviada com sucesso! Entraremos em contacto em breve.')
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          service: '',
+          budget: '',
+          timeline: '',
+          message: ''
+        })
+      } else {
+        setSubmitMessage('Erro ao enviar mensagem. Por favor, tente novamente.')
+      }
+    } catch (error) {
+      console.error('Erro ao enviar formulário:', error)
+      setSubmitMessage('Erro ao enviar mensagem. Por favor, tente novamente.')
+    } finally {
+      setIsSubmitting(false)
       setTimeout(() => {
         setSubmitMessage('')
       }, 5000)
-    }, 2000)
+    }
   }
 
   return (
@@ -98,7 +119,7 @@ function ContactForm() {
                 </div>
                 <div className="info-text">
                   <span className="info-label">Email</span>
-                  <span className="info-value">{t('contact.info.email')}</span>
+                  <a href="mailto:info@webazul.pt" className="info-value">{t('contact.info.email')}</a>
                 </div>
               </div>
 
@@ -108,7 +129,7 @@ function ContactForm() {
                 </div>
                 <div className="info-text">
                   <span className="info-label">{t('contact.info.phoneLabel')}</span>
-                  <span className="info-value">{t('contact.info.phone')}</span>
+                  <a href="tel:+351913428377" className="info-value">{t('contact.info.phone')}</a>
                 </div>
               </div>
 

@@ -160,6 +160,12 @@
   font-weight: 500;
   color: #ffffff;
   display: block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a.info-value:hover {
+  color: #3b82f6;
 }
 
 .contact-features {

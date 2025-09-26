@@ -146,11 +146,18 @@
   flex-shrink: 0;
 }
 
-.contact-item span {
+.contact-item span,
+.contact-item .contact-link {
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   color: #cbd5e1;
   line-height: 1.4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item .contact-link:hover {
+  color: #3b82f6;
 }
 
 

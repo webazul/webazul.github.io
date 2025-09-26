@@ -47,7 +47,7 @@ function Footer() {
               {t('footer.description')}
             </p>
             <div className="footer-social">
-              <a href="#" className="social-link" aria-label="Instagram">
+              <a href="https://www.instagram.com/webazul.pt/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
                 <FaInstagram />
               </a>
               <a href="#" className="social-link" aria-label="Facebook">
@@ -93,11 +93,11 @@ function Footer() {
               </div>
               <div className="contact-item">
                 <FaPhone className="contact-icon" />
-                <span>{t('contact.info.phone')}</span>
+                <a href="tel:+351913428377" className="contact-link">{t('contact.info.phone')}</a>
               </div>
               <div className="contact-item">
                 <FaEnvelope className="contact-icon" />
-                <span>{t('contact.info.email')}</span>
+                <a href="mailto:info@webazul.pt" className="contact-link">{t('contact.info.email')}</a>
               </div>
             </div>
           </div>
