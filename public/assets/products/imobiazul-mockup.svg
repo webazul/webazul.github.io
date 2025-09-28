@@ -1,0 +1,62 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGradient)"/>
+
+  <!-- Laptop Frame -->
+  <rect x="50" y="80" width="500" height="280" rx="20" fill="#1f2937"/>
+  <rect x="70" y="100" width="460" height="240" rx="8" fill="url(#screenGradient)"/>
+
+  <!-- ImobiAzul Interface -->
+  <!-- Header -->
+  <rect x="85" y="115" width="430" height="40" fill="#2563eb"/>
+  <text x="105" y="140" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">ImobiAzul</text>
+  <text x="440" y="140" font-family="Arial, sans-serif" font-size="12" fill="white">Portal</text>
+
+  <!-- Search Bar -->
+  <rect x="85" y="165" width="300" height="25" fill="white" stroke="#d1d5db"/>
+  <text x="90" y="182" font-family="Arial, sans-serif" font-size="10" fill="#9ca3af">Pesquisar propriedades...</text>
+  <rect x="395" y="165" width="70" height="25" fill="#10b981"/>
+  <text x="415" y="182" font-family="Arial, sans-serif" font-size="10" fill="white">Buscar</text>
+
+  <!-- Property Cards -->
+  <rect x="85" y="200" width="140" height="100" fill="white" stroke="#e5e7eb" rx="4"/>
+  <rect x="90" y="205" width="130" height="70" fill="#f3f4f6"/>
+  <text x="92" y="285" font-family="Arial, sans-serif" font-size="9" fill="#374151">Apartamento T3</text>
+  <text x="92" y="295" font-family="Arial, sans-serif" font-size="8" fill="#10b981">€250.000</text>
+
+  <rect x="235" y="200" width="140" height="100" fill="white" stroke="#e5e7eb" rx="4"/>
+  <rect x="240" y="205" width="130" height="70" fill="#f3f4f6"/>
+  <text x="242" y="285" font-family="Arial, sans-serif" font-size="9" fill="#374151">Moradia V4</text>
+  <text x="242" y="295" font-family="Arial, sans-serif" font-size="8" fill="#10b981">€380.000</text>
+
+  <rect x="385" y="200" width="140" height="100" fill="white" stroke="#e5e7eb" rx="4"/>
+  <rect x="390" y="205" width="130" height="70" fill="#f3f4f6"/>
+  <text x="392" y="285" font-family="Arial, sans-serif" font-size="9" fill="#374151">Escritório</text>
+  <text x="392" y="295" font-family="Arial, sans-serif" font-size="8" fill="#10b981">€150.000</text>
+
+  <!-- Stats -->
+  <circle cx="480" cy="320" r="15" fill="#f59e0b" opacity="0.2"/>
+  <text x="475" y="325" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#f59e0b">12</text>
+  <text x="450" y="340" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Propriedades</text>
+
+  <!-- Map Icon -->
+  <rect x="85" y="310" width="40" height="25" fill="#e5e7eb" stroke="#d1d5db"/>
+  <text x="95" y="325" font-family="Arial, sans-serif" font-size="8" fill="#374151">Mapa</text>
+
+  <!-- WebAzul Brand -->
+  <text x="245" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">
+    <tspan fill="white">Imobi</tspan><tspan fill="#2563eb">Azul</tspan>
+  </text>
+  <text x="195" y="50" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">Plataforma Imobiliária Completa</text>
+</svg>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import './HeroSection.css'
+import Particles from './Particles'
 
 function HeroSection() {
   const { t } = useTranslation()
@@ -20,17 +21,16 @@ function HeroSection() {
   return (
     <section id="inicio" className={`hero-section ${isLoaded ? 'loaded' : ''}`}>
       <div className="hero-background">
-        <div className="network-visualization">
-          <div className="network-node network-node-1"></div>
-          <div className="network-node network-node-2"></div>
-          <div className="network-node network-node-3"></div>
-          <div className="network-node network-node-4"></div>
-          <div className="network-connection connection-1"></div>
-          <div className="network-connection connection-2"></div>
-          <div className="network-connection connection-3"></div>
-          <div className="network-connection connection-4"></div>
-        </div>
-
+        <Particles
+          particleColors={['#2563eb', '#3b82f6', '#1e40af']}
+          particleCount={100}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
       </div>
 
       <div className="hero-container">

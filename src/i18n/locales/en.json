@@ -13,7 +13,7 @@
     "brandHighlight": "azul",
     "brandSubtitle": "CREATIVE STUDIO",
     "subtitle": "We transform ideas into innovative digital experiences",
-    "description": "Portuguese agency specialized in web development, social media, hosting and SEO. We create digital solutions that generate results.",
+    "description": "Portuguese agency specialized in web development, digital systems and SaaS solutions. We create digital experiences that transform businesses.",
     "stats": {
       "projects": "100+",
       "projectsLabel": "Projects",
@@ -29,33 +29,24 @@
   },
   "services": {
     "badge": "Services",
-    "title": "Complete digital solutions to",
-    "titleHighlight": "transform your business",
-    "webDev": {
-      "title": "Web Development",
-      "description": "Websites that highlight your business and convert visitors into customers. Professional design that works on all devices.",
-      "features": ["Modern development", "Responsive design", "SEO optimization", "High performance"],
+    "title": "Three pillars for your",
+    "titleHighlight": "digital success",
+    "systems": {
+      "title": "Ready Systems",
+      "description": "Complete and customizable SaaS solutions for different business sectors.",
+      "features": ["AutoAzul - Automotive", "ImobiAzul - Real Estate", "LojaAzul - E-commerce", "RestaurAzul - Restaurant"],
       "badge": "Popular"
+    },
+    "landing": {
+      "title": "Landing Pages",
+      "description": "Professional websites and landing pages optimized for conversion and results.",
+      "features": ["Responsive design", "SEO optimization", "High performance", "Integrated analytics"]
     },
     "socialMedia": {
       "title": "Social Media",
       "description": "Complete management of your social networks with strategy, content and results analysis.",
       "features": ["Digital strategy", "Content creation", "Daily management", "Monthly reports"]
-    },
-    "hosting": {
-      "title": "Hosting",
-      "description": "Professional hosting with SSL, automatic backups and 24/7 support for your website.",
-      "features": ["SSL included", "Daily backups", "24/7 support", "99.9% uptime"]
-    },
-    "seo": {
-      "title": "SEO",
-      "description": "Search engine optimization. Increase your website's visibility on Google.",
-      "features": ["Technical analysis", "Keywords", "Link building", "Monthly reports"],
-      "badge": "Popular"
-    },
-    "customTitle": "Need something custom?",
-    "customDescription": "Contact us to discuss your specific needs",
-    "customButton": "Talk to Us"
+    }
   },
   "process": {
     "badge": "Process",
@@ -72,15 +63,15 @@
       },
       "development": {
         "title": "Development",
-        "description": "Creating the solution using the best technologies and practices",
+        "description": "Solution creation using the best technologies and practices",
         "duration": "3-8 weeks",
         "deliverables": ["UI/UX Design", "Development", "Testing"]
       },
       "launch": {
         "title": "Launch",
-        "description": "Online publication, optimization and final project configuration",
+        "description": "Online publication, optimization and final project setup",
         "duration": "1 week",
-        "deliverables": ["Publication", "Configuration", "Training"]
+        "deliverables": ["Publication", "Setup", "Training"]
       },
       "maintenance": {
         "title": "Maintenance",
@@ -92,97 +83,136 @@
     "timeline": {
       "start": "Start",
       "end": "Delivery"
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "description": "Let's discuss how we can transform your idea into a successful digital solution.",
+      "button": "Start Now"
     }
   },
   "portfolio": {
-    "badge": "Portfolio",
-    "title": "Projects that made the",
-    "titleHighlight": "difference",
-    "subtitle": "Discover some of our most recent work and the results we achieved for our clients.",
+    "badge": "Our Products",
+    "title": "Complete digital solutions",
+    "titleHighlight": "ready to use",
+    "subtitle": "Discover our specialized management software,\ndeveloped by WebAzul to transform your business.",
     "filters": {
       "all": "All",
-      "websites": "Websites",
-      "ecommerce": "E-commerce",
-      "apps": "Apps",
-      "branding": "Branding"
+      "automotive": "Automotive",
+      "real_estate": "Real Estate"
     },
-    "projects": {
-      "projeto1": {
-        "title": "Fashion E-commerce",
-        "category": "E-commerce",
-        "description": "Modern online store with payment system and inventory management",
-        "tech": ["React", "Node.js", "Stripe", "MongoDB"],
+    "products": {
+      "autoazul": {
+        "title": "AutoAzul",
+        "category": "automotive",
+        "description": "Complete system for managing dealerships and car lots with custom landing page",
+        "features": [
+          "Complete vehicle stock management",
+          "Custom responsive landing page",
+          "Integrated CRM for customer management",
+          "Sales and performance reports",
+          "Test drive scheduling system",
+          "Social media integration"
+        ],
+        "images": [
+          "./assets/products/autoazul-mockup.svg",
+          "./assets/products/autoazul-landing.svg"
+        ],
+        "tech": ["React", "Node.js", "PostgreSQL", "AWS"],
         "year": "2024",
-        "views": "15.2K",
-        "url": "https://example1.com"
+        "status": "Available",
+        "pricing": "From €199/month"
       },
-      "projeto2": {
-        "title": "Fitness App",
-        "category": "Apps",
-        "description": "Mobile application for personalized workouts and tracking",
-        "tech": ["React Native", "Firebase", "Redux"],
+      "imobiazul": {
+        "title": "ImobiAzul",
+        "category": "real_estate",
+        "description": "Complete platform for real estate agencies and brokers with custom portal",
+        "features": [
+          "Property and portfolio management",
+          "Custom responsive real estate portal",
+          "CRM for leads and customers",
+          "Integrated 360° virtual tour",
+          "Automatic valuation system",
+          "Mobile app for brokers"
+        ],
+        "images": [
+          "./assets/products/imobiazul-mockup.svg",
+          "./assets/products/imobiazul-landing.svg"
+        ],
+        "tech": ["React", "Node.js", "MongoDB", "Cloudinary"],
         "year": "2024",
-        "views": "8.7K",
-        "url": "https://example2.com"
-      },
-      "projeto3": {
-        "title": "Corporate Website",
-        "category": "Websites",
-        "description": "Institutional website with content management system",
-        "tech": ["Next.js", "Prisma", "PostgreSQL"],
-        "year": "2023",
-        "views": "12.1K",
-        "url": "https://example3.com"
-      },
-      "projeto4": {
-        "title": "Educational Platform",
-        "category": "Apps",
-        "description": "Distance learning system with video conferencing",
-        "tech": ["Vue.js", "Laravel", "WebRTC"],
-        "year": "2023",
-        "views": "22.5K",
-        "url": "https://example4.com"
-      },
-      "projeto5": {
-        "title": "Tech Brand Identity",
-        "category": "Branding",
-        "description": "Complete visual identity for technology startup",
-        "tech": ["Adobe Creative", "Figma", "Brand Guidelines"],
-        "year": "2024",
-        "views": "6.3K",
-        "url": "https://example5.com"
-      },
-      "projeto6": {
-        "title": "Local Marketplace",
-        "category": "E-commerce",
-        "description": "Local commerce platform with geolocation",
-        "tech": ["Angular", "Django", "PostgreSQL"],
-        "year": "2023",
-        "views": "18.9K",
-        "url": "https://example6.com"
-      },
-      "projeto7": {
-        "title": "News Portal",
-        "category": "Websites",
-        "description": "News system with administrative panel",
-        "tech": ["WordPress", "PHP", "MySQL"],
-        "year": "2024",
-        "views": "31.2K",
-        "url": "https://example7.com"
-      },
-      "projeto8": {
-        "title": "SaaS Analytics",
-        "category": "Apps",
-        "description": "Data analysis tool for businesses",
-        "tech": ["Python", "Django", "React", "D3.js"],
-        "year": "2024",
-        "views": "9.8K",
-        "url": "https://example8.com"
+        "status": "Available",
+        "pricing": "From €149/month"
       }
     },
     "buttons": {
-      "viewSite": "View Site",
-      "preview": "Preview"
+      "learnMore": "Learn More",
+      "contact": "Contact"
+    },
+    "badges": {
+      "available": "Available",
+      "popular": "Popular",
+      "new": "New"
+    }
+  },
+  "systems": {
+    "badge": "Ready Systems",
+    "title": "Complete SaaS solutions",
+    "titleHighlight": "for your business",
+    "autoazul": {
+      "title": "AutoAzul",
+      "description": "Complete system for managing dealerships and car lots with custom landing page.",
+      "features": [
+        "Complete vehicle stock management",
+        "Custom responsive landing page",
+        "Integrated CRM for customer management"
+      ]
+    },
+    "imobiazul": {
+      "title": "ImobiAzul",
+      "description": "Complete platform for real estate agencies and brokers with custom portal.",
+      "features": [
+        "Property and portfolio management",
+        "Custom responsive real estate portal",
+        "CRM for leads and customers",
+        "Integrated 360° virtual tour"
+      ]
+    },
+    "belezaazul": {
+      "title": "BelezaAzul",
+      "description": "Complete system for beauty salons, barbershops and aesthetic clinics.",
+      "features": [
+        "Online service scheduling",
+        "Professional and schedule management",
+        "Product stock control",
+        "Customer loyalty program"
+      ]
+    },
+    "buttons": {
+      "demo": "Demo",
+      "contact": "Contact",
+      "notify": "Notify Me"
+    },
+    "badges": {
+      "popular": "Popular",
+      "comingSoon": "Coming Soon"
+    }
+  },
+  "landingPages": {
+    "badge": "Portfolio",
+    "title": "Projects that",
+    "titleHighlight": "transform businesses",
+    "subtitle": "Discover some of the landing pages and websites we created for our clients.",
+    "buttons": {
+      "visit": "Visit Site"
+    }
+  },
+  "socialMedia": {
+    "badge": "Social Media",
+    "title": "Social media management that",
+    "titleHighlight": "generates results",
+    "subtitle": "We create and manage authentic content that connects your brand to the ideal audience.",
+    "buttons": {
+      "viewPost": "View Project"
     }
   },
   "testimonials": {
@@ -241,14 +271,14 @@
         "text": "The SEO investment with WebAzul was the best we made. We are now on Google's first page for all important keywords.",
         "project": "SEO Strategy",
         "duration": "6 months",
-        "result": "1st page Google",
+        "result": "Google 1st page",
         "verified": true
       },
       "client4": {
         "name": "Ana Rodrigues",
         "company": "Fitness Club",
         "role": "Founder",
-        "text": "The mobile application they developed revolutionized how our customers interact with us. Intuitive interface and perfect features.",
+        "text": "The mobile app they developed revolutionized how our clients interact with us. Intuitive interface and perfect features.",
         "project": "Mobile App",
         "duration": "4 months",
         "result": "5000+ downloads",
@@ -260,7 +290,7 @@
     "badge": "Contact",
     "title": "Ready to transform",
     "titleHighlight": "your business?",
-    "subtitle": "Tell us about your project and let's create something incredible together.",
+    "subtitle": "Tell us about your project and let's create something amazing together.",
     "form": {
       "name": "Name *",
       "email": "Email *",
@@ -318,11 +348,11 @@
     "features": {
       "fastResponse": "Fast response",
       "freeConsultation": "Free consultation",
-      "meetDeadlines": "Meet deadlines"
+      "meetDeadlines": "Deadlines met"
     }
   },
   "footer": {
-    "description": "WebAzul Creative Studio - Portuguese agency specialized in web development and innovative digital solutions.",
+    "description": "WebAzul Creative Studio - Portuguese agency specialized in web development, digital systems and innovative SaaS solutions.",
     "navigation": "Navigation",
     "home": "Home",
     "services": "Services",
@@ -356,9 +386,9 @@
     "acceptAll": "Accept All",
     "essentialOnly": "Essential Only",
     "privacyPolicy": "Privacy Policy",
-    "note": "For more information, see our",
+    "note": "For more information, check our",
     "and": "and",
     "cookiePolicy": "Cookie Policy",
-    "closeLabel": "Close cookie banner"
+    "closeLabel": "Close cookies banner"
   }
 }

@@ -13,7 +13,7 @@
     "brandHighlight": "azul",
     "brandSubtitle": "CREATIVE STUDIO",
     "subtitle": "Transformamos ideias em experiências digitais inovadoras",
-    "description": "Agência portuguesa especializada em desenvolvimento web, social media, hosting e SEO. Criamos soluções digitais que geram resultados.",
+    "description": "Agência portuguesa especializada em desenvolvimento web, sistemas digitais e soluções SaaS. Criamos experiências digitais que transformam negócios.",
     "stats": {
       "projects": "100+",
       "projectsLabel": "Projetos",
@@ -29,33 +29,24 @@
   },
   "services": {
     "badge": "Serviços",
-    "title": "Soluções digitais completas para",
-    "titleHighlight": "transformar o seu negócio",
-    "webDev": {
-      "title": "Web Development",
-      "description": "Websites que destacam o seu negócio e convertem visitantes em clientes. Design profissional que funciona em todos os dispositivos.",
-      "features": ["Desenvolvimento moderno", "Design responsivo", "Otimização SEO", "Performance alta"],
+    "title": "Três pilares para o seu",
+    "titleHighlight": "sucesso digital",
+    "systems": {
+      "title": "Sistemas Prontos",
+      "description": "Soluções SaaS completas e personalizáveis para diferentes setores de negócio.",
+      "features": ["AutoAzul - Automóveis", "ImobiAzul - Imobiliário", "LojaAzul - E-commerce", "RestaurAzul - Restauração"],
       "badge": "Popular"
+    },
+    "landing": {
+      "title": "Landing Pages",
+      "description": "Websites profissionais e landing pages otimizadas para conversão e resultados.",
+      "features": ["Design responsivo", "Otimização SEO", "Performance alta", "Analytics integrado"]
     },
     "socialMedia": {
       "title": "Social Media",
       "description": "Gestão completa das suas redes sociais com estratégia, conteúdo e análise de resultados.",
       "features": ["Estratégia digital", "Criação de conteúdo", "Gestão diária", "Relatórios mensais"]
-    },
-    "hosting": {
-      "title": "Hosting",
-      "description": "Hospedagem profissional com SSL, backups automáticos e suporte 24/7 para o seu website.",
-      "features": ["SSL incluído", "Backups diários", "Suporte 24/7", "99.9% uptime"]
-    },
-    "seo": {
-      "title": "SEO",
-      "description": "Otimização para motores de busca. Aumente a visibilidade do seu site no Google.",
-      "features": ["Análise técnica", "Palavras-chave", "Link building", "Relatórios mensais"],
-      "badge": "Popular"
-    },
-    "customTitle": "Precisa de algo personalizado?",
-    "customDescription": "Contacte-nos para discutir as suas necessidades específicas",
-    "customButton": "Falar Connosco"
+    }
   },
   "process": {
     "badge": "Processo",
@@ -92,97 +83,136 @@
     "timeline": {
       "start": "Início",
       "end": "Entrega"
+    },
+    "cta": {
+      "title": "Pronto para começar o seu projeto?",
+      "description": "Vamos discutir como podemos transformar a sua ideia numa solução digital de sucesso.",
+      "button": "Começar Agora"
     }
   },
   "portfolio": {
-    "badge": "Portfolio",
-    "title": "Projetos que fizeram a",
-    "titleHighlight": "diferença",
-    "subtitle": "Descubra alguns dos nossos trabalhos mais recentes e os resultados que alcançámos para os nossos clientes.",
+    "badge": "Nossos Produtos",
+    "title": "Soluções digitais completas",
+    "titleHighlight": "prontas para usar",
+    "subtitle": "Descubra os nossos softwares de gestão especializados,\ndesenvolvidos pela WebAzul para transformar o seu negócio.",
     "filters": {
       "all": "Todos",
-      "websites": "Websites",
-      "ecommerce": "E-commerce",
-      "apps": "Apps",
-      "branding": "Branding"
+      "automotive": "Automóvel",
+      "real_estate": "Imobiliário"
     },
-    "projects": {
-      "projeto1": {
-        "title": "E-commerce Fashion",
-        "category": "E-commerce",
-        "description": "Loja online moderna com sistema de pagamentos e gestão de stock",
-        "tech": ["React", "Node.js", "Stripe", "MongoDB"],
+    "products": {
+      "autoazul": {
+        "title": "AutoAzul",
+        "category": "automotive",
+        "description": "Sistema completo para gestão de concessionárias e stands automóveis com landing page personalizada",
+        "features": [
+          "Gestão completa de stock de veículos",
+          "Landing page responsiva personalizada",
+          "CRM integrado para gestão de clientes",
+          "Relatórios de vendas e performance",
+          "Sistema de agendamento de test drives",
+          "Integração com redes sociais"
+        ],
+        "images": [
+          "./assets/products/autoazul-mockup.svg",
+          "./assets/products/autoazul-landing.svg"
+        ],
+        "tech": ["React", "Node.js", "PostgreSQL", "AWS"],
         "year": "2024",
-        "views": "15.2K",
-        "url": "https://exemplo1.pt"
+        "status": "Disponível",
+        "pricing": "A partir de 199€/mês"
       },
-      "projeto2": {
-        "title": "App Fitness",
-        "category": "Apps",
-        "description": "Aplicação mobile para treinos personalizados e acompanhamento",
-        "tech": ["React Native", "Firebase", "Redux"],
+      "imobiazul": {
+        "title": "ImobiAzul",
+        "category": "real_estate",
+        "description": "Plataforma completa para gestão de imobiliárias e mediadores com portal personalizado",
+        "features": [
+          "Gestão de propriedades e portfolio",
+          "Portal imobiliário responsivo personalizado",
+          "CRM para leads e clientes",
+          "Tour virtual 360° integrado",
+          "Sistema de avaliações automáticas",
+          "App mobile para mediadores"
+        ],
+        "images": [
+          "./assets/products/imobiazul-mockup.svg",
+          "./assets/products/imobiazul-landing.svg"
+        ],
+        "tech": ["React", "Node.js", "MongoDB", "Cloudinary"],
         "year": "2024",
-        "views": "8.7K",
-        "url": "https://exemplo2.pt"
-      },
-      "projeto3": {
-        "title": "Website Corporativo",
-        "category": "Websites",
-        "description": "Site institucional com sistema de gestão de conteúdo",
-        "tech": ["Next.js", "Prisma", "PostgreSQL"],
-        "year": "2023",
-        "views": "12.1K",
-        "url": "https://exemplo3.pt"
-      },
-      "projeto4": {
-        "title": "Plataforma Educativa",
-        "category": "Apps",
-        "description": "Sistema de ensino à distância com videoconferência",
-        "tech": ["Vue.js", "Laravel", "WebRTC"],
-        "year": "2023",
-        "views": "22.5K",
-        "url": "https://exemplo4.pt"
-      },
-      "projeto5": {
-        "title": "Brand Identity Tech",
-        "category": "Branding",
-        "description": "Identidade visual completa para startup tecnológica",
-        "tech": ["Adobe Creative", "Figma", "Brand Guidelines"],
-        "year": "2024",
-        "views": "6.3K",
-        "url": "https://exemplo5.pt"
-      },
-      "projeto6": {
-        "title": "Marketplace Local",
-        "category": "E-commerce",
-        "description": "Plataforma de comércio local com geolocalização",
-        "tech": ["Angular", "Django", "PostgreSQL"],
-        "year": "2023",
-        "views": "18.9K",
-        "url": "https://exemplo6.pt"
-      },
-      "projeto7": {
-        "title": "Portal Notícias",
-        "category": "Websites",
-        "description": "Sistema de notícias com painel administrativo",
-        "tech": ["WordPress", "PHP", "MySQL"],
-        "year": "2024",
-        "views": "31.2K",
-        "url": "https://exemplo7.pt"
-      },
-      "projeto8": {
-        "title": "SaaS Analytics",
-        "category": "Apps",
-        "description": "Ferramenta de análise de dados para empresas",
-        "tech": ["Python", "Django", "React", "D3.js"],
-        "year": "2024",
-        "views": "9.8K",
-        "url": "https://exemplo8.pt"
+        "status": "Disponível",
+        "pricing": "A partir de 149€/mês"
       }
     },
     "buttons": {
-      "viewSite": "Ver Site",
-      "preview": "Preview"
+      "learnMore": "Saber Mais",
+      "contact": "Contactar"
+    },
+    "badges": {
+      "available": "Disponível",
+      "popular": "Popular",
+      "new": "Novo"
+    }
+  },
+  "systems": {
+    "badge": "Sistemas Prontos",
+    "title": "Soluções SaaS completas",
+    "titleHighlight": "para o seu negócio",
+    "autoazul": {
+      "title": "AutoAzul",
+      "description": "Sistema completo para gestão de concessionárias e stands automóveis com landing page personalizada.",
+      "features": [
+        "Gestão completa de stock de veículos",
+        "Landing page responsiva personalizada",
+        "CRM integrado para gestão de clientes"
+      ]
+    },
+    "imobiazul": {
+      "title": "ImobiAzul",
+      "description": "Plataforma completa para gestão de imobiliárias e mediadores com portal personalizado.",
+      "features": [
+        "Gestão de propriedades e portfolio",
+        "Portal imobiliário responsivo personalizado",
+        "CRM para leads e clientes",
+        "Tour virtual 360° integrado"
+      ]
+    },
+    "belezaazul": {
+      "title": "BelezaAzul",
+      "description": "Sistema completo para salões de beleza, barbearias e clínicas de estética.",
+      "features": [
+        "Agendamento online de serviços",
+        "Gestão de profissionais e agenda",
+        "Controlo de stock de produtos",
+        "Programa de fidelização de clientes"
+      ]
+    },
+    "buttons": {
+      "demo": "Demo",
+      "contact": "Contactar",
+      "notify": "Notificar-me"
+    },
+    "badges": {
+      "popular": "Popular",
+      "comingSoon": "Em Breve"
+    }
+  },
+  "landingPages": {
+    "badge": "Portfolio",
+    "title": "Projetos que",
+    "titleHighlight": "transformam negócios",
+    "subtitle": "Descubra algumas das landing pages e websites que criámos para os nossos clientes.",
+    "buttons": {
+      "visit": "Visitar Site"
+    }
+  },
+  "socialMedia": {
+    "badge": "Social Media",
+    "title": "Gestão de redes sociais que",
+    "titleHighlight": "gera resultados",
+    "subtitle": "Criamos e gerimos conteúdo autêntico que conecta a sua marca ao público ideal.",
+    "buttons": {
+      "viewPost": "Ver Projeto"
     }
   },
   "testimonials": {
@@ -322,7 +352,7 @@
     }
   },
   "footer": {
-    "description": "WebAzul Creative Studio - Agência portuguesa especializada em desenvolvimento web e soluções digitais inovadoras.",
+    "description": "WebAzul Creative Studio - Agência portuguesa especializada em desenvolvimento web, sistemas digitais e soluções SaaS inovadoras.",
     "navigation": "Navegação",
     "home": "Início",
     "services": "Serviços",

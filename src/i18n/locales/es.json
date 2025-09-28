@@ -3,7 +3,7 @@
     "home": "Inicio",
     "services": "Servicios",
     "process": "Proceso",
-    "portfolio": "Portafolio",
+    "portfolio": "Portfolio",
     "testimonials": "Testimonios",
     "about": "Acerca",
     "contact": "Contacto"
@@ -13,7 +13,7 @@
     "brandHighlight": "azul",
     "brandSubtitle": "CREATIVE STUDIO",
     "subtitle": "Transformamos ideas en experiencias digitales innovadoras",
-    "description": "Agencia portuguesa especializada en desarrollo web, redes sociales, hosting y SEO. Creamos soluciones digitales que generan resultados.",
+    "description": "Agencia portuguesa especializada en desarrollo web, sistemas digitales y soluciones SaaS. Creamos experiencias digitales que transforman negocios.",
     "stats": {
       "projects": "100+",
       "projectsLabel": "Proyectos",
@@ -24,38 +24,29 @@
     },
     "cta": {
       "primary": "Comenzar Proyecto",
-      "secondary": "Ver Portafolio"
+      "secondary": "Ver Portfolio"
     }
   },
   "services": {
     "badge": "Servicios",
-    "title": "Soluciones digitales completas para",
-    "titleHighlight": "transformar tu negocio",
-    "webDev": {
-      "title": "Desarrollo Web",
-      "description": "Sitios web que destacan tu negocio y convierten visitantes en clientes. Diseño profesional que funciona en todos los dispositivos.",
-      "features": ["Desarrollo moderno", "Diseño responsivo", "Optimización SEO", "Alto rendimiento"],
+    "title": "Tres pilares para su",
+    "titleHighlight": "éxito digital",
+    "systems": {
+      "title": "Sistemas Listos",
+      "description": "Soluciones SaaS completas y personalizables para diferentes sectores empresariales.",
+      "features": ["AutoAzul - Automóviles", "ImobiAzul - Inmobiliario", "LojaAzul - E-commerce", "RestaurAzul - Restauración"],
       "badge": "Popular"
+    },
+    "landing": {
+      "title": "Landing Pages",
+      "description": "Sitios web profesionales y landing pages optimizadas para conversión y resultados.",
+      "features": ["Diseño responsivo", "Optimización SEO", "Alto rendimiento", "Analíticas integradas"]
     },
     "socialMedia": {
-      "title": "Redes Sociales",
-      "description": "Gestión completa de tus redes sociales con estrategia, contenido y análisis de resultados.",
+      "title": "Social Media",
+      "description": "Gestión completa de sus redes sociales con estrategia, contenido y análisis de resultados.",
       "features": ["Estrategia digital", "Creación de contenido", "Gestión diaria", "Informes mensuales"]
-    },
-    "hosting": {
-      "title": "Hosting",
-      "description": "Hosting profesional con SSL, copias de seguridad automáticas y soporte 24/7 para tu sitio web.",
-      "features": ["SSL incluido", "Copias diarias", "Soporte 24/7", "99.9% uptime"]
-    },
-    "seo": {
-      "title": "SEO",
-      "description": "Optimización para motores de búsqueda. Aumenta la visibilidad de tu sitio en Google.",
-      "features": ["Análisis técnico", "Palabras clave", "Link building", "Informes mensuales"],
-      "badge": "Popular"
-    },
-    "customTitle": "¿Necesitas algo personalizado?",
-    "customDescription": "Contáctanos para discutir tus necesidades específicas",
-    "customButton": "Hablar con Nosotros"
+    }
   },
   "process": {
     "badge": "Proceso",
@@ -66,7 +57,7 @@
     "steps": {
       "research": {
         "title": "Investigación",
-        "description": "Análisis profundo de tu negocio, público objetivo y competencia",
+        "description": "Análisis profundo de su negocio, audiencia objetivo y competencia",
         "duration": "1-2 semanas",
         "deliverables": ["Análisis de mercado", "Personas", "Estrategia"]
       },
@@ -92,97 +83,136 @@
     "timeline": {
       "start": "Inicio",
       "end": "Entrega"
+    },
+    "cta": {
+      "title": "¿Listo para comenzar su proyecto?",
+      "description": "Discutamos cómo podemos transformar su idea en una solución digital exitosa.",
+      "button": "Comenzar Ahora"
     }
   },
   "portfolio": {
-    "badge": "Portafolio",
-    "title": "Proyectos que marcaron la",
-    "titleHighlight": "diferencia",
-    "subtitle": "Descubre algunos de nuestros trabajos más recientes y los resultados que logramos para nuestros clientes.",
+    "badge": "Nuestros Productos",
+    "title": "Soluciones digitales completas",
+    "titleHighlight": "listas para usar",
+    "subtitle": "Descubra nuestro software de gestión especializado,\ndesarrollado por WebAzul para transformar su negocio.",
     "filters": {
       "all": "Todos",
-      "websites": "Sitios Web",
-      "ecommerce": "E-commerce",
-      "apps": "Apps",
-      "branding": "Branding"
+      "automotive": "Automóvil",
+      "real_estate": "Inmobiliario"
     },
-    "projects": {
-      "projeto1": {
-        "title": "E-commerce de Moda",
-        "category": "E-commerce",
-        "description": "Tienda online moderna con sistema de pagos y gestión de inventario",
-        "tech": ["React", "Node.js", "Stripe", "MongoDB"],
+    "products": {
+      "autoazul": {
+        "title": "AutoAzul",
+        "category": "automotive",
+        "description": "Sistema completo para gestión de concesionarios y stands de automóviles con landing page personalizada",
+        "features": [
+          "Gestión completa de stock de vehículos",
+          "Landing page responsiva personalizada",
+          "CRM integrado para gestión de clientes",
+          "Informes de ventas y rendimiento",
+          "Sistema de agendamiento de pruebas de manejo",
+          "Integración con redes sociales"
+        ],
+        "images": [
+          "./assets/products/autoazul-mockup.svg",
+          "./assets/products/autoazul-landing.svg"
+        ],
+        "tech": ["React", "Node.js", "PostgreSQL", "AWS"],
         "year": "2024",
-        "views": "15.2K",
-        "url": "https://ejemplo1.es"
+        "status": "Disponible",
+        "pricing": "Desde €199/mes"
       },
-      "projeto2": {
-        "title": "App de Fitness",
-        "category": "Apps",
-        "description": "Aplicación móvil para entrenamientos personalizados y seguimiento",
-        "tech": ["React Native", "Firebase", "Redux"],
+      "imobiazul": {
+        "title": "ImobiAzul",
+        "category": "real_estate",
+        "description": "Plataforma completa para gestión de inmobiliarias y mediadores con portal personalizado",
+        "features": [
+          "Gestión de propiedades y portfolio",
+          "Portal inmobiliario responsivo personalizado",
+          "CRM para leads y clientes",
+          "Tour virtual 360° integrado",
+          "Sistema de valuaciones automáticas",
+          "App móvil para mediadores"
+        ],
+        "images": [
+          "./assets/products/imobiazul-mockup.svg",
+          "./assets/products/imobiazul-landing.svg"
+        ],
+        "tech": ["React", "Node.js", "MongoDB", "Cloudinary"],
         "year": "2024",
-        "views": "8.7K",
-        "url": "https://ejemplo2.es"
-      },
-      "projeto3": {
-        "title": "Sitio Web Corporativo",
-        "category": "Sitios Web",
-        "description": "Sitio institucional con sistema de gestión de contenido",
-        "tech": ["Next.js", "Prisma", "PostgreSQL"],
-        "year": "2023",
-        "views": "12.1K",
-        "url": "https://ejemplo3.es"
-      },
-      "projeto4": {
-        "title": "Plataforma Educativa",
-        "category": "Apps",
-        "description": "Sistema de enseñanza a distancia con videoconferencia",
-        "tech": ["Vue.js", "Laravel", "WebRTC"],
-        "year": "2023",
-        "views": "22.5K",
-        "url": "https://ejemplo4.es"
-      },
-      "projeto5": {
-        "title": "Identidad de Marca Tech",
-        "category": "Branding",
-        "description": "Identidad visual completa para startup tecnológica",
-        "tech": ["Adobe Creative", "Figma", "Brand Guidelines"],
-        "year": "2024",
-        "views": "6.3K",
-        "url": "https://ejemplo5.es"
-      },
-      "projeto6": {
-        "title": "Marketplace Local",
-        "category": "E-commerce",
-        "description": "Plataforma de comercio local con geolocalización",
-        "tech": ["Angular", "Django", "PostgreSQL"],
-        "year": "2023",
-        "views": "18.9K",
-        "url": "https://ejemplo6.es"
-      },
-      "projeto7": {
-        "title": "Portal de Noticias",
-        "category": "Sitios Web",
-        "description": "Sistema de noticias con panel administrativo",
-        "tech": ["WordPress", "PHP", "MySQL"],
-        "year": "2024",
-        "views": "31.2K",
-        "url": "https://ejemplo7.es"
-      },
-      "projeto8": {
-        "title": "SaaS Analytics",
-        "category": "Apps",
-        "description": "Herramienta de análisis de datos para empresas",
-        "tech": ["Python", "Django", "React", "D3.js"],
-        "year": "2024",
-        "views": "9.8K",
-        "url": "https://ejemplo8.es"
+        "status": "Disponible",
+        "pricing": "Desde €149/mes"
       }
     },
     "buttons": {
-      "viewSite": "Ver Sitio",
-      "preview": "Vista Previa"
+      "learnMore": "Saber Más",
+      "contact": "Contactar"
+    },
+    "badges": {
+      "available": "Disponible",
+      "popular": "Popular",
+      "new": "Nuevo"
+    }
+  },
+  "systems": {
+    "badge": "Sistemas Listos",
+    "title": "Soluciones SaaS completas",
+    "titleHighlight": "para su negocio",
+    "autoazul": {
+      "title": "AutoAzul",
+      "description": "Sistema completo para gestión de concesionarios y stands de automóviles con landing page personalizada.",
+      "features": [
+        "Gestión completa de stock de vehículos",
+        "Landing page responsiva personalizada",
+        "CRM integrado para gestión de clientes"
+      ]
+    },
+    "imobiazul": {
+      "title": "ImobiAzul",
+      "description": "Plataforma completa para gestión de inmobiliarias y mediadores con portal personalizado.",
+      "features": [
+        "Gestión de propiedades y portfolio",
+        "Portal inmobiliario responsivo personalizado",
+        "CRM para leads y clientes",
+        "Tour virtual 360° integrado"
+      ]
+    },
+    "belezaazul": {
+      "title": "BelezaAzul",
+      "description": "Sistema completo para salones de belleza, barberías y clínicas estéticas.",
+      "features": [
+        "Agendamiento online de servicios",
+        "Gestión de profesionales y agenda",
+        "Control de stock de productos",
+        "Programa de fidelización de clientes"
+      ]
+    },
+    "buttons": {
+      "demo": "Demo",
+      "contact": "Contactar",
+      "notify": "Notificarme"
+    },
+    "badges": {
+      "popular": "Popular",
+      "comingSoon": "Próximamente"
+    }
+  },
+  "landingPages": {
+    "badge": "Portfolio",
+    "title": "Proyectos que",
+    "titleHighlight": "transforman negocios",
+    "subtitle": "Descubra algunas de las landing pages y sitios web que creamos para nuestros clientes.",
+    "buttons": {
+      "visit": "Visitar Sitio"
+    }
+  },
+  "socialMedia": {
+    "badge": "Social Media",
+    "title": "Gestión de redes sociales que",
+    "titleHighlight": "genera resultados",
+    "subtitle": "Creamos y gestionamos contenido auténtico que conecta su marca con la audiencia ideal.",
+    "buttons": {
+      "viewPost": "Ver Proyecto"
     }
   },
   "testimonials": {
@@ -218,7 +248,7 @@
         "name": "João Silva",
         "company": "TechStart Lda",
         "role": "CEO",
-        "text": "WebAzul transformó completamente nuestra presencia digital. El sitio web que crearon aumentó nuestras ventas en un 150% en solo 6 meses.",
+        "text": "WebAzul transformó completamente nuestra presencia digital. El sitio web que crearon aumentó nuestras ventas en 150% en solo 6 meses.",
         "project": "Sitio Web E-commerce",
         "duration": "3 meses",
         "result": "+150% ventas",
@@ -236,7 +266,7 @@
       },
       "client3": {
         "name": "Carlos Mendes",
-        "company": "Consultoría PM",
+        "company": "Consultoria PM",
         "role": "Socio-Gerente",
         "text": "La inversión en SEO con WebAzul fue la mejor que hicimos. Ahora estamos en la primera página de Google para todas las palabras clave importantes.",
         "project": "Estrategia SEO",
@@ -259,8 +289,8 @@
   "contact": {
     "badge": "Contacto",
     "title": "¿Listo para transformar",
-    "titleHighlight": "tu negocio?",
-    "subtitle": "Cuéntanos sobre tu proyecto y creemos algo increíble juntos.",
+    "titleHighlight": "su negocio?",
+    "subtitle": "Cuéntenos sobre su proyecto y creemos algo increíble juntos.",
     "form": {
       "name": "Nombre *",
       "email": "Email *",
@@ -268,40 +298,40 @@
       "company": "Empresa",
       "service": "Servicio *",
       "serviceOptions": {
-        "select": "Selecciona un servicio",
+        "select": "Seleccione un servicio",
         "website": "Sitio Web",
         "ecommerce": "E-commerce",
         "app": "Aplicación",
         "seo": "SEO",
-        "social": "Redes Sociales",
+        "social": "Social Media",
         "hosting": "Hosting",
         "branding": "Branding",
         "other": "Otro"
       },
       "budget": "Presupuesto",
       "budgetOptions": {
-        "select": "Selecciona un presupuesto",
-        "under5k": "Hasta €5,000",
-        "5k10k": "€5,000 - €10,000",
-        "10k25k": "€10,000 - €25,000",
-        "25k50k": "€25,000 - €50,000",
-        "over50k": "Más de €50,000"
+        "select": "Seleccione un presupuesto",
+        "under5k": "Hasta €5.000",
+        "5k10k": "€5.000 - €10.000",
+        "10k25k": "€10.000 - €25.000",
+        "25k50k": "€25.000 - €50.000",
+        "over50k": "Más de €50.000"
       },
       "timeline": "Plazo deseado",
       "timelineOptions": {
-        "select": "Selecciona un plazo",
-        "asap": "Lo antes posible",
+        "select": "Seleccione un plazo",
+        "asap": "Lo más rápido posible",
         "1month": "1 mes",
         "3months": "3 meses",
         "6months": "6 meses",
         "flexible": "Flexible"
       },
       "message": "Mensaje *",
-      "messagePlaceholder": "Cuéntanos sobre tu proyecto, objetivos y requisitos específicos...",
+      "messagePlaceholder": "Cuéntenos sobre su proyecto, objetivos y requisitos específicos...",
       "submit": "Iniciar Proyecto",
       "submitting": "Enviando...",
-      "namePlaceholder": "Tu nombre completo",
-      "emailPlaceholder": "tuemail@ejemplo.com",
+      "namePlaceholder": "Su nombre completo",
+      "emailPlaceholder": "suemail@ejemplo.com",
       "phonePlaceholder": "+351 900 000 000",
       "companyPlaceholder": "Nombre de la empresa"
     },
@@ -322,11 +352,11 @@
     }
   },
   "footer": {
-    "description": "WebAzul Creative Studio - Agencia portuguesa especializada en desarrollo web y soluciones digitales innovadoras.",
+    "description": "WebAzul Creative Studio - Agencia portuguesa especializada en desarrollo web, sistemas digitales y soluciones SaaS innovadoras.",
     "navigation": "Navegación",
     "home": "Inicio",
     "services": "Servicios",
-    "portfolio": "Portafolio",
+    "portfolio": "Portfolio",
     "process": "Proceso",
     "testimonials": "Testimonios",
     "contact": "Contacto",
@@ -340,10 +370,10 @@
   },
   "whatsapp": {
     "greeting": "¡Hola! 👋",
-    "howHelp": "¿Cómo podemos ayudarte con tu proyecto digital?",
+    "howHelp": "¿Cómo podemos ayudar con su proyecto digital?",
     "services": "Nuestros servicios incluyen:",
     "webDev": "Desarrollo Web",
-    "socialMedia": "Redes Sociales",
+    "socialMedia": "Social Media",
     "hosting": "Hosting",
     "seo": "SEO",
     "startConversation": "Iniciar Conversación",
@@ -352,11 +382,11 @@
   },
   "cookies": {
     "title": "Privacidad y Cookies",
-    "text": "Utilizamos cookies esenciales para garantizar el funcionamiento del sitio web y cookies analíticas para mejorar tu experiencia.",
-    "acceptAll": "Aceptar Todas",
+    "text": "Utilizamos cookies esenciales para garantizar el funcionamiento del sitio web y cookies analíticas para mejorar su experiencia.",
+    "acceptAll": "Aceptar Todos",
     "essentialOnly": "Solo Esenciales",
     "privacyPolicy": "Política de Privacidad",
-    "note": "Para más información, consulta nuestra",
+    "note": "Para más información, consulte nuestra",
     "and": "y",
     "cookiePolicy": "Política de Cookies",
     "closeLabel": "Cerrar banner de cookies"

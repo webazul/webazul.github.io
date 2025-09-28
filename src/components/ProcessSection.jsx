@@ -90,6 +90,18 @@ function ProcessSection() {
             )
           })}
         </div>
+
+        {/* CTA Section */}
+        <div className="process-cta">
+          <h3 className="cta-title">{t('process.cta.title')}</h3>
+          <p className="cta-description">{t('process.cta.description')}</p>
+          <button
+            className="cta-button"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            {t('process.cta.button')}
+          </button>
+        </div>
       </div>
     </section>
   )

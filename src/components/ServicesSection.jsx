@@ -27,39 +27,40 @@ function ServicesSection() {
 
   const services = [
     {
-      title: t('services.webDev.title'),
-      description: t('services.webDev.description'),
-      features: t('services.webDev.features'),
+      title: t('services.systems.title'),
+      description: t('services.systems.description'),
+      features: t('services.systems.features'),
       icon: FaCode,
-      badge: t('services.webDev.badge'),
-      popular: true
+      badge: t('services.systems.badge'),
+      popular: true,
+      link: '#systems'
+    },
+    {
+      title: t('services.landing.title'),
+      description: t('services.landing.description'),
+      features: t('services.landing.features'),
+      icon: FaServer,
+      popular: false,
+      link: '#landing-pages'
     },
     {
       title: t('services.socialMedia.title'),
       description: t('services.socialMedia.description'),
       features: t('services.socialMedia.features'),
       icon: FaShare,
-      popular: false
-    },
-    {
-      title: t('services.hosting.title'),
-      description: t('services.hosting.description'),
-      features: t('services.hosting.features'),
-      icon: FaServer,
-      popular: false
-    },
-    /* {
-      title: t('services.seo.title'),
-      description: t('services.seo.description'),
-      features: t('services.seo.features'),
-      icon: FaSearch,
-      badge: t('services.seo.badge'),
-      popular: true
-    } */
+      popular: false,
+      link: '#social-media'
+    }
   ]
 
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const scrollToSection = (sectionId) => {
+    // Remove o # do início se existir
+    const cleanId = sectionId.replace('#', '')
+    document.getElementById(cleanId)?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -89,6 +90,7 @@ function ServicesSection() {
                 key={index}
                 className={`service-card ${service.popular ? 'popular' : ''}`}
                 style={{ animationDelay: `${index * 0.1}s` }}
+                onClick={() => scrollToSection(service.link)}
               >
                 {service.popular && (
                   <div className="popular-badge">
@@ -117,16 +119,6 @@ function ServicesSection() {
               </div>
             )
           })}
-        </div>
-
-        <div className="services-custom">
-          <div className="custom-service-card">
-            <h3 className="custom-title">{t('services.customTitle')}</h3>
-            <p className="custom-description">{t('services.customDescription')}</p>
-            <button className="custom-cta" onClick={scrollToContact}>
-              {t('services.customButton')}
-            </button>
-          </div>
         </div>
       </div>
     </section>

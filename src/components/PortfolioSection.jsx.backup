@@ -106,17 +106,6 @@ function PortfolioSection() {
                 className="product-card"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                {/* Header Content */}
-                <div className="product-content-top">
-                  <div className="product-header">
-                    <div className="product-icon">
-                      <IconComponent />
-                    </div>
-                    <h3 className="product-title">{product.title}</h3>
-                  </div>
-                  <p className="product-description">{product.description}</p>
-                </div>
-
                 {/* Image Carousel */}
                 <div className="product-image-carousel">
                   {images.length > 0 ? (
@@ -155,14 +144,22 @@ function PortfolioSection() {
                       )}
                     </>
                   ) : (
-                    <div className="no-image-placeholder">
+                    <div style={{ height: '250px', background: '#f3f4f6', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                       No images available
                     </div>
                   )}
                 </div>
 
-                {/* Bottom Content */}
-                <div className="product-content-bottom">
+                <div className="product-content">
+                  <div className="product-header">
+                    <div className="product-icon">
+                      <IconComponent />
+                    </div>
+                    <h3 className="product-title">{product.title}</h3>
+                  </div>
+
+                  <p className="product-description">{product.description}</p>
+
                   {/* Features List */}
                   {features.length > 0 ? (
                     <div className="product-features">

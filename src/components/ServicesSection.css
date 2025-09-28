@@ -1,41 +1,41 @@
 .services-section {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  min-height: var(--wb-height-screen);
+  background: var(--wb-gradient-services);
   position: relative;
-  padding: 6rem 0;
+  padding: var(--wb-space-section) var(--wb-space-0);
   overflow: hidden;
 }
 
 
 .services-background {
   position: absolute;
-  inset: 0;
-  z-index: 1;
+  inset: var(--wb-space-0);
+  z-index: var(--wb-z-background);
 }
 
 .gradient-orb {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
+  border-radius: var(--wb-radius-full);
+  filter: blur(var(--wb-space-15));
   animation: float 8s infinite ease-in-out;
 }
 
 .orb-1 {
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, transparent 70%);
+  width: var(--wb-space-100);
+  height: var(--wb-space-100);
+  background: var(--wb-gradient-orb-1);
   top: 10%;
   left: -10%;
-  animation-delay: 0s;
+  animation-delay: var(--wb-space-0);
 }
 
 .orb-2 {
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 70%);
+  width: var(--wb-space-75);
+  height: var(--wb-space-75);
+  background: var(--wb-gradient-orb-2);
   top: 60%;
   right: -5%;
-  animation-delay: 2s;
+  animation-delay: var(--wb-duration-2s);
 }
 
 .orb-3 {
@@ -53,19 +53,19 @@
   padding: 0 2rem;
   position: relative;
   z-index: 2;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 1s ease-in-out;
-}
-
-.services-section.visible .services-container {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .services-header {
   text-align: center;
   margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+}
+
+.services-section.visible .services-header {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .services-badge {
@@ -74,7 +74,7 @@
 }
 
 .services-badge span {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--wb-font-mono);
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 2px;
@@ -88,13 +88,14 @@
 }
 
 .services-title {
-  font-family: 'Inter', sans-serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #ffffff;
+  font-family: var(--wb-font-primary);
+  font-size: var(--wb-text-2xl);
+  font-weight: var(--wb-font-bold);
+  line-height: var(--wb-leading-tight);
+  color: var(--wb-white);
+  text-transform: var(--wb-text-normal);
   margin: 0;
-  max-width: 600px;
+  max-width: var(--wb-width-title-max);
   margin: 0 auto;
 }
 
@@ -109,28 +110,29 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-bottom: 4rem;
 }
 
 .service-card {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  border: var(--wb-card-border);
+  border-radius: var(--wb-card-radius);
   padding: 2rem;
   position: relative;
   backdrop-filter: blur(20px);
-  transition: all 0.3s ease;
+  transition: var(--wb-card-transition);
   cursor: pointer;
   opacity: 0;
   transform: translateY(30px);
   animation: slideUp 0.6s ease forwards;
   overflow: hidden;
+  box-shadow: var(--wb-card-shadow);
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
-  border-color: rgba(37, 99, 235, 0.3);
-  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.1);
+  transform: var(--wb-card-transform-hover);
+  border: var(--wb-card-border-hover);
+  background: rgba(255, 255, 255, var(--wb-opacity-10));
+  box-shadow: var(--wb-card-shadow-hover);
 }
 
 .service-card.popular {
@@ -140,17 +142,21 @@
 
 .popular-badge {
   position: absolute;
-  top: -1px;
-  right: 1rem;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: white;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 0.4rem 1rem;
-  border-radius: 0 0 8px 8px;
+  top: var(--wb-space-2);
+  right: var(--wb-space-2);
+  z-index: var(--wb-z-10);
+}
+
+.popular-badge span {
+  background: var(--wb-gradient-primary);
+  color: var(--wb-white);
+  font-family: var(--wb-font-primary);
+  font-size: var(--wb-text-2xs);
+  font-weight: var(--wb-font-bold);
+  text-transform: var(--wb-text-upper);
+  letter-spacing: var(--wb-tracking-wide);
+  padding: var(--wb-space-1) var(--wb-space-3);
+  border-radius: var(--wb-radius-lg);
 }
 
 .service-icon {
@@ -172,26 +178,28 @@
 }
 
 .service-card:hover .service-icon {
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.3), rgba(59, 130, 246, 0.3));
-  border-color: rgba(37, 99, 235, 0.5);
+  background: linear-gradient(135deg, rgba(37, 99, 235, var(--wb-opacity-30)), rgba(59, 130, 246, var(--wb-opacity-30)));
+  border-color: rgba(37, 99, 235, var(--wb-opacity-50));
   transform: scale(1.1);
 }
 
 .service-title {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin: 0 0 1rem 0;
+  font-family: var(--wb-font-primary);
+  font-size: var(--wb-text-xl);
+  font-weight: var(--wb-font-semibold);
+  color: var(--wb-white);
+  text-transform: var(--wb-text-normal);
+  margin: var(--wb-space-0) var(--wb-space-0) var(--wb-space-4) var(--wb-space-0);
 }
 
 .service-description {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #cccccc;
-  margin: 0 0 1.5rem 0;
+  font-family: var(--wb-font-primary);
+  font-size: var(--wb-text-base);
+  font-weight: var(--wb-font-normal);
+  line-height: var(--wb-leading-relaxed);
+  color: var(--wb-gray-50);
+  text-transform: var(--wb-text-normal);
+  margin: var(--wb-space-0) var(--wb-space-0) var(--wb-space-6) var(--wb-space-0);
 }
 
 .service-features {
@@ -201,7 +209,7 @@
 }
 
 .service-features li {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--wb-font-primary);
   font-size: 0.85rem;
   color: #aaaaaa;
   margin-bottom: 0.5rem;
@@ -240,7 +248,7 @@
 }
 
 .service-cta {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--wb-font-primary);
   font-size: 0.9rem;
   font-weight: 600;
   color: white;
@@ -291,7 +299,7 @@
 }
 
 .custom-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--wb-font-primary);
   font-size: 1.5rem;
   font-weight: 600;
   color: #ffffff;
@@ -299,7 +307,7 @@
 }
 
 .custom-description {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--wb-font-primary);
   font-size: 1rem;
   color: #cccccc;
   margin: 0 0 2rem 0;
@@ -307,7 +315,7 @@
 }
 
 .custom-cta {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--wb-font-primary);
   font-size: 1rem;
   font-weight: 600;
   color: white;
@@ -322,7 +330,6 @@
 }
 
 .custom-cta:hover {
-  transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
   background: linear-gradient(135deg, #1d4ed8, #1e40af);
 }

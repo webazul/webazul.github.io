@@ -1,0 +1,513 @@
+/* ========================================
+   WEBAZUL - DESIGN SYSTEM COMPLETO
+   ======================================== */
+
+:root {
+  /* ========================================
+     CORES DA MARCA
+     ======================================== */
+
+  /* Cores primárias - Azul */
+  --wb-primary: #2563eb;
+  --wb-primary-light: #60a5fa;
+  --wb-primary-dark: #1d4ed8;
+  --wb-primary-darker: #1e40af;
+
+  /* Cores douradas (para elementos especiais) */
+  --wb-gold: #d4af37;
+  --wb-gold-light: #f4e4a1;
+  --wb-gold-dark: #b8941f;
+
+  /* Cores neutras - Escuros */
+  --wb-black: #000000;
+  --wb-gray-900: #0f0f23;
+  --wb-gray-800: #1a1a1a;
+  --wb-gray-700: #1a1a2e;
+  --wb-gray-600: #16213e;
+  --wb-gray-500: #2c2c2c;
+  --wb-gray-400: #333333;
+  --wb-gray-300: #666666;
+  --wb-gray-200: #888888;
+  --wb-gray-100: #aaaaaa;
+  --wb-gray-50: #cccccc;
+
+  /* Cores neutras - Claros */
+  --wb-white: #ffffff;
+  --wb-cream-100: #f8f6f3;
+  --wb-cream-200: #f0ede8;
+  --wb-cream-300: #f3f1ec;
+  --wb-cream-400: #faf9f7;
+
+  /* Cores de borda */
+  --wb-border: #e8e5e0;
+  --wb-border-light: #f0ede8;
+  --wb-border-dark: #e0ddd8;
+
+  /* Cores funcionais */
+  --wb-success: #10b981;
+  --wb-success-light: #d4edda;
+  --wb-success-text: #155724;
+  --wb-warning: #f59e0b;
+  --wb-danger: #ef4444;
+
+  /* Cores especiais para efeitos */
+  --wb-purple: #a855f7;
+  --wb-purple-light: rgba(168, 85, 247, 0.2);
+  --wb-blue-light: #3b82f6;
+  --wb-instagram: #e1306c;
+  --wb-instagram-light: rgba(225, 48, 108, 0.2);
+  --wb-overlay: rgba(0, 0, 0, 0.5);
+  --wb-overlay-light: rgba(0, 0, 0, 0.3);
+
+  /* ========================================
+     TIPOGRAFIA
+     ======================================== */
+
+  /* Fontes principais */
+  --wb-font-display: 'Kaushan Script', cursive;     /* Títulos principais */
+  --wb-font-hero: 'Dancing Script', cursive;        /* Título hero */
+  --wb-font-accent: 'Caveat', cursive;              /* Subtítulos */
+  --wb-font-handwritten: 'Handlee', cursive;        /* Textos descritivos */
+  --wb-font-casual: 'Patrick Hand', cursive;        /* Botões e labels */
+  --wb-font-elegant: 'Satisfy', cursive;            /* Badges e detalhes */
+  --wb-font-mono: 'JetBrains Mono', monospace;      /* Códigos e técnico */
+
+  /* Fontes principais sistema */
+  --wb-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --wb-font-serif: 'Playfair Display', Georgia, serif;
+
+  /* ========================================
+     TAMANHOS DE FONTE
+     ======================================== */
+
+  /* Super títulos */
+  --wb-text-hero: 4rem;
+  --wb-text-5xl: 3rem;
+  --wb-text-4xl: 2.8rem;
+  --wb-text-3xl: 2.5rem;
+  --wb-text-2xl: 2rem;
+  --wb-text-xl: 1.8rem;
+
+  /* Títulos normais */
+  --wb-text-lg: 1.4rem;
+  --wb-text-base: 1rem;
+  --wb-text-md: 1.1rem;
+  --wb-text-sm: 0.9rem;
+  --wb-text-xs: 0.8rem;
+  --wb-text-2xs: 0.75rem;
+
+  /* Tamanhos específicos */
+  --wb-text-btn: 1rem;
+  --wb-text-badge: 1rem;
+  --wb-text-caption: 0.85rem;
+  --wb-text-stat: 2.5rem;
+
+  /* ========================================
+     PESOS DE FONTE
+     ======================================== */
+
+  --wb-font-thin: 100;
+  --wb-font-light: 300;
+  --wb-font-normal: 400;
+  --wb-font-medium: 500;
+  --wb-font-semibold: 600;
+  --wb-font-bold: 700;
+  --wb-font-extrabold: 800;
+  --wb-font-black: 900;
+
+  /* ========================================
+     ESPAÇAMENTOS
+     ======================================== */
+
+  --wb-space-px: 1px;
+  --wb-space-0: 0;
+  --wb-space-0-5: 0.125rem;    /* 2px */
+  --wb-space-1: 0.25rem;       /* 4px */
+  --wb-space-1-5: 0.375rem;    /* 6px */
+  --wb-space-2: 0.5rem;        /* 8px */
+  --wb-space-2-5: 0.625rem;    /* 10px */
+  --wb-space-3: 0.75rem;       /* 12px */
+  --wb-space-3-5: 0.875rem;    /* 14px */
+  --wb-space-4: 1rem;          /* 16px */
+  --wb-space-5: 1.25rem;       /* 20px */
+  --wb-space-6: 1.5rem;        /* 24px */
+  --wb-space-7: 1.75rem;       /* 28px */
+  --wb-space-8: 2rem;          /* 32px */
+  --wb-space-9: 2.25rem;       /* 36px */
+  --wb-space-10: 2.5rem;       /* 40px */
+  --wb-space-11: 2.75rem;      /* 44px */
+  --wb-space-12: 3rem;         /* 48px */
+  --wb-space-14: 3.5rem;       /* 56px */
+  --wb-space-15: 3.75rem;      /* 60px */
+  --wb-space-16: 4rem;         /* 64px */
+  --wb-space-20: 5rem;         /* 80px */
+  --wb-space-24: 6rem;         /* 96px */
+  --wb-space-28: 7rem;         /* 112px */
+  --wb-space-32: 8rem;         /* 128px */
+  --wb-space-75: 18.75rem;     /* 300px */
+  --wb-space-88: 21.875rem;    /* 350px */
+  --wb-space-63: 15.75rem;     /* 252px */
+  --wb-space-100: 25rem;       /* 400px */
+  --wb-space-175: 43.75rem;    /* 700px */
+
+  /* Espaçamentos específicos */
+  --wb-space-section: 6rem;
+  --wb-space-container: 2rem;
+
+  /* ========================================
+     DIMENSÕES E TAMANHOS
+     ======================================== */
+
+  /* Larguras de containers */
+  --wb-container-xs: 480px;
+  --wb-container-sm: 640px;
+  --wb-container-md: 768px;
+  --wb-container-lg: 1024px;
+  --wb-container-xl: 1200px;
+  --wb-container-2xl: 1400px;
+
+  /* Alturas específicas */
+  --wb-height-screen: 100vh;
+  --wb-height-nav: 80px;
+  --wb-height-hero: 100vh;
+
+  /* Larguras específicas */
+  --wb-width-full: 100%;
+  --wb-width-logo: 220px;
+  --wb-width-logo-mobile: 90px;
+  --wb-width-stat-max: 600px;
+  --wb-width-desc-max: 500px;
+  --wb-width-title-max: 800px;
+
+  /* ========================================
+     CARDS PADRONIZADOS
+     ======================================== */
+
+  /* Card styling */
+  --wb-card-radius: var(--wb-radius-xl);              /* 20px */
+  --wb-card-border: 1px solid rgba(255, 255, 255, 0.1);
+  --wb-card-border-hover: 1px solid var(--wb-primary);
+  --wb-card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --wb-card-shadow-hover: 0 8px 30px rgba(37, 99, 235, 0.2);
+  --wb-card-transform-hover: none;
+  --wb-card-transition: all 0.3s ease;
+
+  /* ========================================
+     BORDAS E SOMBRAS
+     ======================================== */
+
+  /* Border radius */
+  --wb-radius-none: 0;
+  --wb-radius-sm: 6px;
+  --wb-radius: 8px;
+  --wb-radius-md: 12px;
+  --wb-radius-lg: 16px;
+  --wb-radius-xl: 20px;
+  --wb-radius-2xl: 24px;
+  --wb-radius-3xl: 25px;
+  --wb-radius-full: 50%;
+
+  /* Sombras */
+  --wb-shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --wb-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --wb-shadow-md: 0 10px 30px rgba(0, 0, 0, 0.15);
+  --wb-shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
+  --wb-shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+
+  /* Sombras coloridas */
+  --wb-shadow-primary: 0 4px 15px rgba(37, 99, 235, 0.3);
+  --wb-shadow-primary-hover: 0 6px 20px rgba(37, 99, 235, 0.4);
+  --wb-shadow-primary-lg: 0 6px 20px rgba(37, 99, 235, 0.4);
+  --wb-shadow-gold: 0 4px 15px rgba(212, 175, 55, 0.3);
+  --wb-shadow-gold-hover: 0 6px 20px rgba(212, 175, 55, 0.4);
+  --wb-shadow-instagram: 0 4px 15px rgba(225, 48, 108, 0.3);
+  --wb-shadow-instagram-hover: 0 6px 20px rgba(225, 48, 108, 0.4);
+
+  /* Sombras especiais */
+  --wb-shadow-glow: 0 0 20px rgba(37, 99, 235, 0.6);
+  --wb-shadow-node: 0 0 20px rgba(37, 99, 235, 0.6);
+
+  /* ========================================
+     GRADIENTES
+     ======================================== */
+
+  /* Gradientes primários */
+  --wb-gradient-primary: linear-gradient(135deg, var(--wb-primary), var(--wb-primary-dark));
+  --wb-gradient-primary-hover: linear-gradient(135deg, var(--wb-primary-dark), var(--wb-primary-darker));
+  --wb-gradient-gold: linear-gradient(135deg, var(--wb-gold), var(--wb-gold-dark));
+  --wb-gradient-instagram: linear-gradient(135deg, #e1306c, #fd1d1d, #ffdc80);
+  --wb-gradient-social: linear-gradient(135deg, var(--wb-cream-100) 0%, var(--wb-cream-300) 100%);
+
+  /* Gradientes de fundo */
+  --wb-gradient-hero: linear-gradient(135deg, var(--wb-black) 0%, var(--wb-gray-800) 50%, var(--wb-black) 100%);
+  --wb-gradient-cream: linear-gradient(135deg, var(--wb-cream-100) 0%, var(--wb-cream-200) 100%);
+  --wb-gradient-services: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  --wb-gradient-systems: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  --wb-gradient-portfolio: linear-gradient(135deg, #1a1a2e 0%, #2c2c44 50%, #1a1a2e 100%);
+  --wb-gradient-social-new: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+
+  /* Novos gradientes profissionais 2024 */
+  --wb-gradient-process-modern: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  --wb-gradient-portfolio-modern: linear-gradient(135deg, #fafbfc 0%, #f1f5f9 50%, #e2e8f0 100%);
+  --wb-gradient-social-modern: linear-gradient(135deg, #ffffff 0%, #f9fafb 50%, #f3f4f6 100%);
+  --wb-gradient-testimonials-modern: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #2d4356 100%);
+  --wb-gradient-systems-modern: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #4a5568 100%);
+  --wb-gradient-dark: linear-gradient(135deg, var(--wb-gray-500), var(--wb-gray-800));
+
+  /* Gradientes de texto */
+  --wb-gradient-text-light: linear-gradient(45deg, var(--wb-white), #f0f0f0);
+
+  /* Gradientes especiais para efeitos */
+  --wb-gradient-orb-1: radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, transparent 70%);
+  --wb-gradient-orb-2: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 70%);
+  --wb-gradient-orb-3: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, transparent 70%);
+
+  /* Gradientes de conexão */
+  --wb-gradient-connection: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.3), transparent);
+
+  /* ========================================
+     TRANSIÇÕES E ANIMAÇÕES
+     ======================================== */
+
+  /* Durações */
+  --wb-duration-75: 75ms;
+  --wb-duration-100: 100ms;
+  --wb-duration-150: 150ms;
+  --wb-duration-200: 200ms;
+  --wb-duration-300: 300ms;
+  --wb-duration-500: 500ms;
+  --wb-duration-700: 700ms;
+  --wb-duration-1000: 1000ms;
+  --wb-duration-2s: 2s;
+  --wb-duration-3s: 3s;
+
+  /* Transições */
+  --wb-transition-fast: 0.2s ease;
+  --wb-transition: 0.3s ease;
+  --wb-transition-slow: 0.5s ease;
+  --wb-transition-all: all 0.3s ease;
+  --wb-transition-bounce: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* Transições específicas */
+  --wb-transition-hero: all 1s ease-in-out;
+  --wb-transition-section: all 1s ease-in-out;
+
+  /* ========================================
+     Z-INDEX
+     ======================================== */
+
+  --wb-z-0: 0;
+  --wb-z-10: 10;
+  --wb-z-20: 20;
+  --wb-z-30: 30;
+  --wb-z-40: 40;
+  --wb-z-50: 50;
+
+  /* Z-index específicos */
+  --wb-z-background: 1;
+  --wb-z-content: 2;
+  --wb-z-floating: 10;
+  --wb-z-modal: 1000;
+  --wb-z-tooltip: 1100;
+
+  /* ========================================
+     OPACIDADES
+     ======================================== */
+
+  --wb-opacity-0: 0;
+  --wb-opacity-2: 0.02;
+  --wb-opacity-3: 0.03;
+  --wb-opacity-5: 0.05;
+  --wb-opacity-10: 0.1;
+  --wb-opacity-15: 0.15;
+  --wb-opacity-20: 0.2;
+  --wb-opacity-25: 0.25;
+  --wb-opacity-30: 0.3;
+  --wb-opacity-40: 0.4;
+  --wb-opacity-50: 0.5;
+  --wb-opacity-60: 0.6;
+  --wb-opacity-70: 0.7;
+  --wb-opacity-75: 0.75;
+  --wb-opacity-80: 0.8;
+  --wb-opacity-90: 0.9;
+  --wb-opacity-95: 0.95;
+  --wb-opacity-100: 1;
+
+  /* ========================================
+     BREAKPOINTS (para uso em JavaScript)
+     ======================================== */
+
+  --wb-breakpoint-xs: 480px;
+  --wb-breakpoint-sm: 640px;
+  --wb-breakpoint-md: 768px;
+  --wb-breakpoint-lg: 1024px;
+  --wb-breakpoint-xl: 1200px;
+  --wb-breakpoint-2xl: 1400px;
+
+  /* ========================================
+     PROPORÇÕES E LINE HEIGHT
+     ======================================== */
+
+  --wb-leading-none: 1;
+  --wb-leading-tight: 1.25;
+  --wb-leading-snug: 1.375;
+  --wb-leading-normal: 1.5;
+  --wb-leading-relaxed: 1.625;
+  --wb-leading-loose: 2;
+
+  /* Line heights específicos */
+  --wb-leading-hero: 1.3;
+  --wb-leading-title: 1.3;
+  --wb-leading-text: 1.6;
+  --wb-leading-caption: 1.7;
+
+  /* ========================================
+     LETTER SPACING
+     ======================================== */
+
+  --wb-tracking-tighter: -0.05em;
+  --wb-tracking-tight: -0.025em;
+  --wb-tracking-normal: 0em;
+  --wb-tracking-wide: 0.025em;
+  --wb-tracking-wider: 0.05em;
+  --wb-tracking-widest: 0.1em;
+
+  /* Letter spacing específicos */
+  --wb-tracking-subtitle: 2px;
+  --wb-tracking-button: 0.5px;
+  --wb-tracking-stat: 1px;
+
+  /* Text Transform */
+  --wb-text-upper: uppercase;
+  --wb-text-lower: lowercase;
+  --wb-text-capitalize: capitalize;
+  --wb-text-normal: none;
+}
+
+/* ========================================
+   RESPONSIVIDADE - MOBILE FIRST
+   ======================================== */
+
+@media (max-width: 480px) {
+  :root {
+    /* Ajustes de fonte para mobile */
+    --wb-text-hero: 2.5rem;
+    --wb-text-5xl: 2rem;
+    --wb-text-4xl: 2rem;
+    --wb-text-3xl: 1.8rem;
+    --wb-text-2xl: 1.4rem;
+    --wb-text-stat: 1.8rem;
+
+    /* Ajustes de espaçamento para mobile */
+    --wb-space-section: 3rem;
+    --wb-space-container: 1rem;
+
+    /* Ajustes de dimensões para mobile */
+    --wb-width-logo: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    /* Ajustes de fonte para tablet */
+    --wb-text-hero: 3rem;
+    --wb-text-5xl: 2.2rem;
+    --wb-text-4xl: 2.2rem;
+    --wb-text-3xl: 2rem;
+    --wb-text-2xl: 1.6rem;
+    --wb-text-stat: 2rem;
+
+    /* Ajustes de espaçamento para tablet */
+    --wb-space-section: 4rem;
+
+    /* Ajustes de dimensões para tablet */
+    --wb-width-logo: 90px;
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Classes de texto */
+.wb-text-gradient {
+  background: var(--wb-gradient-text-light);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Classes de animação */
+.wb-animate-pulse {
+  animation: wb-pulse 2s infinite;
+}
+
+.wb-animate-float {
+  animation: wb-float 4s infinite ease-in-out;
+}
+
+.wb-animate-flow {
+  animation: wb-flow 3s infinite;
+}
+
+/* Keyframes para animações */
+@keyframes wb-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+@keyframes wb-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes wb-flow {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Classes de efeitos especiais */
+.wb-backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+
+.wb-filter-blur {
+  filter: blur(60px);
+}
+
+/* Classes de posicionamento */
+.wb-absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Classes de transformação de texto */
+.wb-text-upper {
+  text-transform: uppercase;
+}
+
+/* Classes de hover especiais */
+.wb-hover-lift:hover {
+  transform: translateY(-2px);
+}

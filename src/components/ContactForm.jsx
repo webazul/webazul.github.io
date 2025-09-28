@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import './ContactForm.css'
-import { FaRocket, FaClock, FaUsers, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 
 function ContactForm() {
   const { t } = useTranslation()
@@ -154,20 +154,6 @@ function ContactForm() {
               </div>
             </div>
 
-            <div className="contact-features">
-              <div className="feature-item">
-                <FaRocket className="feature-icon" />
-                <span>{t('contact.features.fastResponse')}</span>
-              </div>
-              <div className="feature-item">
-                <FaUsers className="feature-icon" />
-                <span>{t('contact.features.freeConsultation')}</span>
-              </div>
-              <div className="feature-item">
-                <FaClock className="feature-icon" />
-                <span>{t('contact.features.meetDeadlines')}</span>
-              </div>
-            </div>
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>

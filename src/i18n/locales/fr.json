@@ -13,7 +13,7 @@
     "brandHighlight": "azul",
     "brandSubtitle": "CREATIVE STUDIO",
     "subtitle": "Nous transformons les idées en expériences numériques innovantes",
-    "description": "Agence portugaise spécialisée en développement web, réseaux sociaux, hébergement et SEO. Nous créons des solutions numériques qui génèrent des résultats.",
+    "description": "Agence portugaise spécialisée dans le développement web, les systèmes numériques et les solutions SaaS. Nous créons des expériences numériques qui transforment les entreprises.",
     "stats": {
       "projects": "100+",
       "projectsLabel": "Projets",
@@ -23,39 +23,30 @@
       "satisfactionLabel": "Satisfaction"
     },
     "cta": {
-      "primary": "Commencer un Projet",
+      "primary": "Commencer Projet",
       "secondary": "Voir Portfolio"
     }
   },
   "services": {
     "badge": "Services",
-    "title": "Solutions numériques complètes pour",
-    "titleHighlight": "transformer votre entreprise",
-    "webDev": {
-      "title": "Développement Web",
-      "description": "Sites web qui mettent en valeur votre entreprise et convertissent les visiteurs en clients. Design professionnel qui fonctionne sur tous les appareils.",
-      "features": ["Développement moderne", "Design responsive", "Optimisation SEO", "Haute performance"],
+    "title": "Trois piliers pour votre",
+    "titleHighlight": "succès numérique",
+    "systems": {
+      "title": "Systèmes Prêts",
+      "description": "Solutions SaaS complètes et personnalisables pour différents secteurs d'activité.",
+      "features": ["AutoAzul - Automobile", "ImobiAzul - Immobilier", "LojaAzul - E-commerce", "RestaurAzul - Restauration"],
       "badge": "Populaire"
+    },
+    "landing": {
+      "title": "Landing Pages",
+      "description": "Sites web professionnels et landing pages optimisées pour la conversion et les résultats.",
+      "features": ["Design responsive", "Optimisation SEO", "Haute performance", "Analytics intégrées"]
     },
     "socialMedia": {
-      "title": "Réseaux Sociaux",
+      "title": "Social Media",
       "description": "Gestion complète de vos réseaux sociaux avec stratégie, contenu et analyse des résultats.",
-      "features": ["Stratégie digitale", "Création de contenu", "Gestion quotidienne", "Rapports mensuels"]
-    },
-    "hosting": {
-      "title": "Hébergement",
-      "description": "Hébergement professionnel avec SSL, sauvegardes automatiques et support 24/7 pour votre site web.",
-      "features": ["SSL inclus", "Sauvegardes quotidiennes", "Support 24/7", "99.9% uptime"]
-    },
-    "seo": {
-      "title": "SEO",
-      "description": "Optimisation pour les moteurs de recherche. Augmentez la visibilité de votre site sur Google.",
-      "features": ["Analyse technique", "Mots-clés", "Link building", "Rapports mensuels"],
-      "badge": "Populaire"
-    },
-    "customTitle": "Besoin de quelque chose de personnalisé ?",
-    "customDescription": "Contactez-nous pour discuter de vos besoins spécifiques",
-    "customButton": "Nous Parler"
+      "features": ["Stratégie numérique", "Création de contenu", "Gestion quotidienne", "Rapports mensuels"]
+    }
   },
   "process": {
     "badge": "Processus",
@@ -72,7 +63,7 @@
       },
       "development": {
         "title": "Développement",
-        "description": "Création de la solution utilisant les meilleures technologies et pratiques",
+        "description": "Création de la solution en utilisant les meilleures technologies et pratiques",
         "duration": "3-8 semaines",
         "deliverables": ["Design UI/UX", "Développement", "Tests"]
       },
@@ -92,97 +83,136 @@
     "timeline": {
       "start": "Début",
       "end": "Livraison"
+    },
+    "cta": {
+      "title": "Prêt à commencer votre projet ?",
+      "description": "Discutons de la façon dont nous pouvons transformer votre idée en une solution numérique réussie.",
+      "button": "Commencer Maintenant"
     }
   },
   "portfolio": {
-    "badge": "Portfolio",
-    "title": "Projets qui ont fait la",
-    "titleHighlight": "différence",
-    "subtitle": "Découvrez quelques-uns de nos travaux les plus récents et les résultats que nous avons obtenus pour nos clients.",
+    "badge": "Nos Produits",
+    "title": "Solutions numériques complètes",
+    "titleHighlight": "prêtes à utiliser",
+    "subtitle": "Découvrez nos logiciels de gestion spécialisés,\ndéveloppés par WebAzul pour transformer votre entreprise.",
     "filters": {
       "all": "Tous",
-      "websites": "Sites Web",
-      "ecommerce": "E-commerce",
-      "apps": "Apps",
-      "branding": "Branding"
+      "automotive": "Automobile",
+      "real_estate": "Immobilier"
     },
-    "projects": {
-      "projeto1": {
-        "title": "E-commerce Mode",
-        "category": "E-commerce",
-        "description": "Boutique en ligne moderne avec système de paiement et gestion d'inventaire",
-        "tech": ["React", "Node.js", "Stripe", "MongoDB"],
+    "products": {
+      "autoazul": {
+        "title": "AutoAzul",
+        "category": "automotive",
+        "description": "Système complet pour la gestion de concessionnaires et stands automobiles avec landing page personnalisée",
+        "features": [
+          "Gestion complète du stock de véhicules",
+          "Landing page responsive personnalisée",
+          "CRM intégré pour la gestion des clients",
+          "Rapports de ventes et de performance",
+          "Système de planification d'essais",
+          "Intégration réseaux sociaux"
+        ],
+        "images": [
+          "./assets/products/autoazul-mockup.svg",
+          "./assets/products/autoazul-landing.svg"
+        ],
+        "tech": ["React", "Node.js", "PostgreSQL", "AWS"],
         "year": "2024",
-        "views": "15.2K",
-        "url": "https://exemple1.fr"
+        "status": "Disponible",
+        "pricing": "À partir de 199€/mois"
       },
-      "projeto2": {
-        "title": "App Fitness",
-        "category": "Apps",
-        "description": "Application mobile pour entraînements personnalisés et suivi",
-        "tech": ["React Native", "Firebase", "Redux"],
+      "imobiazul": {
+        "title": "ImobiAzul",
+        "category": "real_estate",
+        "description": "Plateforme complète pour la gestion d'agences immobilières et agents avec portail personnalisé",
+        "features": [
+          "Gestion des propriétés et portfolio",
+          "Portail immobilier responsive personnalisé",
+          "CRM pour prospects et clients",
+          "Tour virtuel 360° intégré",
+          "Système d'évaluations automatiques",
+          "App mobile pour agents"
+        ],
+        "images": [
+          "./assets/products/imobiazul-mockup.svg",
+          "./assets/products/imobiazul-landing.svg"
+        ],
+        "tech": ["React", "Node.js", "MongoDB", "Cloudinary"],
         "year": "2024",
-        "views": "8.7K",
-        "url": "https://exemple2.fr"
-      },
-      "projeto3": {
-        "title": "Site Web Corporatif",
-        "category": "Sites Web",
-        "description": "Site institutionnel avec système de gestion de contenu",
-        "tech": ["Next.js", "Prisma", "PostgreSQL"],
-        "year": "2023",
-        "views": "12.1K",
-        "url": "https://exemple3.fr"
-      },
-      "projeto4": {
-        "title": "Plateforme Éducative",
-        "category": "Apps",
-        "description": "Système d'enseignement à distance avec visioconférence",
-        "tech": ["Vue.js", "Laravel", "WebRTC"],
-        "year": "2023",
-        "views": "22.5K",
-        "url": "https://exemple4.fr"
-      },
-      "projeto5": {
-        "title": "Identité de Marque Tech",
-        "category": "Branding",
-        "description": "Identité visuelle complète pour startup technologique",
-        "tech": ["Adobe Creative", "Figma", "Brand Guidelines"],
-        "year": "2024",
-        "views": "6.3K",
-        "url": "https://exemple5.fr"
-      },
-      "projeto6": {
-        "title": "Marketplace Local",
-        "category": "E-commerce",
-        "description": "Plateforme de commerce local avec géolocalisation",
-        "tech": ["Angular", "Django", "PostgreSQL"],
-        "year": "2023",
-        "views": "18.9K",
-        "url": "https://exemple6.fr"
-      },
-      "projeto7": {
-        "title": "Portail d'Actualités",
-        "category": "Sites Web",
-        "description": "Système d'actualités avec panneau administratif",
-        "tech": ["WordPress", "PHP", "MySQL"],
-        "year": "2024",
-        "views": "31.2K",
-        "url": "https://exemple7.fr"
-      },
-      "projeto8": {
-        "title": "SaaS Analytics",
-        "category": "Apps",
-        "description": "Outil d'analyse de données pour entreprises",
-        "tech": ["Python", "Django", "React", "D3.js"],
-        "year": "2024",
-        "views": "9.8K",
-        "url": "https://exemple8.fr"
+        "status": "Disponible",
+        "pricing": "À partir de 149€/mois"
       }
     },
     "buttons": {
-      "viewSite": "Voir le Site",
-      "preview": "Aperçu"
+      "learnMore": "En Savoir Plus",
+      "contact": "Contacter"
+    },
+    "badges": {
+      "available": "Disponible",
+      "popular": "Populaire",
+      "new": "Nouveau"
+    }
+  },
+  "systems": {
+    "badge": "Systèmes Prêts",
+    "title": "Solutions SaaS complètes",
+    "titleHighlight": "pour votre entreprise",
+    "autoazul": {
+      "title": "AutoAzul",
+      "description": "Système complet pour la gestion de concessionnaires et stands automobiles avec landing page personnalisée.",
+      "features": [
+        "Gestion complète du stock de véhicules",
+        "Landing page responsive personnalisée",
+        "CRM intégré pour la gestion des clients"
+      ]
+    },
+    "imobiazul": {
+      "title": "ImobiAzul",
+      "description": "Plateforme complète pour la gestion d'agences immobilières et agents avec portail personnalisé.",
+      "features": [
+        "Gestion des propriétés et portfolio",
+        "Portail immobilier responsive personnalisé",
+        "CRM pour prospects et clients",
+        "Tour virtuel 360° intégré"
+      ]
+    },
+    "belezaazul": {
+      "title": "BelezaAzul",
+      "description": "Système complet pour salons de beauté, barbiers et cliniques esthétiques.",
+      "features": [
+        "Planification en ligne des services",
+        "Gestion des professionnels et agenda",
+        "Contrôle du stock de produits",
+        "Programme de fidélisation des clients"
+      ]
+    },
+    "buttons": {
+      "demo": "Démo",
+      "contact": "Contacter",
+      "notify": "Me Notifier"
+    },
+    "badges": {
+      "popular": "Populaire",
+      "comingSoon": "Bientôt Disponible"
+    }
+  },
+  "landingPages": {
+    "badge": "Portfolio",
+    "title": "Projets qui",
+    "titleHighlight": "transforment les entreprises",
+    "subtitle": "Découvrez quelques-unes des landing pages et sites web que nous avons créés pour nos clients.",
+    "buttons": {
+      "visit": "Visiter le Site"
+    }
+  },
+  "socialMedia": {
+    "badge": "Social Media",
+    "title": "Gestion des réseaux sociaux qui",
+    "titleHighlight": "génère des résultats",
+    "subtitle": "Nous créons et gérons du contenu authentique qui connecte votre marque au public idéal.",
+    "buttons": {
+      "viewPost": "Voir le Projet"
     }
   },
   "testimonials": {
@@ -236,9 +266,9 @@
       },
       "client3": {
         "name": "Carlos Mendes",
-        "company": "Conseil PM",
+        "company": "Consultoria PM",
         "role": "Associé-Gérant",
-        "text": "L'investissement SEO avec WebAzul a été le meilleur que nous ayons fait. Nous sommes maintenant en première page de Google pour tous les mots-clés importants.",
+        "text": "L'investissement en SEO avec WebAzul a été le meilleur que nous ayons fait. Nous sommes maintenant en première page de Google pour tous les mots-clés importants.",
         "project": "Stratégie SEO",
         "duration": "6 mois",
         "result": "1ère page Google",
@@ -273,7 +303,7 @@
         "ecommerce": "E-commerce",
         "app": "Application",
         "seo": "SEO",
-        "social": "Réseaux Sociaux",
+        "social": "Social Media",
         "hosting": "Hébergement",
         "branding": "Branding",
         "other": "Autre"
@@ -298,7 +328,7 @@
       },
       "message": "Message *",
       "messagePlaceholder": "Parlez-nous de votre projet, objectifs et exigences spécifiques...",
-      "submit": "Commencer le Projet",
+      "submit": "Démarrer le Projet",
       "submitting": "Envoi en cours...",
       "namePlaceholder": "Votre nom complet",
       "emailPlaceholder": "votreemail@exemple.com",
@@ -322,7 +352,7 @@
     }
   },
   "footer": {
-    "description": "WebAzul Creative Studio - Agence portugaise spécialisée en développement web et solutions numériques innovantes.",
+    "description": "WebAzul Creative Studio - Agence portugaise spécialisée dans le développement web, les systèmes numériques et les solutions SaaS innovantes.",
     "navigation": "Navigation",
     "home": "Accueil",
     "services": "Services",
@@ -334,7 +364,7 @@
     "rights": "Tous droits réservés.",
     "madeIn": "Fait avec ❤️ au Portugal",
     "privacyPolicy": "Politique de Confidentialité",
-    "termsService": "Conditions de Service",
+    "termsService": "Conditions d'Utilisation",
     "cookies": "Cookies",
     "backToTop": "Retour en Haut"
   },
@@ -343,10 +373,10 @@
     "howHelp": "Comment pouvons-nous vous aider avec votre projet numérique ?",
     "services": "Nos services incluent :",
     "webDev": "Développement Web",
-    "socialMedia": "Réseaux Sociaux",
+    "socialMedia": "Social Media",
     "hosting": "Hébergement",
     "seo": "SEO",
-    "startConversation": "Commencer la Conversation",
+    "startConversation": "Démarrer la Conversation",
     "defaultMessage": "Bonjour ! J'aimerais en savoir plus sur vos services de développement web.",
     "contactLabel": "Contacter via WhatsApp"
   },
@@ -354,11 +384,11 @@
     "title": "Confidentialité et Cookies",
     "text": "Nous utilisons des cookies essentiels pour garantir le fonctionnement du site web et des cookies analytiques pour améliorer votre expérience.",
     "acceptAll": "Accepter Tous",
-    "essentialOnly": "Essentiels Seulement",
+    "essentialOnly": "Essentiels Uniquement",
     "privacyPolicy": "Politique de Confidentialité",
     "note": "Pour plus d'informations, consultez notre",
     "and": "et",
     "cookiePolicy": "Politique de Cookies",
-    "closeLabel": "Fermer la bannière de cookies"
+    "closeLabel": "Fermer la bannière cookies"
   }
 }
