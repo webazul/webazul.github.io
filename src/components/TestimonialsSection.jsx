@@ -44,9 +44,6 @@ function TestimonialsSection() {
       company: t('testimonials.clients.client1.company'),
       role: t('testimonials.clients.client1.role'),
       text: t('testimonials.clients.client1.text'),
-      project: t('testimonials.clients.client1.project'),
-      duration: t('testimonials.clients.client1.duration'),
-      result: t('testimonials.clients.client1.result'),
       verified: t('testimonials.clients.client1.verified')
     },
     {
@@ -55,9 +52,6 @@ function TestimonialsSection() {
       company: t('testimonials.clients.client2.company'),
       role: t('testimonials.clients.client2.role'),
       text: t('testimonials.clients.client2.text'),
-      project: t('testimonials.clients.client2.project'),
-      duration: t('testimonials.clients.client2.duration'),
-      result: t('testimonials.clients.client2.result'),
       verified: t('testimonials.clients.client2.verified')
     },
     {
@@ -66,9 +60,6 @@ function TestimonialsSection() {
       company: t('testimonials.clients.client3.company'),
       role: t('testimonials.clients.client3.role'),
       text: t('testimonials.clients.client3.text'),
-      project: t('testimonials.clients.client3.project'),
-      duration: t('testimonials.clients.client3.duration'),
-      result: t('testimonials.clients.client3.result'),
       verified: t('testimonials.clients.client3.verified')
     },
     {
@@ -77,9 +68,6 @@ function TestimonialsSection() {
       company: t('testimonials.clients.client4.company'),
       role: t('testimonials.clients.client4.role'),
       text: t('testimonials.clients.client4.text'),
-      project: t('testimonials.clients.client4.project'),
-      duration: t('testimonials.clients.client4.duration'),
-      result: t('testimonials.clients.client4.result'),
       verified: t('testimonials.clients.client4.verified')
     }
   ]
@@ -133,18 +121,6 @@ function TestimonialsSection() {
 
                 <div className="testimonial-text">
                   "{current.text}"
-                </div>
-
-                <div className="project-metrics">
-                  <div className="metric">
-                    <strong>{t('testimonials.labels.project')}</strong> {current.project}
-                  </div>
-                  <div className="metric">
-                    <strong>{t('testimonials.labels.duration')}</strong> {current.duration}
-                  </div>
-                  <div className="metric">
-                    <strong>{t('testimonials.labels.result')}</strong> {current.result}
-                  </div>
                 </div>
               </div>
             </div>

@@ -32,7 +32,7 @@ function SystemsSection() {
       description: t('systems.autoazul.description'),
       features: t('systems.autoazul.features', { returnObjects: true }),
       icon: FaCar,
-      demoUrl: 'https://autoazul.webazul.pt',
+      demoUrl: 'https://auto.webazul.pt/',
       category: 'Automóvel',
       color: '#dc2626',
       gradient: 'linear-gradient(135deg, #dc2626, #b91c1c)',
@@ -44,20 +44,21 @@ function SystemsSection() {
       description: t('systems.imobiazul.description'),
       features: t('systems.imobiazul.features', { returnObjects: true }),
       icon: FaHome,
-      demoUrl: 'https://imobiazul.webazul.pt',
+      demoUrl: '#',
       category: 'Imobiliário',
       color: '#059669',
       gradient: 'linear-gradient(135deg, #059669, #047857)',
-      popular: false
+      popular: false,
+      comingSoon: true
     },
     {
-      id: 'belezaazul',
-      title: t('systems.belezaazul.title'),
-      description: t('systems.belezaazul.description'),
-      features: t('systems.belezaazul.features', { returnObjects: true }),
+      id: 'studioazul',
+      title: t('systems.studioazul.title'),
+      description: t('systems.studioazul.description'),
+      features: t('systems.studioazul.features', { returnObjects: true }),
       icon: FaCut,
       demoUrl: '#',
-      category: 'Beleza & Bem-estar',
+      category: 'Studio & Criativo',
       color: '#7c3aed',
       gradient: 'linear-gradient(135deg, #7c3aed, #6d28d9)',
       popular: false,
@@ -143,7 +144,6 @@ function SystemsSection() {
                     <button
                       className="contact-btn"
                       onClick={scrollToContact}
-                      disabled={system.comingSoon}
                     >
                       <FaArrowRight />
                       {system.comingSoon ? t('systems.buttons.notify') : t('systems.buttons.contact')}

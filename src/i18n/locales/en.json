@@ -177,14 +177,14 @@
         "Integrated 360° virtual tour"
       ]
     },
-    "belezaazul": {
-      "title": "BelezaAzul",
-      "description": "Complete system for beauty salons, barbershops and aesthetic clinics.",
+    "studioazul": {
+      "title": "StudioAzul",
+      "description": "Complete system for creative studios, photography and audiovisual production.",
       "features": [
-        "Online service scheduling",
-        "Professional and schedule management",
-        "Product stock control",
-        "Customer loyalty program"
+        "Project and client management",
+        "Equipment scheduling and booking",
+        "Integrated portfolio and gallery",
+        "Billing and financial control"
       ]
     },
     "buttons": {
@@ -198,9 +198,9 @@
     }
   },
   "landingPages": {
-    "badge": "Portfolio",
-    "title": "Projects that",
-    "titleHighlight": "transform businesses",
+    "badge": "Landing Pages",
+    "title": "Pages that",
+    "titleHighlight": "convert visitors",
     "subtitle": "Discover some of the landing pages and websites we created for our clients.",
     "buttons": {
       "visit": "Visit Site"

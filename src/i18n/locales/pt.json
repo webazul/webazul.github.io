@@ -177,14 +177,14 @@
         "Tour virtual 360° integrado"
       ]
     },
-    "belezaazul": {
-      "title": "BelezaAzul",
-      "description": "Sistema completo para salões de beleza, barbearias e clínicas de estética.",
+    "studioazul": {
+      "title": "StudioAzul",
+      "description": "Sistema completo para estúdios criativos, fotografia e produção audiovisual.",
       "features": [
-        "Agendamento online de serviços",
-        "Gestão de profissionais e agenda",
-        "Controlo de stock de produtos",
-        "Programa de fidelização de clientes"
+        "Gestão de projetos e clientes",
+        "Agendamento e reserva de equipamentos",
+        "Portfolio e galeria integrada",
+        "Faturação e controle financeiro"
       ]
     },
     "buttons": {
@@ -198,9 +198,9 @@
     }
   },
   "landingPages": {
-    "badge": "Portfolio",
-    "title": "Projetos que",
-    "titleHighlight": "transformam negócios",
+    "badge": "Landing Pages",
+    "title": "Páginas que",
+    "titleHighlight": "convertem visitantes",
     "subtitle": "Descubra algumas das landing pages e websites que criámos para os nossos clientes.",
     "buttons": {
       "visit": "Visitar Site"

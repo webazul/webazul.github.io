@@ -2,6 +2,7 @@ import './App.css'
 import './i18n/i18n'
 import HeroSection from './components/HeroSection'
 import ServicesSection from './components/ServicesSection'
+// import PortfolioSection from './components/PortfolioSection'
 import SystemsSection from './components/SystemsSection'
 import LandingPagesSection from './components/LandingPagesSection'
 import SocialMediaSection from './components/SocialMediaSection'
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <HeroSection />
       <ServicesSection />
+      {/* <PortfolioSection /> */}
       <SystemsSection />
       <LandingPagesSection />
       <SocialMediaSection />

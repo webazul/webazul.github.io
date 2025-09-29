@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import './SocialMediaSection.css'
-import { FaInstagram, FaUsers, FaChartLine, FaPalette } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
 
 function SocialMediaSection() {
   const { t } = useTranslation()
@@ -28,21 +28,27 @@ function SocialMediaSection() {
   const socialProjects = [
     {
       id: 1,
-      client: 'TechStart',
-      image: './assets/social/techstart-social.jpg',
-      category: 'Tecnologia'
+      client: '@victor_sleepwear',
+      image: 'https://via.placeholder.com/1080x1350/2563eb/ffffff?text=@victor_sleepwear',
+      instagramUrl: 'https://www.instagram.com/p/DPEam-6DQLp/?igsh=YTRuN3kxeXoxem9n',
+      embedCode: 'DPEam-6DQLp',
+      useEmbed: true
     },
     {
       id: 2,
-      client: 'Fashion Store',
-      image: './assets/social/fashion-social.jpg',
-      category: 'Moda'
+      client: '@post_2',
+      image: 'https://via.placeholder.com/1080x1350/ec4899/ffffff?text=Post+2',
+      instagramUrl: 'https://www.instagram.com/p/DPEGGfwCCrd/?igsh=MWFrZTg1YzJwNzBwNQ==',
+      embedCode: 'DPEGGfwCCrd',
+      useEmbed: true
     },
     {
       id: 3,
-      client: 'Fitness Club',
-      image: './assets/social/fitness-social.jpg',
-      category: 'Fitness'
+      client: '@post_3',
+      image: 'https://via.placeholder.com/1080x1350/10b981/ffffff?text=Post+3',
+      instagramUrl: 'https://www.instagram.com/p/DPE4F3qDJSN/?igsh=bDYwMjllNTVtOWg5',
+      embedCode: 'DPE4F3qDJSN',
+      useEmbed: true
     }
   ]
 
@@ -60,37 +66,53 @@ function SocialMediaSection() {
           <p className="social-media-subtitle">{t('socialMedia.subtitle')}</p>
         </div>
 
-        <div className="social-projects-grid">
-          {socialProjects.map((project, index) => {
-            const IconComponent = project.icon
-            return (
-              <div
-                key={project.id}
-                className="social-project-card"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="project-image">
-                  <img src={project.image} alt={`${project.client} Social Media`} />
-                  <div className="image-overlay">
-                    <button
-                      className="view-project-btn"
-                      onClick={() => window.open('#', '_blank')}
-                    >
-                      <FaInstagram />
-                      {t('socialMedia.buttons.viewPost')}
-                    </button>
+        <div className="social-carousel-container">
+          <div className="social-projects-grid">
+            {socialProjects.map((project, index) => {
+              return (
+                <div
+                  key={project.id}
+                  className={`social-project-card ${project.useEmbed ? 'embed-card' : ''}`}
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="project-image">
+                    {project.useEmbed && project.embedCode ? (
+                      <iframe
+                        src={`https://www.instagram.com/p/${project.embedCode}/embed`}
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        scrolling="no"
+                        allowTransparency="true"
+                        style={{ border: 'none', overflow: 'hidden' }}
+                      />
+                    ) : (
+                      <>
+                        <img src={project.image} alt={`${project.client} Social Media`} />
+                        <div className="image-overlay">
+                          <button
+                            className="view-project-btn"
+                            onClick={() => window.open(project.instagramUrl || '#', '_blank')}
+                          >
+                            <FaInstagram />
+                            {t('socialMedia.buttons.viewPost')}
+                          </button>
+                        </div>
+                      </>
+                    )}
                   </div>
-                </div>
 
-                <div className="project-content">
-                  <div className="project-header">
-                    <h3 className="project-client">{project.client}</h3>
-                    <span className="project-category">{project.category}</span>
-                  </div>
+                  {!project.useEmbed && (
+                    <div className="project-content">
+                      <div className="project-header">
+                        <h3 className="project-client">{project.client}</h3>
+                      </div>
+                    </div>
+                  )}
                 </div>
-              </div>
-            )
-          })}
+              )
+            })}
+          </div>
         </div>
 
       </div>

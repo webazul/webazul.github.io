@@ -28,13 +28,15 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 2.5rem;
+  grid-template-columns: 1.5fr 1.5fr 0.8fr;
+  gap: 3rem;
   margin-bottom: 3rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .footer-brand {
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .footer-logo {
@@ -238,10 +240,12 @@
 
 .language-selector {
   margin-top: 1rem;
+  max-width: 200px;
 }
 
 .language-select {
   width: 100%;
+  max-width: 200px;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 10px;
@@ -284,11 +288,23 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    max-width: 280px;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2.5rem;
     text-align: center;
+    justify-items: center;
   }
 
   .footer-brand {

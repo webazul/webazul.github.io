@@ -60,31 +60,6 @@ function Footer() {
           </div>
 
           <div className="footer-section">
-            <h4 className="footer-title">{t('footer.navigation')}</h4>
-            <nav className="footer-nav">
-              <button onClick={() => scrollToSection('hero')} className="footer-link">
-                {t('footer.home')}
-              </button>
-              <button onClick={() => scrollToSection('services')} className="footer-link">
-                {t('footer.services')}
-              </button>
-              {/* <button onClick={() => scrollToSection('portfolio')} className="footer-link">
-                {t('footer.portfolio')}
-              </button> */}
-              <button onClick={() => scrollToSection('process')} className="footer-link">
-                {t('footer.process')}
-              </button>
-              <button onClick={() => scrollToSection('testimonials')} className="footer-link">
-                {t('footer.testimonials')}
-              </button>
-              <button onClick={() => scrollToSection('contact')} className="footer-link">
-                {t('footer.contact')}
-              </button>
-            </nav>
-          </div>
-
-
-          <div className="footer-section">
             <h4 className="footer-title">{t('footer.contactInfo')}</h4>
             <div className="footer-contact">
               <div className="contact-item">

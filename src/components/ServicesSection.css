@@ -1,5 +1,4 @@
 .services-section {
-  min-height: var(--wb-height-screen);
   background: var(--wb-gradient-services);
   position: relative;
   padding: var(--wb-space-section) var(--wb-space-0);
