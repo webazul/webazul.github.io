@@ -68,11 +68,11 @@ function Footer() {
               </div>
               <div className="contact-item">
                 <FaPhone className="contact-icon" />
-                <a href="tel:+351913428377" className="contact-link">{t('contact.info.phone')}</a>
+                <a href="tel:+351910084099" className="contact-link">{t('contact.info.phone')}</a>
               </div>
               <div className="contact-item">
                 <FaEnvelope className="contact-icon" />
-                <a href="mailto:info@webazul.pt" className="contact-link">{t('contact.info.email')}</a>
+                <a href="mailto:contacto@webazul.pt" className="contact-link">{t('contact.info.email')}</a>
               </div>
             </div>
           </div>

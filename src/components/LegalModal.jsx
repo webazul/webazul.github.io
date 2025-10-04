@@ -31,8 +31,8 @@ function LegalModal({ isOpen, onClose, type }) {
               <h3>1. Identificação do Responsável</h3>
               <p>WebAzul Creative Studio<br />
               Lisboa, Portugal<br />
-              Email: info@webazul.pt<br />
-              Telefone: +351 910 000 000</p>
+              Email: contacto@webazul.pt<br />
+              Telefone: (+351) 910 084 099</p>
 
               <h3>2. Dados Pessoais Recolhidos</h3>
               <p>Recolhemos apenas os dados pessoais estritamente necessários para prestar os nossos serviços:</p>
@@ -90,7 +90,7 @@ function LegalModal({ isOpen, onClose, type }) {
               </ul>
 
               <h3>8. Exercício de Direitos</h3>
-              <p>Para exercer os seus direitos, contacte-nos através de info@webazul.pt</p>
+              <p>Para exercer os seus direitos, contacte-nos através de contacto@webazul.pt</p>
               <p>Tem também direito a apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD).</p>
 
               <h3>9. Alterações</h3>
@@ -249,7 +249,7 @@ function LegalModal({ isOpen, onClose, type }) {
               <p>Esta política pode ser atualizada. Quaisquer alterações significativas serão comunicadas através do website.</p>
 
               <h3>9. Contacto</h3>
-              <p>Para questões sobre cookies, contacte-nos em info@webazul.pt</p>
+              <p>Para questões sobre cookies, contacte-nos em contacto@webazul.pt</p>
 
               <p><small><strong>Última atualização:</strong> {new Date().toLocaleDateString('pt-PT')}</small></p>
             </div>

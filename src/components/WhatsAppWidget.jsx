@@ -5,7 +5,7 @@ import { RiWhatsappLine } from 'react-icons/ri'
 function WhatsAppWidget() {
   const { t } = useTranslation()
 
-  const whatsappNumber = "+351913428377"
+  const whatsappNumber = "+351910084099"
   const defaultMessage = t('whatsapp.defaultMessage')
 
   const openWhatsApp = () => {

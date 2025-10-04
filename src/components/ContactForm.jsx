@@ -119,7 +119,7 @@ function ContactForm() {
                 </div>
                 <div className="info-text">
                   <span className="info-label">Email</span>
-                  <a href="mailto:info@webazul.pt" className="info-value">{t('contact.info.email')}</a>
+                  <a href="mailto:contacto@webazul.pt" className="info-value">{t('contact.info.email')}</a>
                 </div>
               </div>
 
@@ -129,7 +129,7 @@ function ContactForm() {
                 </div>
                 <div className="info-text">
                   <span className="info-label">{t('contact.info.phoneLabel')}</span>
-                  <a href="tel:+351913428377" className="info-value">{t('contact.info.phone')}</a>
+                  <a href="tel:+351910084099" className="info-value">{t('contact.info.phone')}</a>
                 </div>
               </div>
 
