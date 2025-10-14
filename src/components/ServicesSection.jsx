@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import './ServicesSection.css'
 import { FaCode, FaShare, FaServer, FaSearch, FaArrowRight } from 'react-icons/fa'
+import { trackServiceInteraction, trackSectionView, trackServiceListView } from '../utils/analytics'
 
 function ServicesSection() {
   const { t } = useTranslation()
@@ -12,6 +13,7 @@ function ServicesSection() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
+          trackSectionView('Services')
         }
       },
       { threshold: 0.1 }
@@ -63,6 +65,11 @@ function ServicesSection() {
     document.getElementById(cleanId)?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  const handleServiceClick = (service, index) => {
+    trackServiceInteraction(service.title, 'click')
+    scrollToSection(service.link)
+  }
+
   return (
     <section id="services" className={`services-section ${isVisible ? 'visible' : ''}`}>
       <div className="services-background">
@@ -90,7 +97,7 @@ function ServicesSection() {
                 key={index}
                 className={`service-card ${service.popular ? 'popular' : ''}`}
                 style={{ animationDelay: `${index * 0.1}s` }}
-                onClick={() => scrollToSection(service.link)}
+                onClick={() => handleServiceClick(service, index)}
               >
                 {service.popular && (
                   <div className="popular-badge">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Sitemap específico para Portugal (PT-PT) -->
+  <!-- Keywords: desenvolvimento web portugal, agência digital braga, websites portugal, saas portugal -->
+
+  <url>
+    <loc>https://webazul.pt/</loc>
+    <lastmod>2025-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://webazul.pt/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webazul.pt/" />
+  </url>
+
+  <!-- Focado em keywords PT-PT -->
+  <url>
+    <loc>https://webazul.pt/#systems</loc>
+    <lastmod>2025-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <!-- Keywords: sistema gestão automóveis portugal, software stand automóveis, autoazul -->
+  </url>
+
+  <url>
+    <loc>https://webazul.pt/#landing-pages</loc>
+    <lastmod>2025-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <!-- Keywords: landing pages portugal, websites profissionais braga -->
+  </url>
+
+</urlset>

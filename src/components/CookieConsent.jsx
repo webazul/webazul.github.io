@@ -3,32 +3,87 @@ import { useTranslation } from 'react-i18next'
 import './CookieConsent.css'
 import { FaTimes, FaShieldAlt, FaCookie } from 'react-icons/fa'
 import LegalModal from './LegalModal'
+import { updateConsentMode } from '../utils/analytics'
 
 function CookieConsent() {
   const { t } = useTranslation()
   const [isVisible, setIsVisible] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
   const [modalType, setModalType] = useState('')
+  const [showSettings, setShowSettings] = useState(false)
+  const [cookiePreferences, setCookiePreferences] = useState({
+    essential: true, // Always true, cannot be disabled
+    analytics: false,
+    marketing: false,
+  })
 
   useEffect(() => {
     const hasConsent = localStorage.getItem('cookieConsent')
+
+    // Set default consent mode to denied
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        functionality_storage: 'granted',
+        personalization_storage: 'denied',
+        security_storage: 'granted',
+      })
+    }
+
     if (!hasConsent) {
       setTimeout(() => {
         setIsVisible(true)
       }, 2000)
+    } else {
+      // Load saved preferences and update consent
+      const savedPreferences = JSON.parse(localStorage.getItem('cookiePreferences') || '{}')
+      if (savedPreferences.analytics || savedPreferences.marketing) {
+        updateConsentMode(savedPreferences.analytics, savedPreferences.marketing)
+      }
     }
   }, [])
 
   const acceptAll = () => {
-    localStorage.setItem('cookieConsent', 'accepted')
-    localStorage.setItem('cookieConsentDate', new Date().toISOString())
+    const preferences = {
+      essential: true,
+      analytics: true,
+      marketing: true,
+    }
+    saveCookieConsent('accepted', preferences)
+    updateConsentMode(true, true)
     setIsVisible(false)
   }
 
   const acceptEssential = () => {
-    localStorage.setItem('cookieConsent', 'essential')
-    localStorage.setItem('cookieConsentDate', new Date().toISOString())
+    const preferences = {
+      essential: true,
+      analytics: false,
+      marketing: false,
+    }
+    saveCookieConsent('essential', preferences)
+    updateConsentMode(false, false)
     setIsVisible(false)
+  }
+
+  const acceptCustom = () => {
+    saveCookieConsent('custom', cookiePreferences)
+    updateConsentMode(cookiePreferences.analytics, cookiePreferences.marketing)
+    setIsVisible(false)
+  }
+
+  const saveCookieConsent = (type, preferences) => {
+    localStorage.setItem('cookieConsent', type)
+    localStorage.setItem('cookiePreferences', JSON.stringify(preferences))
+    localStorage.setItem('cookieConsentDate', new Date().toISOString())
+  }
+
+  const toggleCookieCategory = (category) => {
+    if (category === 'essential') return // Cannot disable essential cookies
+    setCookiePreferences(prev => ({
+      ...prev,
+      [category]: !prev[category]
+    }))
   }
 
   const closeBanner = () => {
@@ -81,20 +136,96 @@ function CookieConsent() {
           </p>
         </div>
 
-        <div className="cookie-actions">
-          <button
-            className="cookie-btn secondary"
-            onClick={acceptEssential}
-          >
-            {t('cookies.essentialOnly')}
-          </button>
-          <button
-            className="cookie-btn primary"
-            onClick={acceptAll}
-          >
-            {t('cookies.acceptAll')}
-          </button>
-        </div>
+        {!showSettings ? (
+          <div className="cookie-actions">
+            <button
+              className="cookie-btn secondary"
+              onClick={acceptEssential}
+            >
+              {t('cookies.essentialOnly')}
+            </button>
+            <button
+              className="cookie-btn tertiary"
+              onClick={() => setShowSettings(true)}
+            >
+              Personalizar
+            </button>
+            <button
+              className="cookie-btn primary"
+              onClick={acceptAll}
+            >
+              {t('cookies.acceptAll')}
+            </button>
+          </div>
+        ) : (
+          <div className="cookie-settings">
+            <h4 className="settings-title">Preferências de Cookies</h4>
+
+            <div className="cookie-category">
+              <div className="category-header">
+                <label className="category-label">
+                  <input
+                    type="checkbox"
+                    checked={cookiePreferences.essential}
+                    disabled
+                  />
+                  <span className="category-name">Essenciais</span>
+                </label>
+                <span className="category-badge required">Obrigatório</span>
+              </div>
+              <p className="category-description">
+                Cookies necessários para o funcionamento básico do site.
+              </p>
+            </div>
+
+            <div className="cookie-category">
+              <div className="category-header">
+                <label className="category-label">
+                  <input
+                    type="checkbox"
+                    checked={cookiePreferences.analytics}
+                    onChange={() => toggleCookieCategory('analytics')}
+                  />
+                  <span className="category-name">Analytics</span>
+                </label>
+              </div>
+              <p className="category-description">
+                Ajudam-nos a entender como os visitantes interagem com o site através de informações anónimas.
+              </p>
+            </div>
+
+            <div className="cookie-category">
+              <div className="category-header">
+                <label className="category-label">
+                  <input
+                    type="checkbox"
+                    checked={cookiePreferences.marketing}
+                    onChange={() => toggleCookieCategory('marketing')}
+                  />
+                  <span className="category-name">Marketing</span>
+                </label>
+              </div>
+              <p className="category-description">
+                Usados para personalizar anúncios e medir a eficácia das campanhas.
+              </p>
+            </div>
+
+            <div className="cookie-actions">
+              <button
+                className="cookie-btn secondary"
+                onClick={() => setShowSettings(false)}
+              >
+                Voltar
+              </button>
+              <button
+                className="cookie-btn primary"
+                onClick={acceptCustom}
+              >
+                Guardar Preferências
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       <LegalModal

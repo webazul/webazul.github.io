@@ -12,6 +12,7 @@ import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 import WhatsAppWidget from './components/WhatsAppWidget'
 import CookieConsent from './components/CookieConsent'
+import ScrollDepthTracker from './components/ScrollDepthTracker'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Footer />
       <WhatsAppWidget />
       <CookieConsent />
+      <ScrollDepthTracker />
     </div>
   )
 }

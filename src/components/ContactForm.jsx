@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import './ContactForm.css'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
+import { trackFormSubmit, trackSectionView, trackContactClick, trackError } from '../utils/analytics'
 
 function ContactForm() {
   const { t } = useTranslation()
@@ -25,6 +26,7 @@ function ContactForm() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
+          trackSectionView('Contact Form')
         }
       },
       { threshold: 0.1 }
@@ -68,6 +70,14 @@ function ContactForm() {
 
       if (response.ok) {
         setSubmitMessage('Mensagem enviada com sucesso! Entraremos em contacto em breve.')
+
+        // Track successful form submission
+        trackFormSubmit('Contact Form', {
+          has_phone: !!formData.phone,
+          has_company: !!formData.company,
+          message_length: formData.message.length,
+        })
+
         setFormData({
           name: '',
           email: '',
@@ -80,10 +90,12 @@ function ContactForm() {
         })
       } else {
         setSubmitMessage('Erro ao enviar mensagem. Por favor, tente novamente.')
+        trackError('form_submission_error', `HTTP ${response.status}`)
       }
     } catch (error) {
       console.error('Erro ao enviar formulário:', error)
       setSubmitMessage('Erro ao enviar mensagem. Por favor, tente novamente.')
+      trackError('form_submission_error', error.message)
     } finally {
       setIsSubmitting(false)
       setTimeout(() => {
@@ -119,7 +131,13 @@ function ContactForm() {
                 </div>
                 <div className="info-text">
                   <span className="info-label">Email</span>
-                  <a href="mailto:contacto@webazul.pt" className="info-value">{t('contact.info.email')}</a>
+                  <a
+                    href="mailto:contacto@webazul.pt"
+                    className="info-value"
+                    onClick={() => trackContactClick('email', 'contacto@webazul.pt')}
+                  >
+                    {t('contact.info.email')}
+                  </a>
                 </div>
               </div>
 
@@ -129,7 +147,13 @@ function ContactForm() {
                 </div>
                 <div className="info-text">
                   <span className="info-label">{t('contact.info.phoneLabel')}</span>
-                  <a href="tel:+351910084099" className="info-value">{t('contact.info.phone')}</a>
+                  <a
+                    href="tel:+351910084099"
+                    className="info-value"
+                    onClick={() => trackContactClick('phone', '+351910084099')}
+                  >
+                    {t('contact.info.phone')}
+                  </a>
                 </div>
               </div>
 

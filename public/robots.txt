@@ -1,0 +1,40 @@
+# WebAzul Creative Studio - Robots.txt
+# Otimizado para mercado PT-PT e PT-BR
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# All other bots
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (se existirem no futuro)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Allow all assets
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.gif$
+
+# Sitemap
+Sitemap: https://webazul.pt/sitemap.xml
+Sitemap: https://webazul.pt/sitemap-pt-pt.xml
+Sitemap: https://webazul.pt/sitemap-pt-br.xml
+
+# Host (preferential domain)
+Host: https://webazul.pt

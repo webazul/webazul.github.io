@@ -1,15 +1,28 @@
 <!doctype html>
 <html lang="pt">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBGNLH2FKC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
 
-      gtag('config', 'G-RBGNLH2FKC');
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
     </script>
+    <!-- End Meta Pixel Code -->
 
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/fingerprint.png" />
@@ -21,41 +34,80 @@
     <meta name="keywords" content="AutoAzul, ImobiAzul, sistema gestão automóveis, software stand automóveis, software imobiliária, CRM automóveis, CRM imobiliário, SaaS Portugal, SaaS Brasil, desenvolvimento web, landing pages, social media, agência digital, websites, Portugal, Brasil, soluções digitais, software empresarial">
     <meta name="author" content="WebAzul Creative Studio">
     <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE_HERE" />
     <link rel="canonical" href="https://webazul.pt/">
 
-    <!-- Multilingual -->
+    <!-- Multilingual / Hreflang -->
+    <!-- Principal: Português Geral -->
     <link rel="alternate" hreflang="pt" href="https://webazul.pt/">
+    <!-- Portugal (mercado primário) -->
     <link rel="alternate" hreflang="pt-PT" href="https://webazul.pt/">
+    <!-- Brasil (mercado secundário) -->
     <link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/">
-    <link rel="alternate" hreflang="en" href="https://webazul.pt/">
-    <link rel="alternate" hreflang="es" href="https://webazul.pt/">
-    <link rel="alternate" hreflang="fr" href="https://webazul.pt/">
+    <!-- Default para outros países -->
     <link rel="alternate" hreflang="x-default" href="https://webazul.pt/">
 
-    <!-- Open Graph / Facebook / WhatsApp -->
+    <!-- Futuras expansões (preparado mas não ativo) -->
+    <!-- <link rel="alternate" hreflang="en" href="https://webazul.pt/en/"> -->
+    <!-- <link rel="alternate" hreflang="es" href="https://webazul.pt/es/"> -->
+
+    <!-- Open Graph Protocol (Facebook, WhatsApp, LinkedIn, Discord) -->
+    <!-- Essential OG Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://webazul.pt/">
-    <meta property="og:title" content="WebAzul - AutoAzul & ImobiAzul | Soluções SaaS para o seu Negócio">
-    <meta property="og:description" content="Software completo para gestão de stands automóveis (AutoAzul) e imobiliárias (ImobiAzul). Landing pages profissionais e social media. Portugal & Brasil.">
+    <meta property="og:site_name" content="WebAzul Creative Studio">
+
+    <!-- Title & Description (55-65 caracteres título, 155-160 descrição) -->
+    <meta property="og:title" content="WebAzul | Desenvolvimento Web & SaaS Portugal Brasil">
+    <meta property="og:description" content="🚀 AutoAzul + ImobiAzul: Software completo para automóveis e imobiliárias. Landing pages profissionais. Transforme seu negócio digital! 🇵🇹🇧🇷">
+
+    <!-- Image Tags - IMPORTANTE: Use imagem 1200x630px -->
+    <!-- Temporário: usando webazul-white.png até converter og-image.svg para PNG -->
     <meta property="og:image" content="https://webazul.pt/webazul-white.png">
+    <meta property="og:image:secure_url" content="https://webazul.pt/webazul-white.png">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:alt" content="WebAzul Creative Studio - AutoAzul & ImobiAzul | Soluções SaaS">
+    <meta property="og:image:width" content="625">
+    <meta property="og:image:height" content="313">
+    <meta property="og:image:alt" content="WebAzul Creative Studio - Soluções SaaS: AutoAzul para Automóveis, ImobiAzul para Imobiliárias">
+
+    <!-- PRÓXIMO PASSO: Converter og-image.svg → og-image.png (1200x630) -->
+    <!-- Depois trocar acima para: https://webazul.pt/og-image.png -->
+
+    <!-- Locale (idioma/região) -->
     <meta property="og:locale" content="pt_PT">
     <meta property="og:locale:alternate" content="pt_BR">
     <meta property="og:locale:alternate" content="en_US">
-    <meta property="og:locale:alternate" content="es_ES">
-    <meta property="og:locale:alternate" content="fr_FR">
-    <meta property="og:site_name" content="WebAzul Creative Studio">
 
-    <!-- Twitter Card -->
+    <!-- Article specific (para blog posts futuro) -->
+    <meta property="article:author" content="WebAzul Creative Studio">
+    <meta property="article:publisher" content="https://webazul.pt">
+
+    <!-- Twitter/X Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://webazul.pt/">
-    <meta name="twitter:title" content="WebAzul - AutoAzul & ImobiAzul | Soluções SaaS">
-    <meta name="twitter:description" content="Software para stands automóveis e imobiliárias. Landing pages e social media. PT & BR.">
-    <meta name="twitter:image" content="https://webazul.pt/webazul-white.png">
-    <meta name="twitter:image:alt" content="WebAzul Creative Studio - Soluções SaaS para Automóveis e Imobiliárias">
-    <meta name="twitter:creator" content="@webazul">
     <meta name="twitter:site" content="@webazul">
+    <meta name="twitter:creator" content="@webazul">
+    <meta name="twitter:url" content="https://webazul.pt/">
+
+    <!-- Title & Description específicos Twitter -->
+    <meta name="twitter:title" content="WebAzul | Desenvolvimento Web & SaaS PT/BR">
+    <meta name="twitter:description" content="🚀 AutoAzul + ImobiAzul: Software para automóveis e imobiliárias. Landing pages profissionais que convertem! 🇵🇹🇧🇷">
+
+    <!-- Twitter Image (mesmo que OG, mas redundância é boa) -->
+    <meta name="twitter:image" content="https://webazul.pt/og-image.png">
+    <meta name="twitter:image:alt" content="WebAzul Creative Studio - AutoAzul & ImobiAzul">
+
+    <!-- Twitter App Card (se tiver app mobile futuro) -->
+    <!-- <meta name="twitter:app:name:iphone" content="WebAzul App"> -->
+    <!-- <meta name="twitter:app:id:iphone" content="app-id"> -->
+
+    <!-- LinkedIn Specific Tags -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+
+    <!-- Pinterest (caso queira impedir pins) -->
+    <!-- <meta name="pinterest" content="nopin"> -->
+
+    <!-- WhatsApp Specific (já existente, mantém) -->
 
     <!-- Geographic & Language -->
     <meta name="geo.region" content="PT">
@@ -168,6 +220,70 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "WebAzul Creative Studio - Home",
+      "url": "https://webazul.pt",
+      "description": "Agência digital PT/BR especializada em SaaS (AutoAzul, ImobiAzul), landing pages e social media.",
+      "inLanguage": "pt-PT",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://webazul.pt",
+        "name": "WebAzul Creative Studio"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://webazul.pt"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "WebAzul Creative Studio"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é o AutoAzul?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AutoAzul é um sistema completo de gestão para concessionárias e stands automóveis, incluindo CRM integrado, gestão de inventário, leads e vendas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que é o ImobiAzul?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ImobiAzul é uma plataforma completa para gestão de imobiliárias com portal personalizado, tour virtual 360° e gestão de propriedades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo demora para ter uma landing page pronta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O desenvolvimento de uma landing page profissional demora tipicamente entre 1 a 2 semanas, dependendo da complexidade e funcionalidades desejadas."
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Additional SEO -->
     <meta name="theme-color" content="#2563eb">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -180,11 +296,40 @@
     <meta property="business:contact_data:email" content="contacto@webazul.pt">
     <meta property="business:contact_data:website" content="https://webazul.pt">
 
+    <!-- Performance Optimizations -->
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
+
+    <!-- Preconnect (critical resources) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+    <!-- Fonts with display=swap for better CLS -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/webazul-white.png" as="image" type="image/png">
+
+    <!-- Resource hints for next navigation -->
+    <link rel="prefetch" href="/assets/" as="fetch" crossorigin>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Meta Pixel (noscript) -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel (noscript) -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

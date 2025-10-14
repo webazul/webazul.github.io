@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import './HeroSection.css'
 import Particles from './Particles'
+import { trackCTAClick, trackSectionView } from '../utils/analytics'
 
 function HeroSection() {
   const { t } = useTranslation()
@@ -9,6 +10,23 @@ function HeroSection() {
 
   useEffect(() => {
     setIsLoaded(true)
+
+    // Track section view
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          trackSectionView('Hero')
+        }
+      },
+      { threshold: 0.5 }
+    )
+
+    const section = document.getElementById('inicio')
+    if (section) {
+      observer.observe(section)
+    }
+
+    return () => observer.disconnect()
   }, [])
 
   const scrollToSection = (sectionId) => {
@@ -16,6 +34,11 @@ function HeroSection() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
+  }
+
+  const handleCTAClick = (ctaName, sectionId) => {
+    trackCTAClick(ctaName, 'Hero Section')
+    scrollToSection(sectionId)
   }
 
   return (
@@ -48,13 +71,13 @@ function HeroSection() {
           <div className="hero-cta">
             <button
               className="cta-primary"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleCTAClick('Começar Projeto', 'contact')}
             >
               {t('hero.cta.primary')}
             </button>
             {/* <button
               className="cta-secondary"
-              onClick={() => scrollToSection('portfolio')}
+              onClick={() => handleCTAClick('Ver Portfolio', 'portfolio')}
             >
               {t('hero.cta.secondary')}
             </button> */}
