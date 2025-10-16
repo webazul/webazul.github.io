@@ -20,6 +20,23 @@
     </image:image>
   </url>
 
+  <!-- AutoAzul - Página Dedicada -->
+  <url>
+    <loc>https://webazul.pt/auto</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/auto" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://webazul.pt/auto" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/auto" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webazul.pt/auto" />
+    <image:image>
+      <image:loc>https://webazul.pt/webazul-white.png</image:loc>
+      <image:title>AutoAzul - Sistema de Gestão para Automóveis</image:title>
+      <image:caption>Software completo para concessionárias e stands automóveis com CRM integrado, gestão de stock e landing page personalizada</image:caption>
+    </image:image>
+  </url>
+
   <!-- Seção Serviços -->
   <url>
     <loc>https://webazul.pt/#services</loc>

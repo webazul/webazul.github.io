@@ -1,5 +1,6 @@
 import './App.css'
 import './i18n/i18n'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HeroSection from './components/HeroSection'
 import ServicesSection from './components/ServicesSection'
 // import PortfolioSection from './components/PortfolioSection'
@@ -13,10 +14,11 @@ import Footer from './components/Footer'
 import WhatsAppWidget from './components/WhatsAppWidget'
 import CookieConsent from './components/CookieConsent'
 import ScrollDepthTracker from './components/ScrollDepthTracker'
+import AutoAzulPage from './pages/AutoAzulPage'
 
-function App() {
+function HomePage() {
   return (
-    <div className="App">
+    <>
       <HeroSection />
       <ServicesSection />
       {/* <PortfolioSection /> */}
@@ -30,7 +32,20 @@ function App() {
       <WhatsAppWidget />
       <CookieConsent />
       <ScrollDepthTracker />
-    </div>
+    </>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/auto" element={<AutoAzulPage />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 

@@ -197,6 +197,27 @@
         page_referrer: document.referrer
       });
     }
+
+    // Redirect to index.html for client-side routing
+    // This allows React Router to handle the route
+    (function() {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+
+    // Store the current path and redirect to index.html
+    // This is needed for GitHub Pages to work with React Router
+    sessionStorage.redirect = location.href;
+  </script>
+
+  <script>
+    // Redirect after a brief moment
+    setTimeout(function() {
+      window.location.href = '/';
+    }, 100);
   </script>
 </body>
 </html>

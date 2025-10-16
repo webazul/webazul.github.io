@@ -14,6 +14,7 @@ Crawl-delay: 0
 # All other bots
 User-agent: *
 Allow: /
+Allow: /auto
 
 # Disallow admin or private areas (se existirem no futuro)
 Disallow: /admin/

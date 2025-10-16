@@ -245,12 +245,13 @@
 .system-actions {
   display: flex;
   gap: var(--wb-space-3);
+  flex-wrap: wrap;
 }
 
 .demo-btn,
 .contact-btn {
   flex: 1;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--wb-space-2);
@@ -264,6 +265,9 @@
   transition: var(--wb-transition-all);
   text-transform: var(--wb-text-upper);
   letter-spacing: var(--wb-tracking-wide);
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .demo-btn {

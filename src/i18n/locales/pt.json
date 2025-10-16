@@ -190,7 +190,8 @@
     "buttons": {
       "demo": "Demo",
       "contact": "Contactar",
-      "notify": "Notificar-me"
+      "notify": "Notificar-me",
+      "details": "Detalhes"
     },
     "badges": {
       "popular": "Popular",

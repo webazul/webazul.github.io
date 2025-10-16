@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import './SystemsSection.css'
 import { FaCar, FaHome, FaCut, FaCheck, FaArrowRight, FaPlay, FaEye } from 'react-icons/fa'
 
@@ -34,8 +35,8 @@ function SystemsSection() {
       icon: FaCar,
       demoUrl: 'https://auto.webazul.pt/',
       category: 'Automóvel',
-      color: '#dc2626',
-      gradient: 'linear-gradient(135deg, #dc2626, #b91c1c)',
+      color: '#2563eb',
+      gradient: 'linear-gradient(135deg, #2563eb, #1d4ed8)',
       popular: true
     },
     {
@@ -141,13 +142,20 @@ function SystemsSection() {
                         {t('systems.buttons.demo')}
                       </button>
                     )}
-                    <button
-                      className="contact-btn"
-                      onClick={scrollToContact}
-                    >
-                      <FaArrowRight />
-                      {system.comingSoon ? t('systems.buttons.notify') : t('systems.buttons.contact')}
-                    </button>
+                    {system.id === 'autoazul' ? (
+                      <Link to="/auto" className="contact-btn">
+                        <FaArrowRight />
+                        {t('systems.buttons.details')}
+                      </Link>
+                    ) : (
+                      <button
+                        className="contact-btn"
+                        onClick={scrollToContact}
+                      >
+                        <FaArrowRight />
+                        {system.comingSoon ? t('systems.buttons.notify') : t('systems.buttons.contact')}
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
