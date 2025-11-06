@@ -106,19 +106,27 @@ const Particles = ({
     const container = containerRef.current;
     if (!container) return;
 
-    const renderer = new Renderer({ depth: false, alpha: true });
-    const gl = renderer.gl;
-    container.appendChild(gl.canvas);
-    gl.clearColor(0, 0, 0, 0);
+    // Check for WebGL support
+    const canvas = document.createElement('canvas');
+    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    if (!gl) {
+      console.warn('WebGL not supported, particles will not render');
+      return;
+    }
 
-    const camera = new Camera(gl, { fov: 15 });
+    const renderer = new Renderer({ depth: false, alpha: true });
+    const glContext = renderer.gl;
+    container.appendChild(glContext.canvas);
+    glContext.clearColor(0, 0, 0, 0);
+
+    const camera = new Camera(glContext, { fov: 15 });
     camera.position.set(0, 0, cameraDistance);
 
     const resize = () => {
       const width = container.clientWidth;
       const height = container.clientHeight;
       renderer.setSize(width, height);
-      camera.perspective({ aspect: gl.canvas.width / gl.canvas.height });
+      camera.perspective({ aspect: glContext.canvas.width / glContext.canvas.height });
     };
     window.addEventListener('resize', resize, false);
     resize();
@@ -155,13 +163,13 @@ const Particles = ({
       colors.set(col, i * 3);
     }
 
-    const geometry = new Geometry(gl, {
+    const geometry = new Geometry(glContext, {
       position: { size: 3, data: positions },
       random: { size: 4, data: randoms },
       color: { size: 3, data: colors }
     });
 
-    const program = new Program(gl, {
+    const program = new Program(glContext, {
       vertex,
       fragment,
       uniforms: {
@@ -175,7 +183,7 @@ const Particles = ({
       depthTest: false
     });
 
-    const particles = new Mesh(gl, { mode: gl.POINTS, geometry, program });
+    const particles = new Mesh(glContext, { mode: glContext.POINTS, geometry, program });
 
     let animationFrameId;
     let lastTime = performance.now();
@@ -214,8 +222,8 @@ const Particles = ({
         container.removeEventListener('mousemove', handleMouseMove);
       }
       cancelAnimationFrame(animationFrameId);
-      if (container.contains(gl.canvas)) {
-        container.removeChild(gl.canvas);
+      if (glContext && container.contains(glContext.canvas)) {
+        container.removeChild(glContext.canvas);
       }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
