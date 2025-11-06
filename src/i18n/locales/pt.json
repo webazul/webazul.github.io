@@ -91,65 +91,25 @@
     }
   },
   "portfolio": {
-    "badge": "Nossos Produtos",
-    "title": "Soluções digitais completas",
-    "titleHighlight": "prontas para usar",
-    "subtitle": "Descubra os nossos softwares de gestão especializados,\ndesenvolvidos pela WebAzul para transformar o seu negócio.",
+    "badge": "Nossos Projetos",
+    "title": "Alguns projetos que fizemos",
+    "titleHighlight": "com paixão",
+    "subtitle": "Conheça alguns dos websites e plataformas digitais que desenvolvemos para transformar negócios.",
     "filters": {
       "all": "Todos",
-      "automotive": "Automóvel",
-      "real_estate": "Imobiliário"
-    },
-    "products": {
-      "autoazul": {
-        "title": "AutoAzul",
-        "category": "automotive",
-        "description": "Sistema completo para gestão de concessionárias e stands automóveis com landing page personalizada",
-        "features": [
-          "Gestão completa de stock de veículos",
-          "Landing page responsiva personalizada",
-          "CRM integrado para gestão de clientes",
-          "Relatórios de vendas e performance",
-          "Sistema de agendamento de test drives",
-          "Integração com redes sociais"
-        ],
-        "images": [
-          "./assets/products/autoazul-mockup.svg",
-          "./assets/products/autoazul-landing.svg"
-        ],
-        "tech": ["React", "Node.js", "PostgreSQL", "AWS"],
-        "year": "2024",
-        "status": "Disponível",
-        "pricing": "A partir de 199€/mês"
-      },
-      "imobiazul": {
-        "title": "ImobiAzul",
-        "category": "real_estate",
-        "description": "Plataforma completa para gestão de imobiliárias e mediadores com portal personalizado",
-        "features": [
-          "Gestão de propriedades e portfolio",
-          "Portal imobiliário responsivo personalizado",
-          "CRM para leads e clientes",
-          "Tour virtual 360° integrado",
-          "Sistema de avaliações automáticas",
-          "App mobile para mediadores"
-        ],
-        "images": [
-          "./assets/products/imobiazul-mockup.svg",
-          "./assets/products/imobiazul-landing.svg"
-        ],
-        "tech": ["React", "Node.js", "MongoDB", "Cloudinary"],
-        "year": "2024",
-        "status": "Disponível",
-        "pricing": "A partir de 149€/mês"
-      }
+      "ecommerce": "E-commerce",
+      "restaurant": "Restauração",
+      "fitness": "Fitness",
+      "health": "Saúde",
+      "corporate": "Corporativo"
     },
     "buttons": {
+      "visit": "Visitar Site",
       "learnMore": "Saber Mais",
       "contact": "Contactar"
     },
     "badges": {
-      "available": "Disponível",
+      "featured": "Destaque",
       "popular": "Popular",
       "new": "Novo"
     }

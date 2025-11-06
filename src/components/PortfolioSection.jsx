@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import './PortfolioSection.css'
-import { FaCheck, FaEnvelope, FaCar, FaHome, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 function PortfolioSection() {
   const { t } = useTranslation()
   const [isVisible, setIsVisible] = useState(false)
-  const [activeImageIndex, setActiveImageIndex] = useState({})
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,54 +25,37 @@ function PortfolioSection() {
     return () => observer.disconnect()
   }, [])
 
-
-  const products = [
+  // Projetos realizados
+  const projects = [
     {
       id: 1,
-      category: 'automotive',
-      title: t('portfolio.products.autoazul.title'),
-      description: t('portfolio.products.autoazul.description'),
-      features: t('portfolio.products.autoazul.features', { returnObjects: true }),
-      images: t('portfolio.products.autoazul.images', { returnObjects: true }),
-      tech: t('portfolio.products.autoazul.tech', { returnObjects: true }),
-      year: t('portfolio.products.autoazul.year'),
-      status: t('portfolio.products.autoazul.status'),
-      pricing: t('portfolio.products.autoazul.pricing'),
-      icon: FaCar
+      title: 'Arcanuns',
+      description: 'Plataforma de numerologia pitagórica com análises personalizadas',
+      category: 'Corporativo',
+      image: '/assets/projects/arcanuns.png',
+      url: 'https://arcanuns.com',
+      tech: ['React.js', 'Inteligência Artificial', 'Node.js', 'API REST']
     },
     {
       id: 2,
-      category: 'real_estate',
-      title: t('portfolio.products.imobiazul.title'),
-      description: t('portfolio.products.imobiazul.description'),
-      features: t('portfolio.products.imobiazul.features', { returnObjects: true }),
-      images: t('portfolio.products.imobiazul.images', { returnObjects: true }),
-      tech: t('portfolio.products.imobiazul.tech', { returnObjects: true }),
-      year: t('portfolio.products.imobiazul.year'),
-      status: t('portfolio.products.imobiazul.status'),
-      pricing: t('portfolio.products.imobiazul.pricing'),
-      icon: FaHome
+      title: 'Datun.ai',
+      description: 'Plataforma SaaS de IA para limpeza e padronização de dados',
+      category: 'Corporativo',
+      image: '/assets/projects/datunai.png',
+      url: 'https://datun.ai',
+      tech: ['JavaScript', 'Python', 'Machine Learning', 'CSS3']
+    },
+    {
+      id: 3,
+      title: 'Sonhos em Linha',
+      description: 'Landing page moderna para moda nupcial e vestidos personalizados',
+      category: 'Landing Page',
+      image: '/assets/projects/sonhosemlinha.png',
+      url: 'https://sonhosemlinha.pt',
+      tech: ['JavaScript', 'CSS3', 'HTML5', 'Design Responsivo']
     }
   ]
 
-
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-  }
-
-  const nextImage = (productId, imagesLength) => {
-    setActiveImageIndex(prev => ({
-      ...prev,
-      [productId]: ((prev[productId] || 0) + 1) % imagesLength
-    }))
-  }
-
-  const prevImage = (productId, imagesLength) => {
-    setActiveImageIndex(prev => ({
-      ...prev,
-      [productId]: ((prev[productId] || 0) - 1 + imagesLength) % imagesLength
-    }))
-  }
 
   return (
     <section id="portfolio" className={`portfolio-section ${isVisible ? 'visible' : ''}`}>
@@ -91,108 +73,61 @@ function PortfolioSection() {
           </p>
         </div>
 
-
-        <div className="products-grid">
-          {products.map((product, index) => {
-            const IconComponent = product.icon
-            const currentImageIndex = activeImageIndex[product.id] || 0
-            const images = Array.isArray(product.images) ? product.images : []
-            const features = Array.isArray(product.features) ? product.features : []
-
-
-            return (
+        <div className="portfolio-grid grid">
+          {projects.length > 0 ? (
+            projects.map((project, index) => (
               <div
-                key={product.id}
-                className="product-card"
-                style={{ animationDelay: `${index * 0.2}s` }}
+                key={project.id}
+                className="portfolio-item"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Header Content */}
-                <div className="product-content-top">
-                  <div className="product-header">
-                    <div className="product-icon">
-                      <IconComponent />
+                <div className="portfolio-image">
+                  <span className="portfolio-category-badge">
+                    {project.category}
+                  </span>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="portfolio-img"
+                    onError={(e) => {
+                      e.target.style.display = 'none'
+                      e.target.parentElement.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+                      e.target.parentElement.style.height = '300px'
+                    }}
+                  />
+                  <div className="portfolio-overlay">
+                    <div className="portfolio-actions">
+                      <button
+                        className="action-btn visit-btn"
+                        onClick={() => window.open(project.url, '_blank')}
+                      >
+                        <FaExternalLinkAlt />
+                        {t('portfolio.buttons.visit')}
+                      </button>
                     </div>
-                    <h3 className="product-title">{product.title}</h3>
                   </div>
-                  <p className="product-description">{product.description}</p>
                 </div>
 
-                {/* Image Carousel */}
-                <div className="product-image-carousel">
-                  {images.length > 0 ? (
-                    <>
-                      <img
-                        src={images[currentImageIndex]}
-                        alt={`${product.title} - ${currentImageIndex + 1}`}
-                        className="product-image"
-                      />
-                      {images.length > 1 && (
-                        <>
-                          <button
-                            className="carousel-btn prev"
-                            onClick={() => prevImage(product.id, images.length)}
-                            aria-label="Imagem anterior"
-                          >
-                            <FaChevronLeft />
-                          </button>
-                          <button
-                            className="carousel-btn next"
-                            onClick={() => nextImage(product.id, images.length)}
-                            aria-label="Próxima imagem"
-                          >
-                            <FaChevronRight />
-                          </button>
-                          <div className="carousel-indicators">
-                            {images.map((_, idx) => (
-                              <span
-                                key={idx}
-                                className={`indicator ${idx === currentImageIndex ? 'active' : ''}`}
-                                onClick={() => setActiveImageIndex(prev => ({ ...prev, [product.id]: idx }))}
-                              />
-                            ))}
-                          </div>
-                        </>
-                      )}
-                    </>
-                  ) : (
-                    <div className="no-image-placeholder">
-                      No images available
-                    </div>
-                  )}
-                </div>
+                <div className="portfolio-content">
+                  <h3 className="portfolio-title-item">{project.title}</h3>
+                  <p className="portfolio-description">{project.description}</p>
 
-                {/* Bottom Content */}
-                <div className="product-content-bottom">
-                  {/* Features List */}
-                  {features.length > 0 ? (
-                    <div className="product-features">
-                      <ul>
-                        {features.slice(0, 4).map((feature, idx) => (
-                          <li key={idx}>
-                            <FaCheck className="feature-check" />
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : (
-                    <div style={{ padding: '1rem', background: '#fef2f2', color: '#b91c1c' }}>
-                      No features available
-                    </div>
-                  )}
-
-                  <div className="product-footer">
-                    <span className="product-pricing">{product.pricing}</span>
-                    <button className="product-btn" onClick={scrollToContact}>
-                      {t('portfolio.buttons.contact')}
-                    </button>
+                  <div className="portfolio-tech">
+                    {project.tech.map((tech, idx) => (
+                      <span key={idx} className="tech-tag">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
-            )
-          })}
+            ))
+          ) : (
+            <div className="portfolio-empty">
+              <p>Nenhum projeto encontrado nesta categoria.</p>
+            </div>
+          )}
         </div>
-
       </div>
     </section>
   )

@@ -123,39 +123,39 @@ function AutoAzulPage() {
     'Suporte técnico dedicado'
   ]
 
-  const pricingPlans = [
-    {
-      name: 'Professional',
-      price: '349€',
-      period: '/mês',
-      features: [
-        'Até 200 veículos',
-        'Landing page premium',
-        'CRM avançado',
-        'Relatórios semanais',
-        'Agendamento test drives',
-        'Integração social media',
-        'Suporte prioritário'
-      ],
-      popular: true
-    },
-    {
-      name: 'Enterprise',
-      price: 'Custom',
-      period: '',
-      features: [
-        'Veículos ilimitados',
-        'Landing page premium+',
-        'CRM completo',
-        'Relatórios em tempo real',
-        'Todas as integrações',
-        'Multi-localização',
-        'Suporte 24/7',
-        'Personalização total'
-      ],
-      popular: false
-    }
-  ]
+  // const pricingPlans = [
+  //   {
+  //     name: 'Professional',
+  //     price: '349€',
+  //     period: '/mês',
+  //     features: [
+  //       'Até 200 veículos',
+  //       'Landing page premium',
+  //       'CRM avançado',
+  //       'Relatórios semanais',
+  //       'Agendamento test drives',
+  //       'Integração social media',
+  //       'Suporte prioritário'
+  //     ],
+  //     popular: true
+  //   },
+  //   {
+  //     name: 'Enterprise',
+  //     price: 'Custom',
+  //     period: '',
+  //     features: [
+  //       'Veículos ilimitados',
+  //       'Landing page premium+',
+  //       'CRM completo',
+  //       'Relatórios em tempo real',
+  //       'Todas as integrações',
+  //       'Multi-localização',
+  //       'Suporte 24/7',
+  //       'Personalização total'
+  //     ],
+  //     popular: false
+  //   }
+  // ]
 
   return (
     <div className={`autoazul-page ${isVisible ? 'visible' : ''}`}>
@@ -163,7 +163,7 @@ function AutoAzulPage() {
         title="AutoAzul - Sistema de Gestão para Automóveis | WebAzul"
         description="Sistema completo para gestão de concessionárias e stands automóveis. CRM integrado, gestão de stock, landing page personalizada, relatórios de vendas e agendamento de test drives. Transforme seu stand automóvel!"
         keywords="AutoAzul, sistema gestão automóveis, software stand automóveis, CRM automóveis, gestão stock veículos, concessionária software, stand automóvel Portugal, software concessionária, sistema vendas carros, gestão leads automóveis, landing page stand, test drives online, relatórios vendas automóveis"
-        url="https://webazul.pt/auto"
+        url="https://webazul.pt/autoazul"
         image="https://webazul.pt/webazul-white.png"
         type="website"
       />
@@ -291,7 +291,7 @@ function AutoAzulPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="pricing-section">
+      {/* <section className="pricing-section">
         <div className="pricing-container">
           <div className="section-header">
             <h2 className="section-title">
@@ -336,7 +336,7 @@ function AutoAzulPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Form Section */}
       <section id="contact-form" className="contact-form-section">

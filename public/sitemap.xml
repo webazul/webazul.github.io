@@ -6,7 +6,7 @@
   <!-- Homepage - Principal -->
   <url>
     <loc>https://webazul.pt/</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/" />
@@ -22,14 +22,14 @@
 
   <!-- AutoAzul - Página Dedicada -->
   <url>
-    <loc>https://webazul.pt/auto</loc>
-    <lastmod>2025-10-16</lastmod>
+    <loc>https://webazul.pt/autoazul</loc>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/auto" />
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://webazul.pt/auto" />
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/auto" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://webazul.pt/auto" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/autoazul" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://webazul.pt/autoazul" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/autoazul" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webazul.pt/autoazul" />
     <image:image>
       <image:loc>https://webazul.pt/webazul-white.png</image:loc>
       <image:title>AutoAzul - Sistema de Gestão para Automóveis</image:title>
@@ -40,7 +40,7 @@
   <!-- Seção Serviços -->
   <url>
     <loc>https://webazul.pt/#services</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#services" />
@@ -48,21 +48,21 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/#services" />
   </url>
 
-  <!-- AutoAzul - Sistema para Automóveis -->
+  <!-- Portfolio - Projetos -->
   <url>
-    <loc>https://webazul.pt/#systems</loc>
-    <lastmod>2025-10-14</lastmod>
+    <loc>https://webazul.pt/#portfolio</loc>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#systems" />
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://webazul.pt/#systems" />
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/#systems" />
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#portfolio" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://webazul.pt/#portfolio" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/#portfolio" />
   </url>
 
   <!-- Landing Pages -->
   <url>
     <loc>https://webazul.pt/#landing-pages</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#landing-pages" />
@@ -73,7 +73,7 @@
   <!-- Social Media -->
   <url>
     <loc>https://webazul.pt/#social-media</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#social-media" />
@@ -81,10 +81,21 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/#social-media" />
   </url>
 
+  <!-- Sistemas Prontos -->
+  <url>
+    <loc>https://webazul.pt/#systems</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#systems" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://webazul.pt/#systems" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/#systems" />
+  </url>
+
   <!-- Processo -->
   <url>
     <loc>https://webazul.pt/#process</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#process" />
@@ -92,21 +103,10 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/#process" />
   </url>
 
-  <!-- Testemunhos -->
-  <url>
-    <loc>https://webazul.pt/#testimonials</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#testimonials" />
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://webazul.pt/#testimonials" />
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/#testimonials" />
-  </url>
-
   <!-- Contacto -->
   <url>
     <loc>https://webazul.pt/#contact</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#contact" />

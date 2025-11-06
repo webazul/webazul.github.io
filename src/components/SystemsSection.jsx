@@ -143,7 +143,7 @@ function SystemsSection() {
                       </button>
                     )}
                     {system.id === 'autoazul' ? (
-                      <Link to="/auto" className="contact-btn">
+                      <Link to="/autoazul" className="contact-btn">
                         <FaArrowRight />
                         {t('systems.buttons.details')}
                       </Link>

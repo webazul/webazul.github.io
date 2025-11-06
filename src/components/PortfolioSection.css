@@ -178,6 +178,28 @@
   border-radius: var(--wb-card-radius) var(--wb-card-radius) 0 0;
 }
 
+.portfolio-category-badge {
+  position: absolute;
+  top: var(--wb-space-2);
+  right: var(--wb-space-2);
+  z-index: var(--wb-z-10);
+  background: var(--wb-gradient-primary);
+  color: var(--wb-white);
+  font-family: var(--wb-font-primary);
+  font-size: var(--wb-text-2xs);
+  font-weight: var(--wb-font-bold);
+  padding: var(--wb-space-1) var(--wb-space-3);
+  border-radius: var(--wb-radius-lg);
+  text-transform: var(--wb-text-upper);
+  letter-spacing: var(--wb-tracking-wide);
+  transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-category-badge {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
 .portfolio-img {
   width: 100%;
   height: 300px;
