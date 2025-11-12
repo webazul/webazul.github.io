@@ -34,8 +34,6 @@ Allow: /*.gif$
 
 # Sitemap
 Sitemap: https://webazul.pt/sitemap.xml
-Sitemap: https://webazul.pt/sitemap-pt-pt.xml
-Sitemap: https://webazul.pt/sitemap-pt-br.xml
 
 # Host (preferential domain)
 Host: https://webazul.pt
