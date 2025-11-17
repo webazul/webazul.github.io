@@ -18,29 +18,54 @@ function CookieConsent() {
   })
 
   useEffect(() => {
-    const hasConsent = localStorage.getItem('cookieConsent')
+    try {
+      const hasConsent = localStorage.getItem('cookieConsent')
 
-    // Set default consent mode to denied
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('consent', 'default', {
-        analytics_storage: 'denied',
-        ad_storage: 'denied',
-        functionality_storage: 'granted',
-        personalization_storage: 'denied',
-        security_storage: 'granted',
-      })
-    }
-
-    if (!hasConsent) {
-      setTimeout(() => {
-        setIsVisible(true)
-      }, 2000)
-    } else {
-      // Load saved preferences and update consent
-      const savedPreferences = JSON.parse(localStorage.getItem('cookiePreferences') || '{}')
-      if (savedPreferences.analytics || savedPreferences.marketing) {
-        updateConsentMode(savedPreferences.analytics, savedPreferences.marketing)
+      // Set default consent mode to denied
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('consent', 'default', {
+          analytics_storage: 'denied',
+          ad_storage: 'denied',
+          functionality_storage: 'granted',
+          personalization_storage: 'denied',
+          security_storage: 'granted',
+        })
       }
+
+      if (!hasConsent) {
+        const showTimer = setTimeout(() => {
+          setIsVisible(true)
+        }, 2000)
+
+        // Auto-hide after 30 seconds if user doesn't interact (safety fallback)
+        const autoHideTimer = setTimeout(() => {
+          console.log('Cookie banner auto-closed after 30s timeout')
+          setIsVisible(false)
+        }, 32000) // 2s delay + 30s = 32s total
+
+        return () => {
+          clearTimeout(showTimer)
+          clearTimeout(autoHideTimer)
+        }
+      } else {
+        // Load saved preferences and update consent
+        try {
+          const savedPreferences = JSON.parse(localStorage.getItem('cookiePreferences') || '{}')
+          if (savedPreferences.analytics || savedPreferences.marketing) {
+            updateConsentMode(savedPreferences.analytics, savedPreferences.marketing)
+          }
+        } catch (parseError) {
+          console.error('Error parsing cookie preferences:', parseError)
+          // If there's an error parsing, clear the corrupt data
+          localStorage.removeItem('cookiePreferences')
+          localStorage.removeItem('cookieConsent')
+          setIsVisible(true)
+        }
+      }
+    } catch (error) {
+      console.error('Error accessing localStorage:', error)
+      // If localStorage fails, show banner as fallback
+      setIsVisible(true)
     }
   }, [])
 
@@ -87,6 +112,14 @@ function CookieConsent() {
   }
 
   const closeBanner = () => {
+    // Close banner and save essential-only consent
+    const preferences = {
+      essential: true,
+      analytics: false,
+      marketing: false,
+    }
+    saveCookieConsent('closed', preferences)
+    updateConsentMode(false, false)
     setIsVisible(false)
   }
 
