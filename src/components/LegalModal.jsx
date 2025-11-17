@@ -6,14 +6,30 @@ function LegalModal({ isOpen, onClose, type }) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'
+
+      // ESC key to close
+      const handleEsc = (e) => {
+        if (e.key === 'Escape') {
+          onClose()
+        }
+      }
+      document.addEventListener('keydown', handleEsc)
+
+      // Safety: Auto-close after 60 seconds if stuck
+      const autoCloseTimer = setTimeout(() => {
+        console.warn('LegalModal auto-closed after 60s timeout')
+        onClose()
+      }, 60000)
+
+      return () => {
+        document.body.style.overflow = 'unset'
+        document.removeEventListener('keydown', handleEsc)
+        clearTimeout(autoCloseTimer)
+      }
     } else {
       document.body.style.overflow = 'unset'
     }
-
-    return () => {
-      document.body.style.overflow = 'unset'
-    }
-  }, [isOpen])
+  }, [isOpen, onClose])
 
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {

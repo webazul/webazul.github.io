@@ -423,14 +423,21 @@
       }
       /* Loading fallback */
       #root:empty::before {
-        content: 'Loading WebAzul...';
+        content: '';
         display: flex;
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        font-family: Inter, system-ui, sans-serif;
-        font-size: 1.2rem;
-        color: #2563eb;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        border: 5px solid rgba(37, 99, 235, 0.2);
+        border-top-color: #2563eb;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
       }
     </style>
   </head>
@@ -446,14 +453,18 @@
 
     <!-- Error detection script -->
     <script>
-      // Detect if React fails to mount after 5 seconds
+      // Detect overlay issues after page loads
       setTimeout(function() {
-        var root = document.getElementById('root');
-        if (root && root.children.length === 0) {
-          console.error('React failed to mount - showing fallback');
-          root.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;font-family:Inter,sans-serif;text-align:center;padding:20px;"><h1 style="color:#2563eb;font-size:2rem;margin-bottom:1rem;">WebAzul Creative Studio</h1><p style="color:#ffffff;font-size:1.1rem;margin-bottom:2rem;">Estamos a carregar o site...</p><p style="color:#888;font-size:0.9rem;">Se esta mensagem persistir, contacte-nos:</p><a href="https://wa.me/351910084099" style="color:#2563eb;font-size:1rem;margin-top:1rem;">WhatsApp: +351 910 084 099</a></div>';
-        }
-      }, 5000);
+        // Check if there are any fixed/absolute elements covering the page
+        var elements = document.querySelectorAll('[style*="position: fixed"], [style*="position: absolute"], .cookie-consent, .legal-modal');
+        elements.forEach(function(el) {
+          var rect = el.getBoundingClientRect();
+          var zIndex = window.getComputedStyle(el).zIndex;
+          if (rect.width === window.innerWidth && rect.height === window.innerHeight && zIndex > 1000) {
+            console.warn('Potential overlay covering page:', el);
+          }
+        });
+      }, 3000);
 
       // Global error handler
       window.addEventListener('error', function(e) {
