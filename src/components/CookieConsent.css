@@ -50,11 +50,6 @@
   cursor: pointer;
 }
 
-/* Garantir que o backdrop nunca apareça sozinho */
-.cookie-consent:not(:has(.cookie-container)) {
-  display: none !important;
-}
-
 .cookie-container {
   position: relative;
   max-width: 500px;

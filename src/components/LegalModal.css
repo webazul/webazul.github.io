@@ -15,11 +15,6 @@
   cursor: pointer;
 }
 
-/* Garantir que o modal nunca apareça sozinho sem conteúdo */
-.legal-modal-backdrop:not(:has(.legal-modal)) {
-  display: none !important;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
