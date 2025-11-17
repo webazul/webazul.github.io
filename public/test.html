@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAzul - Test Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: system-ui, sans-serif;
+            background: #000;
+            color: #fff;
+        }
+        .status {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            background: #1a1a1a;
+            border: 2px solid #2563eb;
+        }
+        .error {
+            border-color: #ef4444;
+            background: #2a0a0a;
+        }
+        .success {
+            border-color: #10b981;
+            background: #0a2a1a;
+        }
+        pre {
+            background: #0a0a0a;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 WebAzul - Diagnóstico iOS</h1>
+    <div id="results"></div>
+
+    <script>
+        const results = document.getElementById('results');
+
+        function addResult(title, content, type = 'status') {
+            const div = document.createElement('div');
+            div.className = `status ${type}`;
+            div.innerHTML = `<strong>${title}</strong><br>${content}`;
+            results.appendChild(div);
+        }
+
+        // Test 1: Basic JavaScript
+        try {
+            addResult('✅ JavaScript Básico', 'Funcionando', 'success');
+        } catch (e) {
+            addResult('❌ JavaScript Básico', e.message, 'error');
+        }
+
+        // Test 2: Browser Info
+        addResult('📱 Navegador', `
+            UserAgent: ${navigator.userAgent}<br>
+            Platform: ${navigator.platform}<br>
+            Vendor: ${navigator.vendor}
+        `);
+
+        // Test 3: ES6 Features
+        try {
+            const arrow = () => 'arrow function';
+            const [a, b] = [1, 2];
+            const obj = { a: 1, ...{b: 2} };
+            addResult('✅ ES6 Básico', 'Arrow functions, destructuring, spread OK', 'success');
+        } catch (e) {
+            addResult('❌ ES6 Básico', e.message, 'error');
+        }
+
+        // Test 4: Optional Chaining
+        try {
+            const test = {a: {b: 1}};
+            const val = test?.a?.b;
+            addResult('✅ Optional Chaining', 'Suportado', 'success');
+        } catch (e) {
+            addResult('❌ Optional Chaining', e.message, 'error');
+        }
+
+        // Test 5: Nullish Coalescing
+        try {
+            const val = null ?? 'default';
+            addResult('✅ Nullish Coalescing', 'Suportado', 'success');
+        } catch (e) {
+            addResult('❌ Nullish Coalescing', e.message, 'error');
+        }
+
+        // Test 6: Async/Await
+        try {
+            (async () => {
+                await new Promise(resolve => setTimeout(resolve, 10));
+                addResult('✅ Async/Await', 'Funcionando', 'success');
+            })();
+        } catch (e) {
+            addResult('❌ Async/Await', e.message, 'error');
+        }
+
+        // Test 7: React Check (simulate)
+        try {
+            if (typeof window !== 'undefined') {
+                addResult('✅ Window Object', 'Disponível', 'success');
+            }
+        } catch (e) {
+            addResult('❌ Window Object', e.message, 'error');
+        }
+
+        // Test 8: Console Errors
+        window.addEventListener('error', (e) => {
+            addResult('🚨 Erro Global', `
+                Mensagem: ${e.message}<br>
+                Arquivo: ${e.filename}<br>
+                Linha: ${e.lineno}
+            `, 'error');
+        });
+
+        window.addEventListener('unhandledrejection', (e) => {
+            addResult('🚨 Promise Rejeitada', e.reason, 'error');
+        });
+
+        // Test 9: Try loading main site
+        addResult('🔗 Próximo Passo', `
+            <a href="/" style="color: #2563eb;">Voltar para o site principal</a><br>
+            <small>Se ver erros acima, tire print e envie</small>
+        `);
+    </script>
+</body>
+</html>
