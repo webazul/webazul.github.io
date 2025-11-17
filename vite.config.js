@@ -6,6 +6,12 @@ export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/' : '/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    target: ['es2015', 'safari11'],
+    minify: 'esbuild',
+    cssTarget: ['safari11']
+  },
+  esbuild: {
+    target: 'es2015'
   }
 })
