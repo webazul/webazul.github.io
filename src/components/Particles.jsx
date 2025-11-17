@@ -114,7 +114,9 @@ const Particles = ({
       return;
     }
 
-    const renderer = new Renderer({ depth: false, alpha: true });
+    // Wrap everything in try-catch for iOS compatibility
+    try {
+      const renderer = new Renderer({ depth: false, alpha: true });
     const glContext = renderer.gl;
     container.appendChild(glContext.canvas);
     glContext.clearColor(0, 0, 0, 0);
@@ -226,6 +228,11 @@ const Particles = ({
         container.removeChild(glContext.canvas);
       }
     };
+    } catch (error) {
+      console.error('Error initializing particles (likely iOS WebGL issue):', error);
+      // Fail silently - particles are decorative, not essential
+      return () => {}; // Empty cleanup function
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     particleCount,
