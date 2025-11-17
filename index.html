@@ -408,6 +408,31 @@
 
     <!-- Resource hints for next navigation -->
     <link rel="prefetch" href="/assets/" as="fetch" crossorigin>
+
+    <!-- Critical CSS - Prevent black screen on JS errors -->
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        min-height: 100vh;
+        color: #ffffff;
+      }
+      #root {
+        min-height: 100vh;
+      }
+      /* Loading fallback */
+      #root:empty::before {
+        content: 'Loading WebAzul...';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 1.2rem;
+        color: #2563eb;
+      }
+    </style>
   </head>
   <body>
     <!-- Meta Pixel (noscript) -->
@@ -418,5 +443,26 @@
 
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Error detection script -->
+    <script>
+      // Detect if React fails to mount after 5 seconds
+      setTimeout(function() {
+        var root = document.getElementById('root');
+        if (root && root.children.length === 0) {
+          console.error('React failed to mount - showing fallback');
+          root.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;font-family:Inter,sans-serif;text-align:center;padding:20px;"><h1 style="color:#2563eb;font-size:2rem;margin-bottom:1rem;">WebAzul Creative Studio</h1><p style="color:#ffffff;font-size:1.1rem;margin-bottom:2rem;">Estamos a carregar o site...</p><p style="color:#888;font-size:0.9rem;">Se esta mensagem persistir, contacte-nos:</p><a href="https://wa.me/351910084099" style="color:#2563eb;font-size:1rem;margin-top:1rem;">WhatsApp: +351 910 084 099</a></div>';
+        }
+      }, 5000);
+
+      // Global error handler
+      window.addEventListener('error', function(e) {
+        console.error('Global error:', e.error || e.message);
+      });
+
+      window.addEventListener('unhandledrejection', function(e) {
+        console.error('Unhandled promise rejection:', e.reason);
+      });
+    </script>
   </body>
 </html>
