@@ -34,7 +34,7 @@ function ServicesSection() {
       features: t('services.systems.features'),
       icon: FaCode,
       badge: t('services.systems.badge'),
-      popular: true,
+      popular: false,
       link: '#systems'
     },
     {
@@ -42,7 +42,8 @@ function ServicesSection() {
       description: t('services.landing.description'),
       features: t('services.landing.features'),
       icon: FaServer,
-      popular: false,
+      badge: t('services.landing.badge'),
+      popular: true,
       link: '#landing-pages'
     },
     {

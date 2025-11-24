@@ -32,7 +32,7 @@ function PortfolioSection() {
       title: 'Arcanuns',
       description: 'Plataforma de numerologia pitagórica com análises personalizadas',
       category: 'Corporativo',
-      image: '/assets/projects/arcanuns.png',
+      image: '/arcanuns.png',
       url: 'https://arcanuns.com',
       tech: ['React.js', 'Inteligência Artificial', 'Node.js', 'API REST']
     },
@@ -41,7 +41,7 @@ function PortfolioSection() {
       title: 'Datun.ai',
       description: 'Plataforma SaaS de IA para limpeza e padronização de dados',
       category: 'Corporativo',
-      image: '/assets/projects/datunai.png',
+      image: '/datun.png',
       url: 'https://datun.ai',
       tech: ['JavaScript', 'Python', 'Machine Learning', 'CSS3']
     },
@@ -50,7 +50,7 @@ function PortfolioSection() {
       title: 'Sonhos em Linha',
       description: 'Landing page moderna para moda nupcial e vestidos personalizados',
       category: 'Landing Page',
-      image: '/assets/projects/sonhosemlinha.png',
+      image: '/sonhosemlinha.png',
       url: 'https://sonhosemlinha.pt',
       tech: ['JavaScript', 'CSS3', 'HTML5', 'Design Responsivo']
     }

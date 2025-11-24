@@ -50,6 +50,22 @@ function SocialMediaSection() {
       instagramUrl: 'https://www.instagram.com/p/DPE4F3qDJSN/?igsh=bDYwMjllNTVtOWg5',
       embedCode: 'DPE4F3qDJSN',
       useEmbed: true
+    },
+    {
+      id: 4,
+      client: '@new_post',
+      image: 'https://via.placeholder.com/1080x1350/8b5cf6/ffffff?text=Post+4',
+      instagramUrl: 'https://www.instagram.com/p/DRLCVGniV5N/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D',
+      embedCode: 'DRLCVGniV5N',
+      useEmbed: true
+    },
+    {
+      id: 5,
+      client: '@new_post_2',
+      image: 'https://via.placeholder.com/1080x1350/ec4899/ffffff?text=Post+5',
+      instagramUrl: 'https://www.instagram.com/p/DRM5JKKDCJO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D',
+      embedCode: 'DRM5JKKDCJO',
+      useEmbed: true
     }
   ]
 

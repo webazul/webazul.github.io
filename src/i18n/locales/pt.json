@@ -40,7 +40,8 @@
     "landing": {
       "title": "Landing Pages",
       "description": "Websites profissionais e landing pages otimizadas para conversão e resultados.",
-      "features": ["Design responsivo", "Otimização SEO", "Performance alta", "Analytics integrado"]
+      "features": ["Design responsivo", "Otimização SEO", "Performance alta", "Analytics integrado"],
+      "badge": "Popular"
     },
     "socialMedia": {
       "title": "Social Media",
