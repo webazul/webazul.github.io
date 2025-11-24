@@ -66,6 +66,14 @@ function SocialMediaSection() {
       instagramUrl: 'https://www.instagram.com/p/DRM5JKKDCJO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D',
       embedCode: 'DRM5JKKDCJO',
       useEmbed: true
+    },
+    {
+      id: 6,
+      client: '@new_post_3',
+      image: 'https://via.placeholder.com/1080x1350/06b6d4/ffffff?text=Post+6',
+      instagramUrl: 'https://www.instagram.com/p/DRM9mQTDBdU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D',
+      embedCode: 'DRM9mQTDBdU',
+      useEmbed: true
     }
   ]
 
