@@ -6,7 +6,7 @@
   <!-- Homepage - Principal -->
   <url>
     <loc>https://webazul.pt/</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2024-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/" />
@@ -23,7 +23,7 @@
   <!-- AutoAzul - Página Dedicada -->
   <url>
     <loc>https://webazul.pt/autoazul</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2024-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/autoazul" />
@@ -40,7 +40,7 @@
   <!-- Seção Serviços -->
   <url>
     <loc>https://webazul.pt/#services</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2024-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#services" />
@@ -51,7 +51,7 @@
   <!-- Portfolio - Projetos -->
   <url>
     <loc>https://webazul.pt/#portfolio</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2024-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#portfolio" />
@@ -62,7 +62,7 @@
   <!-- Landing Pages -->
   <url>
     <loc>https://webazul.pt/#landing-pages</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2024-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#landing-pages" />
@@ -73,7 +73,7 @@
   <!-- Social Media -->
   <url>
     <loc>https://webazul.pt/#social-media</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2024-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#social-media" />
@@ -84,7 +84,7 @@
   <!-- Sistemas Prontos -->
   <url>
     <loc>https://webazul.pt/#systems</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2024-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#systems" />
@@ -95,7 +95,7 @@
   <!-- Processo -->
   <url>
     <loc>https://webazul.pt/#process</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2024-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#process" />
@@ -106,12 +106,49 @@
   <!-- Contacto -->
   <url>
     <loc>https://webazul.pt/#contact</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2024-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pt" href="https://webazul.pt/#contact" />
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://webazul.pt/#contact" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://webazul.pt/#contact" />
+  </url>
+
+  <!-- Projetos do Portfolio -->
+  <url>
+    <loc>https://arcanuns.com</loc>
+    <lastmod>2024-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://webazul.pt/arcanuns.png</image:loc>
+      <image:title>Arcanuns - Plataforma de Numerologia</image:title>
+      <image:caption>Plataforma de numerologia pitagórica com análises personalizadas usando IA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://datun.ai</loc>
+    <lastmod>2024-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://webazul.pt/datun.png</image:loc>
+      <image:title>Datun.ai - Plataforma SaaS de IA</image:title>
+      <image:caption>Plataforma SaaS de IA para limpeza e padronização de dados</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sonhosemlinha.pt</loc>
+    <lastmod>2024-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://webazul.pt/sonhosemlinha.png</image:loc>
+      <image:title>Sonhos em Linha - Moda Nupcial</image:title>
+      <image:caption>Landing page moderna para moda nupcial e vestidos personalizados</image:caption>
+    </image:image>
   </url>
 
 </urlset>
