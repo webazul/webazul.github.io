@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import './PortfolioSection.css'
-import { FaExternalLinkAlt } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
 function PortfolioSection() {
   const { t } = useTranslation()
   const [isVisible, setIsVisible] = useState(false)
+  const carouselRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -47,6 +48,15 @@ function PortfolioSection() {
     },
     {
       id: 3,
+      title: 'DhubStream',
+      description: 'Plataforma de streaming e gestão de conteúdos digitais',
+      category: 'Corporativo',
+      image: '/dhub.png',
+      url: 'https://dhub.stream',
+      tech: ['React.js', 'Node.js', 'Streaming', 'API REST']
+    },
+    {
+      id: 4,
       title: 'Sonhos em Linha',
       description: 'Landing page moderna para moda nupcial e vestidos personalizados',
       category: 'Landing Page',
@@ -56,6 +66,16 @@ function PortfolioSection() {
     }
   ]
 
+  const scrollCarousel = (direction) => {
+    if (carouselRef.current) {
+      const scrollAmount = 320
+      const newScrollLeft = carouselRef.current.scrollLeft + (direction === 'left' ? -scrollAmount : scrollAmount)
+      carouselRef.current.scrollTo({
+        left: newScrollLeft,
+        behavior: 'smooth'
+      })
+    }
+  }
 
   return (
     <section id="portfolio" className={`portfolio-section ${isVisible ? 'visible' : ''}`}>
@@ -73,9 +93,17 @@ function PortfolioSection() {
           </p>
         </div>
 
-        <div className="portfolio-grid grid">
-          {projects.length > 0 ? (
-            projects.map((project, index) => (
+        <div className="portfolio-carousel-wrapper">
+          <button
+            className="portfolio-carousel-btn portfolio-carousel-btn-left"
+            onClick={() => scrollCarousel('left')}
+            aria-label="Anterior"
+          >
+            <FaChevronLeft />
+          </button>
+
+          <div className="portfolio-carousel" ref={carouselRef}>
+            {projects.map((project, index) => (
               <div
                 key={project.id}
                 className="portfolio-item"
@@ -88,11 +116,11 @@ function PortfolioSection() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="portfolio-img"
+                    className={`portfolio-img ${project.title === 'DhubStream' ? 'logo-small' : ''}`}
                     onError={(e) => {
                       e.target.style.display = 'none'
                       e.target.parentElement.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
-                      e.target.parentElement.style.height = '300px'
+                      e.target.parentElement.style.height = '200px'
                     }}
                   />
                   <div className="portfolio-overlay">
@@ -121,12 +149,16 @@ function PortfolioSection() {
                   </div>
                 </div>
               </div>
-            ))
-          ) : (
-            <div className="portfolio-empty">
-              <p>Nenhum projeto encontrado nesta categoria.</p>
-            </div>
-          )}
+            ))}
+          </div>
+
+          <button
+            className="portfolio-carousel-btn portfolio-carousel-btn-right"
+            onClick={() => scrollCarousel('right')}
+            aria-label="Próximo"
+          >
+            <FaChevronRight />
+          </button>
         </div>
       </div>
     </section>

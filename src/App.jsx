@@ -33,12 +33,12 @@ function HomePage() {
       <PortfolioSection />
       <LandingPagesSection />
       <SocialMediaSection />
-      <SystemsSection />
+      {/* <SystemsSection /> */}
       <ProcessSection />
       {/* <TestimonialsSection /> */}
       <ContactForm />
       <Footer />
-      <WhatsAppWidget />
+      {/* <WhatsAppWidget /> */}
       <CookieConsent />
       <ScrollDepthTracker />
     </>

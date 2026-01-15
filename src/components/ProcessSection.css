@@ -1,17 +1,17 @@
 .process-section {
-  padding: 6rem 0;
+  padding: var(--wb-space-section) 0;
   background: var(--wb-gradient-process-modern);
 }
 
 .process-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .process-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease-in-out;
@@ -24,20 +24,20 @@
 
 .process-badge {
   display: inline-block;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .process-badge span {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #2563eb;
   background: rgba(37, 99, 235, 0.1);
   border: 1px solid rgba(37, 99, 235, 0.3);
-  border-radius: 20px;
-  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
   backdrop-filter: blur(10px);
 }
 
@@ -47,7 +47,7 @@
   font-weight: 700;
   line-height: 1.2;
   color: #ffffff;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -63,7 +63,7 @@
 .process-steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: start;
 }
 
@@ -90,22 +90,22 @@
 
 
 .step-icon {
-  width: 80px;
-  height: 80px;
+  width: 56px;
+  height: 56px;
   background: linear-gradient(135deg, #2563eb, #3b82f6);
-  border-radius: 20px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
   transition: all 0.3s ease;
 }
 
 .process-step:hover .step-icon {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .step-content {
@@ -114,16 +114,16 @@
 
 .step-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #ffffff;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .step-description {
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.85rem;
+  line-height: 1.5;
   color: #e2e8f0;
   margin: 0;
 }
@@ -207,8 +207,8 @@
 /* CTA Section */
 .process-cta {
   text-align: center;
-  margin-top: 4rem;
-  padding: 3rem 2rem;
+  margin-top: 2.5rem;
+  padding: 2rem 1.5rem;
   background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(59, 130, 246, 0.05));
   border: 1px solid rgba(37, 99, 235, 0.2);
   border-radius: var(--wb-card-radius);
@@ -217,17 +217,17 @@
 
 .cta-title {
   font-family: 'Inter', sans-serif;
-  font-size: var(--wb-text-2xl);
+  font-size: 1.4rem;
   font-weight: 700;
   color: #ffffff;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.75rem 0;
 }
 
 .cta-description {
   font-family: 'Inter', sans-serif;
-  font-size: var(--wb-text-md);
+  font-size: 0.95rem;
   color: #e2e8f0;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1.25rem 0;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -237,10 +237,10 @@
   background: linear-gradient(135deg, #2563eb, #3b82f6);
   color: white;
   border: none;
-  border-radius: 12px;
-  padding: 1rem 2rem;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -248,7 +248,7 @@
 }
 
 .cta-button:hover {
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
 }
 
 @media (max-width: 768px) {

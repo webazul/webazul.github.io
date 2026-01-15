@@ -56,7 +56,7 @@
 
 .services-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease-in-out;
@@ -69,20 +69,20 @@
 
 .services-badge {
   display: inline-block;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .services-badge span {
   font-family: var(--wb-font-mono);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #2563eb;
   background: rgba(37, 99, 235, 0.1);
   border: 1px solid rgba(37, 99, 235, 0.3);
-  border-radius: 20px;
-  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
   backdrop-filter: blur(10px);
 }
 
@@ -107,15 +107,15 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
 }
 
 .service-card {
   background: rgba(255, 255, 255, 0.05);
   border: var(--wb-card-border);
   border-radius: var(--wb-card-radius);
-  padding: 2rem;
+  padding: 1.5rem;
   position: relative;
   backdrop-filter: blur(20px);
   transition: var(--wb-card-transition);
@@ -159,20 +159,20 @@
 }
 
 .service-icon {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(59, 130, 246, 0.2));
   border: 1px solid rgba(37, 99, 235, 0.3);
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   transition: all 0.3s ease;
 }
 
 .service-icon svg {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #2563eb;
 }
 
@@ -184,21 +184,21 @@
 
 .service-title {
   font-family: var(--wb-font-primary);
-  font-size: var(--wb-text-xl);
+  font-size: 1.1rem;
   font-weight: var(--wb-font-semibold);
   color: var(--wb-white);
   text-transform: var(--wb-text-normal);
-  margin: var(--wb-space-0) var(--wb-space-0) var(--wb-space-4) var(--wb-space-0);
+  margin: 0 0 0.5rem 0;
 }
 
 .service-description {
   font-family: var(--wb-font-primary);
-  font-size: var(--wb-text-base);
+  font-size: 0.9rem;
   font-weight: var(--wb-font-normal);
-  line-height: var(--wb-leading-relaxed);
+  line-height: 1.5;
   color: var(--wb-gray-50);
   text-transform: var(--wb-text-normal);
-  margin: var(--wb-space-0) var(--wb-space-0) var(--wb-space-6) var(--wb-space-0);
+  margin: 0 0 1rem 0;
 }
 
 .service-features {
@@ -209,24 +209,24 @@
 
 .service-features li {
   font-family: var(--wb-font-primary);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #aaaaaa;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .checkmark {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: linear-gradient(135deg, #10b981, #059669);
   border-radius: 50%;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: bold;
   flex-shrink: 0;
 }

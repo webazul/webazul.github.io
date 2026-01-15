@@ -151,8 +151,8 @@
   --wb-space-175: 43.75rem;    /* 700px */
 
   /* Espaçamentos específicos */
-  --wb-space-section: 6rem;
-  --wb-space-container: 2rem;
+  --wb-space-section: 4rem;
+  --wb-space-container: 1.5rem;
 
   /* ========================================
      DIMENSÕES E TAMANHOS
@@ -198,13 +198,13 @@
 
   /* Border radius */
   --wb-radius-none: 0;
-  --wb-radius-sm: 6px;
-  --wb-radius: 8px;
-  --wb-radius-md: 12px;
-  --wb-radius-lg: 16px;
-  --wb-radius-xl: 20px;
-  --wb-radius-2xl: 24px;
-  --wb-radius-3xl: 25px;
+  --wb-radius-sm: 4px;
+  --wb-radius: 6px;
+  --wb-radius-md: 8px;
+  --wb-radius-lg: 10px;
+  --wb-radius-xl: 12px;
+  --wb-radius-2xl: 14px;
+  --wb-radius-3xl: 16px;
   --wb-radius-full: 50%;
 
   /* Sombras */
@@ -399,7 +399,7 @@
     --wb-text-stat: 1.8rem;
 
     /* Ajustes de espaçamento para mobile */
-    --wb-space-section: 3rem;
+    --wb-space-section: 2.5rem;
     --wb-space-container: 1rem;
 
     /* Ajustes de dimensões para mobile */
@@ -418,7 +418,7 @@
     --wb-text-stat: 2rem;
 
     /* Ajustes de espaçamento para tablet */
-    --wb-space-section: 4rem;
+    --wb-space-section: 3rem;
 
     /* Ajustes de dimensões para tablet */
     --wb-width-logo: 90px;

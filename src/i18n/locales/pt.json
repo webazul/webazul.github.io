@@ -31,11 +31,11 @@
     "badge": "Serviços",
     "title": "Três pilares para o seu",
     "titleHighlight": "sucesso digital",
-    "systems": {
-      "title": "Sistemas Prontos",
-      "description": "Soluções SaaS completas e personalizáveis para diferentes setores de negócio.",
-      "features": ["AutoAzul - Automóveis", "ImobiAzul - Imobiliário", "LojaAzul - E-commerce", "RestaurAzul - Restauração"],
-      "badge": "Popular"
+    "customProjects": {
+      "title": "Projetos Personalizados",
+      "description": "Desenvolvemos soluções digitais à medida para empresas que procuram diferenciação no mercado.",
+      "features": ["Plataformas SaaS", "Websites Corporativos", "Aplicações Web", "Integrações API"],
+      "badge": "Destaque"
     },
     "landing": {
       "title": "Landing Pages",

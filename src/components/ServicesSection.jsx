@@ -29,13 +29,13 @@ function ServicesSection() {
 
   const services = [
     {
-      title: t('services.systems.title'),
-      description: t('services.systems.description'),
-      features: t('services.systems.features'),
+      title: t('services.customProjects.title'),
+      description: t('services.customProjects.description'),
+      features: t('services.customProjects.features'),
       icon: FaCode,
-      badge: t('services.systems.badge'),
+      badge: t('services.customProjects.badge'),
       popular: false,
-      link: '#systems'
+      link: '#portfolio'
     },
     {
       title: t('services.landing.title'),

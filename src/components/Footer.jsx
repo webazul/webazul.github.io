@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import './Footer.css'
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaInstagram, FaFacebook, FaLinkedin, FaArrowUp, FaRocket, FaGlobe } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaInstagram, FaArrowUp, FaGlobe } from 'react-icons/fa'
 import LegalModal from './LegalModal'
 
 function Footer() {
@@ -49,12 +49,6 @@ function Footer() {
             <div className="footer-social">
               <a href="https://www.instagram.com/webazul.pt/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
                 <FaInstagram />
-              </a>
-              <a href="#" className="social-link" aria-label="Facebook">
-                <FaFacebook />
-              </a>
-              <a href="#" className="social-link" aria-label="LinkedIn">
-                <FaLinkedin />
               </a>
             </div>
           </div>

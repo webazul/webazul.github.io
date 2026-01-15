@@ -9,12 +9,12 @@
 
 .whatsapp-bubble {
   position: absolute;
-  bottom: 80px;
+  bottom: 70px;
   right: 0;
   background: white;
-  border-radius: 16px;
+  border-radius: var(--wb-card-radius);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-  width: 320px;
+  width: 280px;
   max-width: calc(100vw - 4rem);
   overflow: hidden;
   transform: scale(0.8) translateY(20px);
@@ -32,21 +32,21 @@
 .bubble-header {
   background: linear-gradient(135deg, #25d366, #20bc5a);
   color: white;
-  padding: 1rem;
+  padding: 0.875rem;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.6rem;
 }
 
 .bubble-avatar {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   flex-shrink: 0;
 }
 
@@ -56,14 +56,14 @@
 
 .bubble-info h4 {
   font-family: 'Caveat', cursive;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.15rem 0;
 }
 
 .bubble-info p {
   font-family: 'Handlee', cursive;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   margin: 0;
   opacity: 0.9;
 }
@@ -87,16 +87,16 @@
 }
 
 .bubble-content {
-  padding: 1rem;
+  padding: 0.875rem;
 }
 
 .message {
   background: #f0f0f0;
-  border-radius: 12px;
-  padding: 1rem;
+  border-radius: 8px;
+  padding: 0.75rem;
   font-family: 'Handlee', cursive;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
 
 .message p {
@@ -118,7 +118,7 @@
 }
 
 .bubble-footer {
-  padding: 1rem;
+  padding: 0.875rem;
   border-top: 1px solid #f0f0f0;
 }
 
@@ -128,10 +128,10 @@
   color: white;
   border: none;
   border-radius: 8px;
-  padding: 0.875rem 1rem;
+  padding: 0.65rem 0.875rem;
   font-family: 'Patrick Hand', cursive;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -151,8 +151,8 @@
 }
 
 .whatsapp-float-button {
-  width: 60px;
-  height: 60px;
+  width: 52px;
+  height: 52px;
   background: linear-gradient(135deg, #25d366, #20bc5a);
   border: none;
   border-radius: 50%;

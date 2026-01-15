@@ -1,5 +1,5 @@
 .contact-section {
-  padding: 6rem 0;
+  padding: var(--wb-space-section) 0;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   color: white;
   position: relative;
@@ -28,7 +28,7 @@
 
 .contact-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease-in-out;
@@ -41,20 +41,20 @@
 
 .contact-badge {
   display: inline-block;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact-badge span {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #2563eb;
   background: rgba(37, 99, 235, 0.1);
   border: 1px solid rgba(37, 99, 235, 0.3);
-  border-radius: 20px;
-  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
   backdrop-filter: blur(10px);
 }
 
@@ -64,10 +64,8 @@
   font-weight: 700;
   line-height: 1.2;
   color: #ffffff;
-  margin: 0 0 1.5rem 0;
+  margin: 0 auto 1rem auto;
   max-width: var(--wb-width-title-max);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .title-highlight {
@@ -89,15 +87,15 @@
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 3rem;
+  gap: 2rem;
   align-items: stretch;
 }
 
 .contact-info {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 2rem;
+  border-radius: var(--wb-card-radius);
+  padding: 1.5rem;
   backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
@@ -106,21 +104,21 @@
 
 .info-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #ffffff;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1.25rem 0;
 }
 
 .info-items {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .info-item {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .info-item:last-child {
@@ -128,15 +126,15 @@
 }
 
 .info-icon {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background: linear-gradient(135deg, #2563eb, #3b82f6);
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .info-text {
@@ -172,8 +170,8 @@ a.info-value:hover {
 .contact-form {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 2.5rem;
+  border-radius: var(--wb-card-radius);
+  padding: 1.5rem;
   backdrop-filter: blur(20px);
   position: relative;
   display: flex;
@@ -213,11 +211,11 @@ a.info-value:hover {
 
 .form-group label {
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: #e2e8f0;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 .form-group input,
@@ -226,10 +224,10 @@ a.info-value:hover {
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
-  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #ffffff;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
@@ -260,17 +258,17 @@ a.info-value:hover {
 
 .form-group textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 90px;
 }
 
 .submit-btn {
   width: 100%;
   background: linear-gradient(135deg, #2563eb, #3b82f6);
   border: none;
-  border-radius: 12px;
-  padding: 1.25rem 2rem;
+  border-radius: 8px;
+  padding: 0.875rem 1.5rem;
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: white;
   cursor: pointer;
