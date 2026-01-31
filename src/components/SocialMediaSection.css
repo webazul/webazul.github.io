@@ -383,8 +383,10 @@
   }
 
   .social-projects-grid {
-    grid-template-columns: 1fr;
-    gap: var(--wb-space-6);
+    display: flex;
+    justify-content: center;
+    max-width: 350px;
+    margin: 0 auto;
   }
 
   .social-carousel-btn {

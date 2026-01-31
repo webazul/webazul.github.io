@@ -146,7 +146,8 @@
     },
     "buttons": {
       "learnMore": "Saber Más",
-      "contact": "Contactar"
+      "contact": "Contactar",
+      "showMore": "Mostrar más"
     },
     "badges": {
       "available": "Disponible",
@@ -213,6 +214,30 @@
     "subtitle": "Creamos y gestionamos contenido auténtico que conecta su marca con la audiencia ideal.",
     "buttons": {
       "viewPost": "Ver Proyecto"
+    }
+  },
+  "team": {
+    "badge": "Nuestro Equipo",
+    "title": "Conoce quién está detrás de tu",
+    "titleHighlight": "éxito digital",
+    "subtitle": "Un equipo multidisciplinario enfocado en entregar resultados excepcionales.",
+    "members": {
+      "tech": {
+        "name": "Jhony Mendonça",
+        "role": "Tecnología"
+      },
+      "marketing": {
+        "name": "Leticia Faccini",
+        "role": "Marketing"
+      },
+      "growth": {
+        "name": "Daniel Rocha",
+        "role": "Growth"
+      },
+      "design": {
+        "name": "Ingrid Lopes",
+        "role": "Diseño"
+      }
     }
   },
   "testimonials": {

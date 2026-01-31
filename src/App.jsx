@@ -7,6 +7,7 @@ import PortfolioSection from './components/PortfolioSection'
 import SystemsSection from './components/SystemsSection'
 import LandingPagesSection from './components/LandingPagesSection'
 import SocialMediaSection from './components/SocialMediaSection'
+import TeamSection from './components/TeamSection'
 import ProcessSection from './components/ProcessSection'
 // import TestimonialsSection from './components/TestimonialsSection'
 import ContactForm from './components/ContactForm'
@@ -15,15 +16,14 @@ import WhatsAppWidget from './components/WhatsAppWidget'
 import CookieConsent from './components/CookieConsent'
 import ScrollDepthTracker from './components/ScrollDepthTracker'
 import SEO from './components/SEO'
-import AutoAzulPage from './pages/AutoAzulPage'
 
 function HomePage() {
   return (
     <>
       <SEO
-        title="WebAzul - Desenvolvimento Web, Sistemas SaaS e Marketing Digital | Portugal"
-        description="Agência digital portuguesa especializada em desenvolvimento web, sistemas SaaS personalizados, landing pages e gestão de redes sociais. Transformamos ideias em soluções digitais de sucesso."
-        keywords="desenvolvimento web Portugal, agência digital portuguesa, sistemas SaaS, AutoAzul, ImobiAzul, landing pages, websites profissionais, gestão redes sociais, marketing digital Portugal, desenvolvimento software, CRM Portugal, sistemas gestão, WebAzul"
+        title="WebAzul - Desenvolvimento Web e Marketing Digital"
+        description="Agência digital portuguesa especializada em desenvolvimento web, landing pages e gestão de redes sociais. Transformamos ideias em experiências digitais de sucesso."
+        keywords="desenvolvimento web Portugal, agência digital portuguesa, landing pages, websites profissionais, gestão redes sociais, marketing digital Portugal, web design, criação de sites, WebAzul"
         url="https://webazul.pt/"
         image="https://webazul.pt/webazul-white.png"
         type="website"
@@ -35,6 +35,7 @@ function HomePage() {
       <SocialMediaSection />
       {/* <SystemsSection /> */}
       <ProcessSection />
+      <TeamSection />
       {/* <TestimonialsSection /> */}
       <ContactForm />
       <Footer />
@@ -51,7 +52,6 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/autoazul" element={<AutoAzulPage />} />
         </Routes>
       </div>
     </Router>

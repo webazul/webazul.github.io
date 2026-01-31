@@ -12,16 +12,16 @@ function SEOHead({ section = 'home', title, description, keywords, image }) {
   // Default SEO data por seção
   const seoData = {
     home: {
-      title: 'WebAzul Creative Studio - Desenvolvimento Web & SaaS | Portugal & Brasil',
-      description: 'Agência digital PT/BR especializada em SaaS (AutoAzul, ImobiAzul), landing pages e social media. Transformamos negócios com soluções digitais.',
-      keywords: 'desenvolvimento web portugal, agência digital braga, saas portugal, autoazul, imobiazul, websites profissionais, desenvolvimento web brasil',
+      title: 'WebAzul Creative Studio - Desenvolvimento Web e Marketing Digital',
+      description: 'Agência digital portuguesa especializada em desenvolvimento web, landing pages e gestão de redes sociais. Transformamos negócios com soluções digitais.',
+      keywords: 'desenvolvimento web portugal, agência digital braga, websites profissionais, landing pages, marketing digital',
       image: 'https://webazul.pt/webazul-white.png'
     },
-    systems: {
-      title: 'Sistemas Prontos SaaS - AutoAzul & ImobiAzul | WebAzul',
-      description: 'Soluções SaaS completas para automóveis (AutoAzul) e imobiliárias (ImobiAzul). Sistema de gestão pronto com landing page personalizada.',
-      keywords: 'autoazul, imobiazul, sistema gestão automóveis, software concessionária, sistema imobiliário, saas portugal, saas brasil',
-      image: 'https://webazul.pt/assets/products/autoazul-mockup.svg'
+    portfolio: {
+      title: 'Portfolio - Projetos de Desenvolvimento Web | WebAzul',
+      description: 'Conheça os projetos de desenvolvimento web e landing pages que criámos para os nossos clientes.',
+      keywords: 'portfolio webazul, projetos web, websites profissionais, landing pages',
+      image: 'https://webazul.pt/webazul-white.png'
     },
     landingPages: {
       title: 'Landing Pages Profissionais | Otimizadas para Conversão | WebAzul',

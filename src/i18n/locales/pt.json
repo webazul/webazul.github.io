@@ -13,7 +13,7 @@
     "brandHighlight": "azul",
     "brandSubtitle": "CREATIVE STUDIO",
     "subtitle": "Transformamos ideias em experiências digitais inovadoras",
-    "description": "Agência portuguesa especializada em desenvolvimento web, sistemas digitais e soluções SaaS. Criamos experiências digitais que transformam negócios.",
+    "description": "Agência portuguesa especializada em desenvolvimento web, landing pages e gestão de redes sociais. Criamos experiências digitais que transformam negócios.",
     "stats": {
       "projects": "100+",
       "projectsLabel": "Projetos",
@@ -34,7 +34,7 @@
     "customProjects": {
       "title": "Projetos Personalizados",
       "description": "Desenvolvemos soluções digitais à medida para empresas que procuram diferenciação no mercado.",
-      "features": ["Plataformas SaaS", "Websites Corporativos", "Aplicações Web", "Integrações API"],
+      "features": ["Websites Corporativos", "Aplicações Web", "E-commerce", "Integrações API"],
       "badge": "Destaque"
     },
     "landing": {
@@ -107,56 +107,13 @@
     "buttons": {
       "visit": "Visitar Site",
       "learnMore": "Saber Mais",
-      "contact": "Contactar"
+      "contact": "Contactar",
+      "showMore": "Mostrar mais"
     },
     "badges": {
       "featured": "Destaque",
       "popular": "Popular",
       "new": "Novo"
-    }
-  },
-  "systems": {
-    "badge": "Sistemas Prontos",
-    "title": "Soluções SaaS completas",
-    "titleHighlight": "para o seu negócio",
-    "autoazul": {
-      "title": "AutoAzul",
-      "description": "Sistema completo para gestão de concessionárias e stands automóveis com landing page personalizada.",
-      "features": [
-        "Gestão completa de stock de veículos",
-        "Landing page responsiva personalizada",
-        "CRM integrado para gestão de clientes"
-      ]
-    },
-    "imobiazul": {
-      "title": "ImobiAzul",
-      "description": "Plataforma completa para gestão de imobiliárias e mediadores com portal personalizado.",
-      "features": [
-        "Gestão de propriedades e portfolio",
-        "Portal imobiliário responsivo personalizado",
-        "CRM para leads e clientes",
-        "Tour virtual 360° integrado"
-      ]
-    },
-    "studioazul": {
-      "title": "StudioAzul",
-      "description": "Sistema completo para estúdios criativos, fotografia e produção audiovisual.",
-      "features": [
-        "Gestão de projetos e clientes",
-        "Agendamento e reserva de equipamentos",
-        "Portfolio e galeria integrada",
-        "Faturação e controle financeiro"
-      ]
-    },
-    "buttons": {
-      "demo": "Demo",
-      "contact": "Contactar",
-      "notify": "Notificar-me",
-      "details": "Detalhes"
-    },
-    "badges": {
-      "popular": "Popular",
-      "comingSoon": "Em Breve"
     }
   },
   "landingPages": {
@@ -175,6 +132,30 @@
     "subtitle": "Criamos e gerimos conteúdo autêntico que conecta a sua marca ao público ideal.",
     "buttons": {
       "viewPost": "Ver Projeto"
+    }
+  },
+  "team": {
+    "badge": "A Nossa Equipa",
+    "title": "Conheça quem está por trás do",
+    "titleHighlight": "seu sucesso digital",
+    "subtitle": "Uma equipa multidisciplinar focada em entregar resultados excepcionais.",
+    "members": {
+      "tech": {
+        "name": "Jhony Mendonça",
+        "role": "Tecnologia"
+      },
+      "marketing": {
+        "name": "Leticia Faccini",
+        "role": "Marketing"
+      },
+      "growth": {
+        "name": "Daniel Rocha",
+        "role": "Growth"
+      },
+      "design": {
+        "name": "Ingrid Lopes",
+        "role": "Design"
+      }
     }
   },
   "testimonials": {
@@ -314,7 +295,7 @@
     }
   },
   "footer": {
-    "description": "WebAzul Creative Studio - Agência portuguesa especializada em desenvolvimento web, sistemas digitais e soluções SaaS inovadoras.",
+    "description": "WebAzul Creative Studio - Agência portuguesa especializada em desenvolvimento web, landing pages e marketing digital.",
     "navigation": "Navegação",
     "home": "Início",
     "services": "Serviços",

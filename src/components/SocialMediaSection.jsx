@@ -7,6 +7,17 @@ function SocialMediaSection() {
   const { t } = useTranslation()
   const [isVisible, setIsVisible] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
+      setCurrentIndex(0)
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -77,7 +88,7 @@ function SocialMediaSection() {
     }
   ]
 
-  const itemsPerView = 3
+  const itemsPerView = isMobile ? 1 : 3
   const totalSlides = Math.ceil(socialProjects.length / itemsPerView)
 
   const nextSlide = () => {

@@ -13,8 +13,8 @@
  * @param {string} options.type - Tipo OG (website, article, etc)
  */
 export const updateSocialMeta = ({
-  title = 'WebAzul | Desenvolvimento Web & SaaS Portugal Brasil',
-  description = '🚀 AutoAzul + ImobiAzul: Software completo para automóveis e imobiliárias. Landing pages profissionais. Transforme seu negócio digital! 🇵🇹🇧🇷',
+  title = 'WebAzul | Desenvolvimento Web e Marketing Digital',
+  description = 'Agência digital portuguesa especializada em desenvolvimento web, landing pages e gestão de redes sociais. Transformamos ideias em experiências digitais.',
   image = 'https://webazul.pt/og-image.png',
   url = window.location.href,
   type = 'website'
@@ -56,22 +56,16 @@ const updateMetaTag = (attr, key, content) => {
  */
 export const SocialMetaData = {
   home: {
-    title: 'WebAzul | Desenvolvimento Web & SaaS Portugal Brasil',
-    description: '🚀 AutoAzul + ImobiAzul: Software completo para automóveis e imobiliárias. Landing pages profissionais. Transforme seu negócio digital! 🇵🇹🇧🇷',
+    title: 'WebAzul | Desenvolvimento Web e Marketing Digital',
+    description: 'Agência digital portuguesa especializada em desenvolvimento web, landing pages e gestão de redes sociais. Transformamos ideias em experiências digitais.',
     image: 'https://webazul.pt/og-image.png',
     url: 'https://webazul.pt/'
   },
-  autoazul: {
-    title: 'AutoAzul | Sistema de Gestão para Stands Automóveis',
-    description: '🚗 Sistema completo para gestão de concessionárias e stands automóveis. CRM integrado, gestão de inventário, leads e vendas. Experimente agora!',
-    image: 'https://webazul.pt/og-autoazul.png',
-    url: 'https://webazul.pt/#systems'
-  },
-  imobiazul: {
-    title: 'ImobiAzul | Plataforma para Imobiliárias',
-    description: '🏠 Plataforma completa para gestão de imobiliárias. Portal personalizado, tour virtual 360°, CRM para leads. Revolucione sua imobiliária!',
-    image: 'https://webazul.pt/og-imobiazul.png',
-    url: 'https://webazul.pt/#systems'
+  portfolio: {
+    title: 'Portfolio | Projetos de Desenvolvimento Web | WebAzul',
+    description: 'Conheça os projetos de desenvolvimento web e landing pages que criámos para os nossos clientes.',
+    image: 'https://webazul.pt/og-image.png',
+    url: 'https://webazul.pt/#portfolio'
   },
   landingPages: {
     title: 'Landing Pages Profissionais | Otimizadas para Conversão',

@@ -1,6 +1,6 @@
 .landing-pages-section {
   padding: var(--wb-space-section) var(--wb-space-0);
-  background: var(--wb-gradient-portfolio-modern);
+  background: linear-gradient(135deg, #ffffff 0%, #f9fafb 50%, #f3f4f6 100%);
   position: relative;
   overflow: hidden;
 }
@@ -39,7 +39,7 @@
   font-size: var(--wb-text-2xl);
   font-weight: var(--wb-font-bold);
   line-height: var(--wb-leading-tight);
-  color: var(--wb-gray-600);
+  color: #1e293b;
   margin: var(--wb-space-0);
   max-width: var(--wb-width-title-max);
   margin-left: auto;
@@ -47,13 +47,16 @@
 }
 
 .title-highlight {
-  color: var(--wb-primary);
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .landing-pages-subtitle {
   font-family: var(--wb-font-primary);
   font-size: 0.95rem;
-  color: var(--wb-gray-500);
+  color: #64748b;
   max-width: var(--wb-width-desc-max);
   margin: 0.75rem auto 0 auto;
   line-height: 1.5;
@@ -93,11 +96,11 @@
   transform: translateY(-50%);
   width: var(--wb-space-12);
   height: var(--wb-space-12);
-  background: rgba(255, 255, 255, var(--wb-opacity-10));
-  backdrop-filter: blur(var(--wb-space-2-5));
-  border: var(--wb-space-px) solid rgba(255, 255, 255, var(--wb-opacity-20));
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(37, 99, 235, 0.2);
   border-radius: var(--wb-radius-full);
-  color: var(--wb-white);
+  color: #64748b;
   font-size: var(--wb-text-xl);
   display: flex;
   align-items: center;
@@ -105,11 +108,14 @@
   cursor: pointer;
   transition: var(--wb-transition-all);
   z-index: var(--wb-z-10);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-btn:hover {
-  background: rgba(255, 255, 255, var(--wb-opacity-20));
-  transform: translateY(-50%) scale(1.1);
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+  transform: translateY(-50%) scale(1.05);
 }
 
 .carousel-btn-left {
@@ -123,26 +129,25 @@
 /* Project Card */
 .project-card {
   flex: 0 0 260px;
-  background: rgba(255, 255, 255, var(--wb-opacity-5));
-  backdrop-filter: blur(var(--wb-space-2-5));
-  border: var(--wb-card-border);
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: var(--wb-card-radius);
   overflow: hidden;
   transition: var(--wb-card-transition);
-  box-shadow: var(--wb-card-shadow);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .project-card:hover {
   transform: var(--wb-card-transform-hover);
-  border: var(--wb-card-border-hover);
-  box-shadow: var(--wb-card-shadow-hover);
+  border-color: rgba(37, 99, 235, 0.3);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.15);
 }
 
 .project-image {
   position: relative;
   height: 160px;
   overflow: hidden;
-  background: var(--wb-gray-800);
+  background: #f1f5f9;
 }
 
 .project-image img {
@@ -202,7 +207,7 @@
   font-family: var(--wb-font-primary);
   font-size: var(--wb-text-md);
   font-weight: var(--wb-font-bold);
-  color: var(--wb-white);
+  color: #1e293b;
   margin: var(--wb-space-0) var(--wb-space-0) var(--wb-space-2) var(--wb-space-0);
 }
 

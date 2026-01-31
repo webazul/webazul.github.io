@@ -146,7 +146,8 @@
     },
     "buttons": {
       "learnMore": "Learn More",
-      "contact": "Contact"
+      "contact": "Contact",
+      "showMore": "Show more"
     },
     "badges": {
       "available": "Available",
@@ -213,6 +214,30 @@
     "subtitle": "We create and manage authentic content that connects your brand to the ideal audience.",
     "buttons": {
       "viewPost": "View Project"
+    }
+  },
+  "team": {
+    "badge": "Our Team",
+    "title": "Meet who's behind your",
+    "titleHighlight": "digital success",
+    "subtitle": "A multidisciplinary team focused on delivering exceptional results.",
+    "members": {
+      "tech": {
+        "name": "Jhony Mendonça",
+        "role": "Technology"
+      },
+      "marketing": {
+        "name": "Leticia Faccini",
+        "role": "Marketing"
+      },
+      "growth": {
+        "name": "Daniel Rocha",
+        "role": "Growth"
+      },
+      "design": {
+        "name": "Ingrid Lopes",
+        "role": "Design"
+      }
     }
   },
   "testimonials": {
