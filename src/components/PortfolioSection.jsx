@@ -83,7 +83,7 @@ function PortfolioSection() {
       description: 'Landing page com painel admin para gestão e cadastro de jogos',
       category: 'Landing Page',
       image: '/soarensefc.png',
-      url: 'https://soarensefc.pt'
+      url: 'https://soarensesc.pt'
     }
   ]
 
