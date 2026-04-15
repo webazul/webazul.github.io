@@ -4,88 +4,81 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
   z-index: 15000;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  animation: fadeIn 0.3s ease-out;
+  animation: fadeIn 0.2s ease-out both;
   cursor: pointer;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .legal-modal {
-  background: rgba(15, 23, 42, 0.95);
-  border: 1px solid rgba(37, 99, 235, 0.3);
-  border-radius: var(--wb-card-radius);
-  max-width: 700px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  max-width: 640px;
   width: 100%;
   max-height: 85vh;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(20px);
-  animation: slideUp 0.3s ease-out;
-  color: #ffffff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.25s ease-out both;
+  cursor: default;
 }
 
 @keyframes slideUp {
   from {
-    transform: translateY(30px) scale(0.95);
+    transform: translateY(20px);
     opacity: 0;
   }
   to {
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 .legal-modal-header {
-  padding: 1.25rem 1.5rem 1rem 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: var(--wb-card-radius) var(--wb-card-radius) 0 0;
 }
 
 .legal-modal-header h2 {
   font-family: 'Inter', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
   margin: 0;
 }
 
 .legal-modal-close {
   width: 32px;
   height: 32px;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
-  color: #94a3b8;
+  color: #64748b;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
-  font-size: 1rem;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
 }
 
 .legal-modal-close:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  transform: scale(1.05);
+  background: #f1f5f9;
+  color: #0f172a;
 }
 
 .legal-modal-content {
@@ -93,18 +86,17 @@
   overflow-y: auto;
   flex: 1;
   font-family: 'Inter', sans-serif;
-  line-height: 1.5;
-  color: #cbd5e1;
+  line-height: 1.6;
+  color: #475569;
 }
 
 .legal-modal-content h3 {
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #2563eb;
-  margin: 1.5rem 0 0.75rem 0;
-  border-bottom: 1px solid rgba(37, 99, 235, 0.3);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 1.75rem 0 0.5rem 0;
   padding-bottom: 0.4rem;
+  border-bottom: 1px solid #f1f5f9;
 }
 
 .legal-modal-content h3:first-child {
@@ -112,143 +104,113 @@
 }
 
 .legal-modal-content h4 {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #e2e8f0;
-  margin: 1rem 0 0.5rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #334155;
+  margin: 1rem 0 0.4rem 0;
 }
 
 .legal-modal-content p {
-  margin: 0 0 0.75rem 0;
-  font-size: 0.85rem;
-  color: #cbd5e1;
+  margin: 0 0 0.6rem 0;
+  font-size: 0.8rem;
+  color: #475569;
 }
 
 .legal-modal-content ul {
-  margin: 0.4rem 0 0.75rem 0;
+  margin: 0.3rem 0 0.6rem 0;
   padding-left: 1.25rem;
 }
 
 .legal-modal-content li {
-  margin-bottom: 0.35rem;
-  font-size: 0.85rem;
-  color: #cbd5e1;
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+  color: #475569;
 }
 
 .legal-modal-content strong {
-  color: #ffffff;
+  color: #0f172a;
   font-weight: 600;
 }
 
 .legal-modal-content small {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #94a3b8;
 }
 
 .legal-modal-footer {
-  padding: 1rem 1.5rem 1.25rem 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #f1f5f9;
   display: flex;
   justify-content: flex-end;
-  border-radius: 0 0 var(--wb-card-radius) var(--wb-card-radius);
 }
 
 .legal-modal-btn {
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  background: #0f172a;
   color: white;
   border: none;
-  padding: 0.65rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   border-radius: 8px;
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 0.85rem;
+  font-weight: 600;
+  font-size: 0.8rem;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  transition: all 0.2s ease;
 }
 
 .legal-modal-btn:hover {
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  background: #1e293b;
 }
 
-/* Custom scrollbar */
+/* Scrollbar */
 .legal-modal-content::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 .legal-modal-content::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 3px;
+  background: transparent;
 }
 
 .legal-modal-content::-webkit-scrollbar-thumb {
-  background: rgba(37, 99, 235, 0.5);
+  background: #e2e8f0;
   border-radius: 3px;
 }
 
 .legal-modal-content::-webkit-scrollbar-thumb:hover {
-  background: rgba(37, 99, 235, 0.7);
+  background: #cbd5e1;
 }
 
 @media (max-width: 768px) {
   .legal-modal-backdrop {
     padding: 1rem;
+    align-items: flex-end;
   }
 
   .legal-modal {
-    max-height: 95vh;
-  }
-
-  .legal-modal-header {
-    padding: 1.5rem 1.5rem 1rem 1.5rem;
-  }
-
-  .legal-modal-header h2 {
-    font-size: 1.6rem;
-  }
-
-  .legal-modal-content {
-    padding: 1.5rem;
-  }
-
-  .legal-modal-content h3 {
-    font-size: 1.2rem;
-  }
-
-  .legal-modal-footer {
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    max-height: 90vh;
+    border-radius: 16px 16px 0 0;
   }
 }
 
 @media (max-width: 480px) {
   .legal-modal-backdrop {
-    padding: 0.5rem;
+    padding: 0;
+  }
+
+  .legal-modal {
+    max-height: 95vh;
+    border-radius: 16px 16px 0 0;
   }
 
   .legal-modal-header {
-    padding: 1rem 1rem 0.75rem 1rem;
-  }
-
-  .legal-modal-header h2 {
-    font-size: 1.4rem;
+    padding: 1rem 1.25rem;
   }
 
   .legal-modal-content {
-    padding: 1rem;
-  }
-
-  .legal-modal-content h3 {
-    font-size: 1.1rem;
-  }
-
-  .legal-modal-content p,
-  .legal-modal-content li {
-    font-size: 0.9rem;
+    padding: 1.25rem;
   }
 
   .legal-modal-footer {
-    padding: 0.75rem 1rem 1rem 1rem;
+    padding: 0.75rem 1.25rem;
   }
 
   .legal-modal-btn {

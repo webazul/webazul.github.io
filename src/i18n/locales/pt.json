@@ -1,337 +1,92 @@
 {
-  "nav": {
-    "home": "Início",
-    "services": "Serviços",
-    "process": "Processo",
-    "portfolio": "Portfolio",
-    "testimonials": "Testemunhos",
-    "about": "Sobre",
-    "contact": "Contacto"
-  },
   "hero": {
-    "brandText": "web",
-    "brandHighlight": "azul",
-    "brandSubtitle": "CREATIVE STUDIO",
-    "subtitle": "Transformamos ideias em experiências digitais inovadoras",
-    "description": "Agência portuguesa especializada em desenvolvimento web, landing pages e gestão de redes sociais. Criamos experiências digitais que transformam negócios.",
-    "stats": {
-      "projects": "100+",
-      "projectsLabel": "Projetos",
-      "clients": "50+",
-      "clientsLabel": "Clientes",
-      "satisfaction": "99%",
-      "satisfactionLabel": "Satisfação"
-    },
-    "cta": {
-      "primary": "Começar Projeto",
-      "secondary": "Ver Portfolio"
-    }
+    "tagline": "Software Group"
   },
-  "services": {
-    "badge": "Serviços",
-    "title": "Três pilares para o seu",
-    "titleHighlight": "sucesso digital",
-    "customProjects": {
-      "title": "Projetos Personalizados",
-      "description": "Desenvolvemos soluções digitais à medida para empresas que procuram diferenciação no mercado.",
-      "features": ["Websites Corporativos", "Aplicações Web", "E-commerce", "Integrações API"],
-      "badge": "Destaque"
-    },
-    "landing": {
-      "title": "Landing Pages",
-      "description": "Websites profissionais e landing pages otimizadas para conversão e resultados.",
-      "features": ["Design responsivo", "Otimização SEO", "Performance alta", "Analytics integrado"],
-      "badge": "Popular"
-    },
-    "socialMedia": {
-      "title": "Social Media",
-      "description": "Gestão completa das suas redes sociais com estratégia, conteúdo e análise de resultados.",
-      "features": ["Estratégia digital", "Criação de conteúdo", "Gestão diária", "Relatórios mensais"]
-    }
+  "stats": {
+    "users": "Utilizadores Ativos",
+    "bookings": "Marcações Realizadas",
+    "businesses": "Negócios Registados",
+    "documents": "Documentos Processados"
   },
-  "process": {
-    "badge": "Processo",
-    "title": "Como trabalhamos para garantir",
-    "titleHighlight": "resultados excepcionais",
-    "hubTitle": "webazul",
-    "hubSubtitle": "HUB CENTRAL",
-    "steps": {
-      "research": {
-        "title": "Pesquisa",
-        "description": "Análise profunda do seu negócio, público-alvo e concorrência",
-        "duration": "1-2 semanas",
-        "deliverables": ["Análise de mercado", "Personas", "Estratégia"]
+  "products": {
+    "title": "Os nossos produtos",
+    "items": {
+      "webgym": {
+        "name": "WebGym",
+        "description": "Plataforma de gestão para ginásios. Apps white-label, check-in digital, reserva de aulas e gestão de membros.",
+        "tags": ["Ginásios", "Apps Mobile", "Check-in Digital"],
+        "url": "https://webgym.pt"
       },
-      "development": {
-        "title": "Desenvolvimento",
-        "description": "Criação da solução usando as melhores tecnologias e práticas",
-        "duration": "3-8 semanas",
-        "deliverables": ["Design UI/UX", "Desenvolvimento", "Testes"]
+      "webgympersonal": {
+        "name": "WebGym Personal",
+        "description": "App para personal trainers e os seus clientes. Sessões, progresso, medições corporais e pagamentos.",
+        "tags": ["Personal Trainers", "Fitness", "Progresso"],
+        "url": "https://webgym.pt/personal"
       },
-      "launch": {
-        "title": "Lançamento",
-        "description": "Publicação online, otimização e configuração final do projeto",
-        "duration": "1 semana",
-        "deliverables": ["Publicação", "Configuração", "Treino"]
+      "webagenda": {
+        "name": "WebAgenda",
+        "description": "Agendamentos online para negócios de serviços. Calendário visual, gestão de equipa e lembretes SMS.",
+        "tags": ["Agendamentos", "Salões", "Clínicas"],
+        "url": "https://webagenda.pt"
       },
-      "maintenance": {
-        "title": "Manutenção",
-        "description": "Suporte contínuo, atualizações e melhorias",
-        "duration": "Contínuo",
-        "deliverables": ["Suporte", "Updates", "Melhorias"]
+      "webscan": {
+        "name": "WebScan",
+        "description": "Digitalização de documentos com OCR, captura de assinaturas e armazenamento na cloud.",
+        "tags": ["Documentos", "OCR", "Cloud"],
+        "url": "#"
+      },
+      "webcontas": {
+        "name": "WebContas",
+        "description": "Envio de documentos ao contabilista sem esforço. Classificação com IA e integração e-Fatura.",
+        "tags": ["Contabilidade", "IA", "e-Fatura"],
+        "url": "https://webcontas.pt"
+      },
+      "datun": {
+        "name": "Datun AI",
+        "description": "Standardização de dados em folhas de cálculo com inteligência artificial. Transforma dados desorganizados em formatos limpos e padronizados.",
+        "tags": ["IA", "Dados", "Spreadsheets"],
+        "url": "https://datun.ai"
       }
     },
-    "timeline": {
-      "start": "Início",
-      "end": "Entrega"
-    },
-    "cta": {
-      "title": "Pronto para começar o seu projeto?",
-      "description": "Vamos discutir como podemos transformar a sua ideia numa solução digital de sucesso.",
-      "button": "Começar Agora"
-    }
-  },
-  "portfolio": {
-    "badge": "Nossos Projetos",
-    "title": "Alguns projetos que fizemos",
-    "titleHighlight": "com paixão",
-    "subtitle": "Conheça alguns dos websites e plataformas digitais que desenvolvemos para transformar negócios.",
-    "filters": {
-      "all": "Todos",
-      "ecommerce": "E-commerce",
-      "restaurant": "Restauração",
-      "fitness": "Fitness",
-      "health": "Saúde",
-      "corporate": "Corporativo"
-    },
-    "buttons": {
-      "visit": "Visitar Site",
-      "learnMore": "Saber Mais",
-      "contact": "Contactar",
-      "showMore": "Mostrar mais"
-    },
-    "badges": {
-      "featured": "Destaque",
-      "popular": "Popular",
-      "new": "Novo"
-    }
-  },
-  "landingPages": {
-    "badge": "Landing Pages",
-    "title": "Páginas que",
-    "titleHighlight": "convertem visitantes",
-    "subtitle": "Descubra algumas das landing pages e websites que criámos para os nossos clientes.",
-    "buttons": {
-      "visit": "Visitar Site"
-    }
-  },
-  "socialMedia": {
-    "badge": "Social Media",
-    "title": "Gestão de redes sociais que",
-    "titleHighlight": "gera resultados",
-    "subtitle": "Criamos e gerimos conteúdo autêntico que conecta a sua marca ao público ideal.",
-    "buttons": {
-      "viewPost": "Ver Projeto"
-    }
-  },
-  "team": {
-    "badge": "A Nossa Equipa",
-    "title": "Conheça quem está por trás do",
-    "titleHighlight": "seu sucesso digital",
-    "subtitle": "Uma equipa multidisciplinar focada em entregar resultados excepcionais.",
-    "members": {
-      "tech": {
-        "name": "Jhony Mendonça",
-        "role": "Tecnologia"
-      },
-      "marketing": {
-        "name": "Leticia Falaschi",
-        "role": "Marketing"
-      },
-      "growth": {
-        "name": "Daniel Rocha",
-        "role": "Growth"
-      },
-      "design": {
-        "name": "Ingrid Lopes",
-        "role": "Design"
-      }
-    }
-  },
-  "testimonials": {
-    "badge": "Testemunhos",
-    "title": "O que dizem os nossos",
-    "titleHighlight": "clientes",
-    "subtitle": "Histórias reais de transformação digital e sucesso empresarial.",
-    "stats": {
-      "clients": "50+",
-      "clientsLabel": "Clientes",
-      "satisfaction": "98%",
-      "satisfactionLabel": "Satisfação",
-      "projects": "120+",
-      "projectsLabel": "Projetos",
-      "awards": "15",
-      "awardsLabel": "Prémios"
-    },
-    "videoInterface": {
-      "play": "▶",
-      "pause": "⏸",
-      "timeline": "Testemunho",
-      "quality": "HD",
-      "fullscreen": "⛶"
-    },
-    "labels": {
-      "verified": "Verificado",
-      "project": "Projeto:",
-      "duration": "Duração:",
-      "result": "Resultado:"
-    },
-    "clients": {
-      "client1": {
-        "name": "João Silva",
-        "company": "TechStart Lda",
-        "role": "CEO",
-        "text": "A WebAzul transformou completamente a nossa presença digital. O website que criaram aumentou as nossas vendas em 150% em apenas 6 meses.",
-        "project": "Website E-commerce",
-        "duration": "3 meses",
-        "result": "+150% vendas",
-        "verified": true
-      },
-      "client2": {
-        "name": "Maria Santos",
-        "company": "Fashion Store",
-        "role": "Diretora",
-        "text": "Profissionalismo excecional! A equipa entendeu perfeitamente a nossa visão e entregou um resultado que superou todas as expectativas.",
-        "project": "Loja Online",
-        "duration": "2 meses",
-        "result": "+200% tráfego",
-        "verified": true
-      },
-      "client3": {
-        "name": "Carlos Mendes",
-        "company": "Consultoria PM",
-        "role": "Sócio-Gerente",
-        "text": "O investimento em SEO com a WebAzul foi o melhor que fizemos. Estamos agora na primeira página do Google para todas as palavras-chave importantes.",
-        "project": "SEO Strategy",
-        "duration": "6 meses",
-        "result": "1ª página Google",
-        "verified": true
-      },
-      "client4": {
-        "name": "Ana Rodrigues",
-        "company": "Fitness Club",
-        "role": "Fundadora",
-        "text": "A aplicação mobile que desenvolveram revolucionou a forma como os nossos clientes interagem connosco. Interface intuitiva e funcionalidades perfeitas.",
-        "project": "App Mobile",
-        "duration": "4 meses",
-        "result": "5000+ downloads",
-        "verified": true
-      }
-    }
+    "visitSite": "Visitar",
+    "comingSoon": "Em Breve"
   },
   "contact": {
-    "badge": "Contacto",
-    "title": "Pronto para transformar",
-    "titleHighlight": "o seu negócio?",
-    "subtitle": "Conte-nos sobre o seu projeto e vamos criar algo incrível juntos.",
+    "title": "Fale connosco",
+    "subtitle": "Tem alguma questão sobre os nossos produtos? Entre em contacto.",
+    "phoneLabel": "Telemóvel",
+    "addressLabel": "Morada",
     "form": {
       "name": "Nome *",
       "email": "Email *",
       "phone": "Telemóvel",
-      "company": "Empresa",
-      "service": "Serviço *",
-      "serviceOptions": {
-        "select": "Selecione um serviço",
-        "website": "Website",
-        "ecommerce": "E-commerce",
-        "app": "Aplicação",
-        "seo": "SEO",
-        "social": "Social Media",
-        "hosting": "Hosting",
-        "branding": "Branding",
-        "other": "Outro"
-      },
-      "budget": "Orçamento",
-      "budgetOptions": {
-        "select": "Selecione um orçamento",
-        "under5k": "Até 5.000€",
-        "5k10k": "5.000€ - 10.000€",
-        "10k25k": "10.000€ - 25.000€",
-        "25k50k": "25.000€ - 50.000€",
-        "over50k": "Mais de 50.000€"
-      },
-      "timeline": "Prazo desejado",
-      "timelineOptions": {
-        "select": "Selecione um prazo",
-        "asap": "O mais rápido possível",
-        "1month": "1 mês",
-        "3months": "3 meses",
-        "6months": "6 meses",
-        "flexible": "Flexível"
-      },
       "message": "Mensagem *",
-      "messagePlaceholder": "Conte-nos sobre o seu projeto, objetivos e requisitos específicos...",
-      "submit": "Iniciar Projeto",
-      "submitting": "A enviar...",
-      "namePlaceholder": "O seu nome completo",
+      "namePlaceholder": "O seu nome",
       "emailPlaceholder": "seuemail@exemplo.com",
       "phonePlaceholder": "+351 900 000 000",
-      "companyPlaceholder": "Nome da empresa"
-    },
-    "info": {
-      "title": "Informações de Contacto",
-      "email": "contacto@webazul.pt",
-      "phone": "(+351) 910 084 099",
-      "address": "Braga, Portugal",
-      "hours": "Seg-Sex: 9h-18h",
-      "phoneLabel": "Telemóvel",
-      "locationLabel": "Localização",
-      "hoursLabel": "Horário"
-    },
-    "features": {
-      "fastResponse": "Resposta rápida",
-      "freeConsultation": "Consulta gratuita",
-      "meetDeadlines": "Prazos cumpridos"
+      "messagePlaceholder": "Como podemos ajudar?",
+      "submit": "Enviar Mensagem",
+      "submitting": "A enviar...",
+      "success": "Mensagem enviada com sucesso! Entraremos em contacto em breve.",
+      "error": "Erro ao enviar mensagem. Por favor, tente novamente."
     }
   },
   "footer": {
-    "description": "WebAzul Creative Studio - Agência portuguesa especializada em desenvolvimento web, landing pages e marketing digital.",
-    "navigation": "Navegação",
-    "home": "Início",
-    "services": "Serviços",
-    "portfolio": "Portfolio",
-    "process": "Processo",
-    "testimonials": "Testemunhos",
+    "products": "Produtos",
     "contact": "Contacto",
-    "contactInfo": "Informações de Contacto",
+    "legal": "Legal",
     "rights": "Todos os direitos reservados.",
-    "madeIn": "Feito com ❤️ em Portugal",
-    "privacyPolicy": "Política de Privacidade",
-    "termsService": "Termos de Serviço",
+    "privacyPolicy": "Privacidade",
+    "termsService": "Termos",
     "cookies": "Cookies",
-    "backToTop": "Voltar ao Topo"
-  },
-  "whatsapp": {
-    "greeting": "Olá! 👋",
-    "howHelp": "Como podemos ajudar com o seu projeto digital?",
-    "services": "Os nossos serviços incluem:",
-    "webDev": "Desenvolvimento Web",
-    "socialMedia": "Social Media",
-    "hosting": "Hosting",
-    "seo": "SEO",
-    "startConversation": "Iniciar Conversa",
-    "defaultMessage": "Olá! Gostaria de saber mais sobre os vossos serviços de desenvolvimento web.",
-    "contactLabel": "Contactar via WhatsApp"
+    "address": "R. de Santa Margarida 42, Braga",
+    "nif": "NIF 518109739",
+    "email": "contacto@webazul.pt",
+    "phone": "(+351) 910 084 099"
   },
   "cookies": {
-    "title": "Privacidade e Cookies",
-    "text": "Utilizamos cookies essenciais para garantir o funcionamento do website e cookies analíticos para melhorar a sua experiência.",
-    "acceptAll": "Aceitar Todos",
-    "essentialOnly": "Apenas Essenciais",
-    "privacyPolicy": "Política de Privacidade",
-    "note": "Para mais informações, consulte a nossa",
-    "and": "e",
-    "cookiePolicy": "Política de Cookies",
-    "closeLabel": "Fechar banner de cookies"
+    "text": "Este site utiliza cookies essenciais para o seu funcionamento.",
+    "accept": "Aceitar",
+    "privacyPolicy": "Política de Privacidade"
   }
 }

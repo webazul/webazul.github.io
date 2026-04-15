@@ -1,59 +1,42 @@
 import { useTranslation } from 'react-i18next'
+import { FaCheck, FaMapMarkerAlt, FaHeart } from 'react-icons/fa'
 import './AboutSection.css'
-import { RiScissorsLine, RiShirtLine, RiStarLine } from 'react-icons/ri'
+
+const valueIcons = {
+  simplicity: FaCheck,
+  local: FaMapMarkerAlt,
+  quality: FaHeart,
+}
+
+const valueKeys = ['simplicity', 'local', 'quality']
 
 function AboutSection() {
   const { t } = useTranslation()
+
   return (
-    <section id="sobre" className="about">
+    <section id="sobre" className="about-section">
       <div className="about-container">
-        <div className="about-image">
-          <img
-            src="/sonhos-em-linha-2.png"
-            alt="Atelier Sonhos em Linha - Sobre nós"
-            className="about-img"
-          />
-        </div>
-        <div className="about-content">
-          <div className="about-badge">
-            <span>{t('about.badge')}</span>
-          </div>
+        <div className="about-header">
+          <span className="about-badge">{t('about.badge')}</span>
           <h2 className="about-title">
-            {t('about.title')}
-            <span className="highlight"> {t('about.titleHighlight')}</span>
+            {t('about.title')} <span className="about-highlight">{t('about.titleHighlight')}</span>
           </h2>
-          <p className="about-text">
-            {t('about.description')}
-          </p>
-          <div className="about-features">
-            <div className="feature">
-              <div className="feature-icon">
-                <RiScissorsLine />
+          <p className="about-description">{t('about.description')}</p>
+        </div>
+
+        <div className="about-values">
+          {valueKeys.map((key) => {
+            const Icon = valueIcons[key]
+            return (
+              <div key={key} className="value-card">
+                <div className="value-icon">
+                  <Icon />
+                </div>
+                <h3 className="value-title">{t(`about.values.${key}.title`)}</h3>
+                <p className="value-description">{t(`about.values.${key}.description`)}</p>
               </div>
-              <div className="feature-content">
-                <h4>{t('about.feature1Title')}</h4>
-                <p>{t('about.feature1Text')}</p>
-              </div>
-            </div>
-            <div className="feature">
-              <div className="feature-icon">
-                <RiShirtLine />
-              </div>
-              <div className="feature-content">
-                <h4>{t('about.feature2Title')}</h4>
-                <p>{t('about.feature2Text')}</p>
-              </div>
-            </div>
-            <div className="feature">
-              <div className="feature-icon">
-                <RiStarLine />
-              </div>
-              <div className="feature-content">
-                <h4>{t('about.feature3Title')}</h4>
-                <p>{t('about.feature3Text')}</p>
-              </div>
-            </div>
-          </div>
+            )
+          })}
         </div>
       </div>
     </section>
