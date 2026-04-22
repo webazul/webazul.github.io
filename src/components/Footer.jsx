@@ -8,7 +8,7 @@ const products = [
   { name: 'WebGym', url: 'https://webgym.pt' },
   { name: 'WebGym Personal', url: 'https://webgym.pt/personal' },
   { name: 'WebAgenda', url: 'https://webagenda.pt' },
-  { name: 'WebScan', url: '#' },
+  { name: 'WebPaper', url: '#' },
   { name: 'WebContas', url: 'https://webcontas.pt' },
   { name: 'Datun AI', url: 'https://datun.ai' },
 ]

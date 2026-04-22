@@ -80,6 +80,25 @@
   transform: translateX(0);
 }
 
+.product-header-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-global {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: rgba(37, 99, 235, 0.08);
+  padding: 0.2rem 0.5rem;
+  border-radius: 100px;
+}
+
 .product-soon {
   font-family: 'Inter', sans-serif;
   font-size: 0.65rem;

@@ -21,7 +21,7 @@
         "name": "WebGym Personal",
         "description": "App para personal trainers e os seus clientes. Sessões, progresso, medições corporais e pagamentos.",
         "tags": ["Personal Trainers", "Fitness", "Progresso"],
-        "url": "https://webgym.pt/personal"
+        "url": "#"
       },
       "webagenda": {
         "name": "WebAgenda",
@@ -29,17 +29,17 @@
         "tags": ["Agendamentos", "Salões", "Clínicas"],
         "url": "https://webagenda.pt"
       },
-      "webscan": {
-        "name": "WebScan",
+      "webpaper": {
+        "name": "WebPaper",
         "description": "Digitalização de documentos com OCR, captura de assinaturas e armazenamento na cloud.",
-        "tags": ["Documentos", "OCR", "Cloud"],
-        "url": "#"
+        "tags": ["Documentos", "OCR", "Cloud", "Apps Mobile"],
+        "url": ""
       },
       "webcontas": {
         "name": "WebContas",
         "description": "Envio de documentos ao contabilista sem esforço. Classificação com IA e integração e-Fatura.",
         "tags": ["Contabilidade", "IA", "e-Fatura"],
-        "url": "https://webcontas.pt"
+        "url": "#"
       },
       "datun": {
         "name": "Datun AI",

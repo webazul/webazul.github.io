@@ -14,15 +14,15 @@ function HomePage() {
     <>
       <SEO
         title="WebAzul — Software Group"
-        description="Grupo de software português. Produtos SaaS que simplificam a gestão de negócios: WebGym, WebAgenda, WebScan, WebContas."
+        description="Grupo de software português. Produtos SaaS que simplificam a gestão de negócios: WebGym, WebAgenda, WebPaper, WebContas."
         keywords="software Portugal, SaaS, gestão ginásios, agendamentos online, digitalização documentos, contabilidade, WebAzul"
         url="https://webazul.pt/"
         image="https://webazul.pt/webazul-white.png"
         type="website"
       />
       <HeroSection />
-      <StatsSection />
       <ProductsSection />
+      <StatsSection />
       <ContactForm />
       <Footer />
       <CookieConsent />

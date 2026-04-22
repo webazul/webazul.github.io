@@ -1,26 +1,34 @@
 import { useTranslation } from 'react-i18next'
-import { FaDumbbell, FaUserAlt, FaCalendarCheck, FaCamera, FaFileInvoice, FaArrowRight, FaTable } from 'react-icons/fa'
+import { FaDumbbell, FaUserAlt, FaCalendarCheck, FaFileAlt, FaFileInvoice, FaArrowRight, FaTable, FaGlobe } from 'react-icons/fa'
 import './ProductsSection.css'
 
 const productIcons = {
-  webgym: FaDumbbell,
-  webgympersonal: FaUserAlt,
+  webgym: null, // uses image
+  webgympersonal: null, // uses image
   webagenda: FaCalendarCheck,
-  webscan: FaCamera,
+  webpaper: null, // uses image
   webcontas: FaFileInvoice,
   datun: FaTable,
+}
+
+const productImages = {
+  webgym: '/webgym.png',
+  webgympersonal: '/webgym.png',
+  webpaper: '/webpaper.png',
 }
 
 const productColors = {
   webgym: '#6366f1',
   webgympersonal: '#0d9488',
   webagenda: '#8b5cf6',
-  webscan: '#3b82f6',
+  webpaper: '#3b82f6',
   webcontas: '#f59e0b',
   datun: '#059669',
 }
 
-const productKeys = ['webgym', 'webgympersonal', 'webagenda', 'webscan', 'webcontas', 'datun']
+const globalProducts = new Set(['webpaper', 'datun'])
+
+const productKeys = ['webgym', 'webagenda', 'datun', 'webpaper', 'webgympersonal', 'webcontas']
 
 function ProductsSection() {
   const { t } = useTranslation()
@@ -36,6 +44,8 @@ function ProductsSection() {
             const color = productColors[key]
             const url = t(`products.items.${key}.url`)
             const hasUrl = url && url !== '#'
+            const isComingSoon = url === '#'
+            const isGlobal = globalProducts.has(key)
 
             return (
               <a
@@ -43,17 +53,28 @@ function ProductsSection() {
                 href={hasUrl ? url : undefined}
                 target={hasUrl ? '_blank' : undefined}
                 rel={hasUrl ? 'noopener noreferrer' : undefined}
-                className={`product-card ${!hasUrl ? 'product-card--disabled' : ''}`}
+                className={`product-card ${isComingSoon ? 'product-card--disabled' : ''}`}
               >
                 <div className="product-card-header">
-                  <div className="product-icon" style={{ background: `${color}12`, color }}>
-                    <Icon />
-                  </div>
-                  {hasUrl ? (
-                    <FaArrowRight className="product-arrow" style={{ color }} />
+                  {productImages[key] ? (
+                    <div className="product-icon" style={{ padding: 0, overflow: 'hidden' }}>
+                      <img src={productImages[key]} alt={key} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit' }} />
+                    </div>
                   ) : (
-                    <span className="product-soon">{t('products.comingSoon')}</span>
+                    <div className="product-icon" style={{ background: `${color}12`, color }}>
+                      <Icon />
+                    </div>
                   )}
+                  <div className="product-header-badges">
+                    {isGlobal && (
+                      <span className="product-global"><FaGlobe /> Global</span>
+                    )}
+                    {hasUrl ? (
+                      <FaArrowRight className="product-arrow" style={{ color }} />
+                    ) : isComingSoon ? (
+                      <span className="product-soon">{t('products.comingSoon')}</span>
+                    ) : null}
+                  </div>
                 </div>
                 <h3 className="product-name">{t(`products.items.${key}.name`)}</h3>
                 <p className="product-description">{t(`products.items.${key}.description`)}</p>

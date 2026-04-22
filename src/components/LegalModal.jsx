@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import './LegalModal.css'
 import { FaTimes } from 'react-icons/fa'
 
@@ -41,7 +42,7 @@ function LegalModal({ isOpen, onClose, type }) {
               <ul>
                 <li><strong>Dados de identificação:</strong> Nome, email</li>
                 <li><strong>Dados técnicos:</strong> Endereço IP, tipo de navegador, dados de navegação</li>
-                <li><strong>Dados de utilização:</strong> Informações de uso dos nossos produtos (WebGym, WebGym Personal, WebAgenda, WebScan, WebContas, Datun AI)</li>
+                <li><strong>Dados de utilização:</strong> Informações de uso dos nossos produtos (WebGym, WebGym Personal, WebAgenda, WebPaper, WebContas, Datun AI)</li>
               </ul>
 
               <h3>3. Finalidades do Tratamento</h3>
@@ -95,7 +96,7 @@ function LegalModal({ isOpen, onClose, type }) {
               NIF 518109739</p>
 
               <h3>2. Objeto</h3>
-              <p>Os presentes termos regulam o acesso e utilização dos produtos de software desenvolvidos pela WebAzul, nomeadamente WebGym, WebGym Personal, WebAgenda, WebScan, WebContas e Datun AI.</p>
+              <p>Os presentes termos regulam o acesso e utilização dos produtos de software desenvolvidos pela WebAzul, nomeadamente WebGym, WebGym Personal, WebAgenda, WebPaper, WebContas e Datun AI.</p>
 
               <h3>3. Acesso aos Produtos</h3>
               <p><strong>3.1.</strong> O acesso a cada produto é regido pelos termos específicos de cada plataforma.</p>
@@ -163,7 +164,7 @@ function LegalModal({ isOpen, onClose, type }) {
 
   const { title, content } = getContent()
 
-  return (
+  return createPortal(
     <div className="legal-modal-backdrop" onClick={handleBackdropClick}>
       <div className="legal-modal">
         <div className="legal-modal-header">
@@ -179,7 +180,8 @@ function LegalModal({ isOpen, onClose, type }) {
           <button className="legal-modal-btn" onClick={onClose}>Fechar</button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }
 

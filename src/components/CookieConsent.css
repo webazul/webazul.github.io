@@ -7,18 +7,17 @@
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  background: rgba(15, 23, 42, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
   padding: 1rem 1.5rem;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  animation: slideUp 0.4s ease-out;
-  max-width: 550px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  animation: cookieSlideUp 0.4s ease-out;
+  max-width: 480px;
   width: calc(100% - 2rem);
 }
 
-@keyframes slideUp {
+@keyframes cookieSlideUp {
   from {
     opacity: 0;
     transform: translateX(-50%) translateY(20px);
@@ -32,7 +31,7 @@
 .cookie-text {
   font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
-  color: #94a3b8;
+  color: #475569;
   margin: 0;
   line-height: 1.5;
 }
