@@ -1,58 +1,32 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="1200" height="630" fill="#000000"/>
-
-  <!-- Gradient Orbs -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
   <defs>
-    <radialGradient id="blueGradient" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.6" />
-      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:0" />
-    </radialGradient>
-    <radialGradient id="cyanGradient" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.4" />
-      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0" />
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050510"></stop>
+      <stop offset="40%" stop-color="#0a0f2e"></stop>
+      <stop offset="100%" stop-color="#0c1445"></stop>
+    </linearGradient>
+    <linearGradient id="sg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1648"></stop>
+      <stop offset="100%" stop-color="#2563eb"></stop>
+    </linearGradient>
+    <linearGradient id="sg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb"></stop>
+      <stop offset="100%" stop-color="#60a5fa"></stop>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.3"></stop>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"></stop>
     </radialGradient>
   </defs>
-
-  <circle cx="200" cy="150" r="200" fill="url(#blueGradient)"/>
-  <circle cx="1000" cy="500" r="250" fill="url(#cyanGradient)"/>
-
-  <!-- Brand -->
-  <text x="100" y="200" font-family="'Inter', sans-serif" font-weight="800" font-size="90" fill="#ffffff">
-    web<tspan fill="#2563eb">azul</tspan>
-  </text>
-  <text x="100" y="240" font-family="'Inter', sans-serif" font-weight="500" font-size="24" fill="#9ca3af" letter-spacing="4">
-    CREATIVE STUDIO
-  </text>
-
-  <!-- Subtitle -->
-  <text x="100" y="320" font-family="'Inter', sans-serif" font-weight="600" font-size="36" fill="#ffffff">
-    Soluções SaaS para o seu Negócio
-  </text>
-
-  <!-- Products -->
-  <g transform="translate(100, 380)">
-    <!-- AutoAzul -->
-    <rect x="0" y="0" width="280" height="100" rx="12" fill="rgba(37, 99, 235, 0.1)" stroke="#2563eb" stroke-width="2"/>
-    <text x="20" y="40" font-family="'Inter', sans-serif" font-weight="700" font-size="28" fill="#2563eb">
-      AutoAzul
-    </text>
-    <text x="20" y="70" font-family="'Inter', sans-serif" font-weight="400" font-size="16" fill="#9ca3af">
-      Gestão de Automóveis
-    </text>
-
-    <!-- ImobiAzul -->
-    <rect x="300" y="0" width="280" height="100" rx="12" fill="rgba(37, 99, 235, 0.1)" stroke="#2563eb" stroke-width="2"/>
-    <text x="320" y="40" font-family="'Inter', sans-serif" font-weight="700" font-size="28" fill="#2563eb">
-      ImobiAzul
-    </text>
-    <text x="320" y="70" font-family="'Inter', sans-serif" font-weight="400" font-size="16" fill="#9ca3af">
-      Gestão Imobiliária
-    </text>
+  <rect width="1200" height="630" fill="url(#bg)"></rect>
+  <ellipse cx="600" cy="315" rx="500" ry="280" fill="url(#glow)"></ellipse>
+  
+  <g transform="translate(420 180) scale(4.7)">
+    <rect x="6" y="14" width="10" height="36" rx="2" fill="url(#sg1)"></rect>
+    <rect x="20" y="22" width="10" height="28" rx="2" fill="#2563eb" opacity="0.85"></rect>
+    <rect x="34" y="22" width="10" height="28" rx="2" fill="#2563eb" opacity="0.85"></rect>
+    <rect x="48" y="14" width="10" height="36" rx="2" fill="url(#sg2)"></rect>
   </g>
-
-  <!-- CTA -->
-  <text x="100" y="550" font-family="'Inter', sans-serif" font-weight="500" font-size="20" fill="#9ca3af">
-    🌐 webazul.pt  |  📱 (+351) 910 084 099  |  🇵🇹 Portugal • 🇧🇷 Brasil
-  </text>
+  <text x="600" y="490" font-family="&#39;Space Grotesk&#39;, sans-serif" font-weight="600" font-size="76" fill="#ffffff" letter-spacing="-2" text-anchor="middle">webazul</text>
+  <text x="600" y="540" font-family="&#39;Space Grotesk&#39;, sans-serif" font-weight="500" font-size="22" fill="rgba(255,255,255,0.55)" letter-spacing="8" text-anchor="middle">SOFTWARE GROUP</text>
 </svg>

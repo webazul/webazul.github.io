@@ -5,7 +5,7 @@ import './ProductsSection.css'
 const productIcons = {
   webgym: null, // uses image
   webgympersonal: null, // uses image
-  webagenda: FaCalendarCheck,
+  webagenda: null, // uses image
   webpaper: null, // uses image
   webcontas: FaFileInvoice,
   datun: FaTable,
@@ -15,6 +15,7 @@ const productImages = {
   webgym: '/webgym.png',
   webgympersonal: '/webgym.png',
   webpaper: '/webpaper.png',
+  webagenda: '/webagenda.png',
 }
 
 const productColors = {
@@ -27,6 +28,13 @@ const productColors = {
 }
 
 const globalProducts = new Set(['webpaper', 'datun'])
+
+const productRegions = {
+  webgym: ['🇵🇹 Portugal'],
+  webgympersonal: ['🇵🇹 Portugal'],
+  webagenda: ['🇪🇺 Europa'],
+  webcontas: ['🇵🇹 Portugal'],
+}
 
 const productKeys = ['webgym', 'webagenda', 'datun', 'webpaper', 'webgympersonal', 'webcontas']
 
@@ -46,6 +54,7 @@ function ProductsSection() {
             const hasUrl = url && url !== '#'
             const isComingSoon = url === '#'
             const isGlobal = globalProducts.has(key)
+            const regions = productRegions[key]
 
             return (
               <a
@@ -69,6 +78,9 @@ function ProductsSection() {
                     {isGlobal && (
                       <span className="product-global"><FaGlobe /> Global</span>
                     )}
+                    {regions && regions.map((region, i) => (
+                      <span key={i} className="product-global">{region}</span>
+                    ))}
                     {hasUrl ? (
                       <FaArrowRight className="product-arrow" style={{ color }} />
                     ) : isComingSoon ? (

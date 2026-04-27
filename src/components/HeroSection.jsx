@@ -31,7 +31,6 @@ function HeroSection() {
           <div className="hero-brand">
             <img src="./webazul-white.png" alt="WebAzul" className="brand-logo-image" />
           </div>
-          <p className="hero-tagline">{t('hero.tagline')}</p>
         </div>
       </div>
 

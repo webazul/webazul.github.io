@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" fill="none">
+  <defs>
+    <linearGradient id="sg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1648"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="sg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(110 10) scale(1.25)">
+    <rect x="6" y="14" width="10" height="36" rx="2" fill="url(#sg1)"/>
+    <rect x="20" y="22" width="10" height="28" rx="2" fill="#2563eb" opacity="0.85"/>
+    <rect x="34" y="22" width="10" height="28" rx="2" fill="#2563eb" opacity="0.85"/>
+    <rect x="48" y="14" width="10" height="36" rx="2" fill="url(#sg2)"/>
+  </g>
+  <text x="150" y="120" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="600" font-size="42" fill="#ffffff" letter-spacing="-1" text-anchor="middle">webazul</text>
+  <text x="150" y="150" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="500" font-size="12" fill="rgba(255,255,255,0.55)" letter-spacing="6" text-anchor="middle">SOFTWARE GROUP</text>
+</svg>

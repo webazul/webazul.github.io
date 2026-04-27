@@ -40,7 +40,7 @@
 }
 
 .brand-logo-image {
-  height: 140px;
+  height: 220px;
   width: auto;
   object-fit: contain;
 }
@@ -76,7 +76,7 @@
 
 @media (max-width: 768px) {
   .brand-logo-image {
-    height: 100px;
+    height: 160px;
   }
 
   .hero-tagline {
@@ -88,7 +88,7 @@
 
 @media (max-width: 480px) {
   .brand-logo-image {
-    height: 80px;
+    height: 120px;
   }
 
   .hero-tagline {
