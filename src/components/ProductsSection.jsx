@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { FaDumbbell, FaUserAlt, FaCalendarCheck, FaFileAlt, FaFileInvoice, FaArrowRight, FaTable, FaGlobe } from 'react-icons/fa'
+import { FaDumbbell, FaUserAlt, FaCalendarCheck, FaFileAlt, FaFileInvoice, FaArrowRight, FaGlobe } from 'react-icons/fa'
 import './ProductsSection.css'
 
 const productIcons = {
@@ -8,7 +8,7 @@ const productIcons = {
   webagenda: null, // uses image
   webpaper: null, // uses image
   webcontas: FaFileInvoice,
-  datun: FaTable,
+  datun: null, // uses image
 }
 
 const productImages = {
@@ -16,6 +16,7 @@ const productImages = {
   webgympersonal: '/webgym.png',
   webpaper: '/webpaper.png',
   webagenda: '/webagenda.png',
+  datun: '/datun.png',
 }
 
 const productColors = {
@@ -36,7 +37,7 @@ const productRegions = {
   webcontas: ['🇵🇹 Portugal'],
 }
 
-const productKeys = ['webgym', 'webagenda', 'datun', 'webpaper', 'webgympersonal', 'webcontas']
+const productKeys = ['webgym', 'webagenda', 'webpaper', 'datun', 'webgympersonal', 'webcontas']
 
 function ProductsSection() {
   const { t } = useTranslation()
