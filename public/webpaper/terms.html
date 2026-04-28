@@ -4,223 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WebPaper - Terms of Service</title>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NDFVWZMB');</script>
-<!-- End Google Tag Manager -->
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RBGNLH2FKC"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RBGNLH2FKC');
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var lang = params.get('lang');
+    if (!lang) {
+      var nav = navigator.language || navigator.userLanguage || 'en';
+      lang = nav.split('-')[0].toLowerCase();
+    }
+    var supported = ['pt', 'es', 'fr', 'de'];
+    if (supported.indexOf(lang) !== -1) {
+      window.location.replace(lang + '-terms.html');
+    } else {
+      window.location.replace('en-terms.html');
+    }
+  })();
 </script>
-<!-- End Google Analytics 4 -->
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; background: #fafafa; line-height: 1.7; }
-  .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
-  h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: #1a1a2e; }
-  .updated { font-size: 14px; color: #888; margin-bottom: 32px; }
-  h2 { font-size: 20px; font-weight: 600; margin: 32px 0 12px; color: #1a1a2e; }
-  h3 { font-size: 16px; font-weight: 600; margin: 20px 0 8px; }
-  p, li { font-size: 15px; color: #444; margin-bottom: 12px; }
-  ul { padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  a { color: #6366F1; }
-  .highlight { background: #f0f0ff; border-left: 3px solid #6366F1; padding: 12px 16px; border-radius: 6px; margin: 16px 0; }
-  .highlight p { margin: 0; }
-  .warning { background: #fff8f0; border-left: 3px solid #f59e0b; padding: 12px 16px; border-radius: 6px; margin: 16px 0; }
-  .warning p { margin: 0; }
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
-  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e5e5e5; }
-  th { background: #f5f5ff; font-weight: 600; color: #1a1a2e; }
-  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-size: 13px; color: #999; }
-</style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDFVWZMB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div class="container">
-
-<h1>Terms of Service</h1>
-<p class="updated">Last updated: April 28, 2026</p>
-
-<div class="highlight">
-<p><strong>Summary:</strong> WebPaper is a document scanning and signing app. You own your documents. Use the app responsibly and legally. Subscriptions are managed by Apple/Google. Free users' files are stored locally only &mdash; we cannot recover them if lost.</p>
-</div>
-
-<h2>1. Acceptance of Terms</h2>
-<p>By downloading, installing, or using WebPaper ("the App"), you agree to these Terms of Service ("Terms"). If you do not agree, do not use the App. These Terms constitute a legally binding agreement between you and <strong>WebAzul</strong> ("we", "us", "our"), a company registered in Portugal.</p>
-
-<h2>2. Description of Service</h2>
-<p>WebPaper is a mobile application that provides:</p>
-<ul>
-  <li>Document scanning using your device's camera with perspective correction</li>
-  <li>PDF and image file importing and organization into collections</li>
-  <li>Digital signature and initials placement on documents</li>
-  <li>PDF export and sharing with various quality options</li>
-  <li>Local and cloud document storage depending on your plan</li>
-</ul>
-
-<h2>3. Account Registration</h2>
-<ul>
-  <li>You must be at least 13 years old (16 in the EEA/UK) to create an account</li>
-  <li>You must provide a valid email address</li>
-  <li>You are responsible for maintaining the confidentiality of your account credentials</li>
-  <li>You are responsible for all activity that occurs under your account</li>
-  <li>You must notify us immediately at <a href="mailto:contacto@webazul.pt">contacto@webazul.pt</a> if you suspect unauthorized use of your account</li>
-</ul>
-
-<h2>4. Plans and Storage</h2>
-
-<h3>4.1 Free Plan</h3>
-<ul>
-  <li>Unlimited document scanning and digital signing</li>
-  <li>Documents stored <strong>locally on your device only</strong></li>
-  <li>PDF exports include a small "Generated by WebPaper" watermark</li>
-  <li>Advertisements displayed within the app (via Google AdMob)</li>
-</ul>
-
-<div class="warning">
-<p><strong>Important &mdash; Free Plan Data Loss Risk:</strong> With the Free plan, all your documents, scans, and signatures are stored exclusively on your device. <strong>If you uninstall the app, factory-reset your device, or the device is lost/damaged, all documents will be permanently and irreversibly lost.</strong> We do not have copies of your local files and cannot recover them under any circumstances. We strongly recommend regularly exporting important documents or upgrading to Premium for automatic cloud backup.</p>
-</div>
-
-<h3>4.2 Premium Plan</h3>
-<ul>
-  <li>All Free plan features, without advertisements</li>
-  <li>Automatic cloud backup to Google Cloud Storage (encrypted)</li>
-  <li>Sync documents across multiple devices logged into the same account</li>
-  <li>PDF exports without watermark</li>
-  <li>Up to 5 GB of cloud storage</li>
-  <li>Annual subscription, billed through Apple App Store or Google Play Store</li>
-</ul>
-
-<h3>4.3 Grandfathered Users</h3>
-<p>Users who purchased storage add-ons before the subscription model was introduced retain permanent Premium access at no additional cost.</p>
-
-<h2>5. Subscriptions, Payments, and Cancellation</h2>
-<ul>
-  <li>Premium subscriptions are billed <strong>annually</strong> and managed entirely by Apple (App Store) or Google (Play Store)</li>
-  <li>Payment is charged to your Apple ID or Google account at the time of purchase confirmation</li>
-  <li>Subscriptions <strong>automatically renew</strong> unless cancelled at least 24 hours before the end of the current billing period</li>
-  <li>You can manage or cancel your subscription at any time in your device's account settings:
-    <ul>
-      <li><strong>iOS:</strong> Settings &gt; Apple ID &gt; Subscriptions</li>
-      <li><strong>Android:</strong> Google Play Store &gt; Subscriptions</li>
-    </ul>
-  </li>
-  <li>Refunds are handled exclusively by Apple or Google according to their respective refund policies. WebPaper does not process refunds directly</li>
-  <li>Upon subscription expiry, your existing cloud documents remain accessible (read-only), but you cannot upload new documents to the cloud. New scans will be stored locally</li>
-</ul>
-
-<h2>6. Your Content and Intellectual Property</h2>
-<ul>
-  <li>You retain <strong>full and exclusive ownership</strong> of all documents, images, signatures, and other content you create, import, or process using the App</li>
-  <li>We do not claim any intellectual property rights over your content</li>
-  <li>We do not access, read, analyze, monetize, or use your document contents for any purpose other than storage and delivery to you</li>
-  <li>You are solely responsible for the legality, accuracy, and appropriateness of the content you process</li>
-  <li>You must not use the App to scan, sign, forge, or distribute fraudulent, illegal, or unauthorized documents</li>
-</ul>
-
-<h2>7. Digital Signatures &mdash; Legal Disclaimer</h2>
-<div class="warning">
-<p><strong>Important:</strong> Digital signatures created in WebPaper are visual image overlays placed on documents. They are <strong>not</strong> qualified electronic signatures (QES), advanced electronic signatures (AdES), or cryptographic digital signatures as defined by:</p>
-</div>
-<ul>
-  <li><strong>EU:</strong> eIDAS Regulation (EU) No 910/2014</li>
-  <li><strong>USA:</strong> ESIGN Act (15 U.S.C. &sect;7001) and UETA</li>
-  <li><strong>Brazil:</strong> Medida Provis&oacute;ria 2.200-2/2001 (ICP-Brasil)</li>
-</ul>
-<p>WebPaper does not:</p>
-<ul>
-  <li>Verify the identity of signers</li>
-  <li>Issue digital certificates</li>
-  <li>Provide tamper-evidence or non-repudiation</li>
-  <li>Guarantee the legal validity or enforceability of any signature</li>
-</ul>
-<p>The legal acceptance of signatures created with WebPaper depends on the jurisdiction, the type of document, and the agreement between the parties. For legally binding signatures, consult a qualified legal professional or use a certified electronic signature provider.</p>
-
-<h2>8. Acceptable Use</h2>
-<p>You agree not to:</p>
-<ul>
-  <li>Use the App for fraudulent purposes, including forging or falsifying signatures or documents</li>
-  <li>Scan, store, or distribute copyrighted material without authorization</li>
-  <li>Scan, store, or distribute illegal content of any kind</li>
-  <li>Attempt to circumvent subscription restrictions, ad display, or any technical protection measures</li>
-  <li>Reverse engineer, decompile, disassemble, or modify the App or its components</li>
-  <li>Use the App in any way that violates applicable local, national, or international laws</li>
-  <li>Attempt to access other users' data or accounts</li>
-  <li>Use automated systems (bots, scrapers) to interact with the App</li>
-</ul>
-<p>Violation of these terms may result in immediate suspension or termination of your account without notice.</p>
-
-<h2>9. Data and Privacy</h2>
-<p>Your use of the App is also governed by our <a href="privacy.html">Privacy Policy</a>, which describes how we collect, use, store, and protect your data. By using the App, you acknowledge that you have read and understood the Privacy Policy.</p>
-
-<h2>10. Intellectual Property</h2>
-<p>The App, including its source code, design, user interface, branding, icons, and the "WebPaper" name and logo, are the exclusive property of WebAzul and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, sell, or create derivative works based on the App without prior written permission.</p>
-
-<h2>11. Service Availability and Modifications</h2>
-<ul>
-  <li>We strive to maintain the App's availability but do not guarantee uninterrupted, error-free service</li>
-  <li>We may update, modify, add, or remove features at any time, with or without notice</li>
-  <li>Cloud storage availability depends on third-party infrastructure (Google Cloud Platform) and may be subject to their service interruptions</li>
-  <li>We reserve the right to discontinue the App with reasonable prior notice (minimum 90 days) to allow users to export their data</li>
-</ul>
-
-<h2>12. Limitation of Liability</h2>
-<p>To the maximum extent permitted by applicable law:</p>
-<ul>
-  <li>The App is provided <strong>"as is"</strong> and <strong>"as available"</strong> without warranties of any kind, express or implied, including warranties of merchantability, fitness for a particular purpose, or non-infringement</li>
-  <li>We are <strong>not liable for any data loss</strong> on your device, including locally stored documents, scans, or signatures that are lost due to device failure, app uninstallation, or any other cause</li>
-  <li>We are <strong>not liable for the legal validity, enforceability, or acceptance</strong> of digital signatures created with the App</li>
-  <li>Our total aggregate liability for any claim arising from your use of the App shall not exceed the amount you actually paid for the App in the 12 months preceding the event giving rise to the claim</li>
-  <li>In no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, business opportunities, or goodwill</li>
-</ul>
-<p>These limitations do not apply where prohibited by law. Nothing in these Terms excludes or limits our liability for fraud, gross negligence, death, or personal injury caused by our negligence.</p>
-
-<h2>13. Indemnification</h2>
-<p>You agree to indemnify, defend, and hold harmless WebAzul, its officers, employees, and agents from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from your use of the App, your violation of these Terms, or your violation of any third-party rights.</p>
-
-<h2>14. Termination</h2>
-<ul>
-  <li>You may stop using the App and delete your account at any time through the App's settings</li>
-  <li>We may suspend or terminate accounts that violate these Terms, with or without prior notice depending on the severity of the violation</li>
-  <li>Upon account deletion, all cloud-stored data will be permanently deleted within 30 days</li>
-  <li>Local documents on your device are not affected by account deletion or app removal &mdash; they remain until you manually delete them or uninstall the App</li>
-  <li>Sections 6 (Your Content), 7 (Signatures Disclaimer), 12 (Limitation of Liability), and 13 (Indemnification) survive termination</li>
-</ul>
-
-<h2>15. Governing Law and Dispute Resolution</h2>
-<p>These Terms are governed by and construed in accordance with the laws of <strong>Portugal</strong>. Any disputes shall be submitted to the courts of Portugal, without prejudice to:</p>
-<ul>
-  <li>Your right as an EU/EEA consumer to bring proceedings in the courts of your country of residence</li>
-  <li>Mandatory consumer protection laws of your country of residence that provide greater protection</li>
-  <li>The European Commission's Online Dispute Resolution platform: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr</a></li>
-</ul>
-
-<h2>16. Severability</h2>
-<p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect. The invalid provision shall be replaced by a valid provision that most closely achieves the original intent.</p>
-
-<h2>17. Changes to These Terms</h2>
-<p>We may update these Terms from time to time. Material changes will be communicated through the App (in-app notification) or by email at least 30 days before taking effect. The "Last updated" date at the top reflects the most recent revision. Continued use of the App after changes take effect constitutes acceptance of the updated Terms.</p>
-
-<h2>18. Contact</h2>
-<p>For questions about these Terms or any legal matters:</p>
-<p><strong>Email:</strong> <a href="mailto:contacto@webazul.pt">contacto@webazul.pt</a><br>
-<strong>Entity:</strong> WebAzul<br>
-<strong>Country:</strong> Portugal</p>
-
-<footer>
-  <p>&copy; 2026 WebPaper by WebAzul. All rights reserved.</p>
-</footer>
-
-</div>
+<p style="text-align:center;padding:40px;font-family:sans-serif;color:#888">Redirecting...</p>
 </body>
 </html>
