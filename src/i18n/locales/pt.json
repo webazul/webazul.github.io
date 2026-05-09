@@ -17,11 +17,11 @@
         "tags": ["Ginásios", "Apps Mobile", "Check-in Digital"],
         "url": "https://webgym.pt"
       },
-      "webgympersonal": {
-        "name": "WebGym Personal",
-        "description": "App para personal trainers e os seus clientes. Sessões, progresso, medições corporais e pagamentos.",
-        "tags": ["Personal Trainers", "Fitness", "Progresso"],
-        "url": "#"
+      "arcanuns": {
+        "name": "Arcanuns",
+        "description": "Numerologia pitagórica. Descubra o propósito da sua vida, traços de personalidade e destino através do poder dos números.",
+        "tags": ["Numerologia", "Autoconhecimento", "Apps Mobile"],
+        "url": "https://arcanuns.com"
       },
       "webagenda": {
         "name": "WebAgenda",
@@ -88,5 +88,96 @@
     "text": "Este site utiliza cookies essenciais para o seu funcionamento.",
     "accept": "Aceitar",
     "privacyPolicy": "Política de Privacidade"
+  },
+  "briefing": {
+    "loading": "A carregar...",
+    "notFound": "Briefing não encontrado",
+    "loadError": "Erro ao carregar o briefing",
+    "errorContact": "Verifique o link ou contacte-nos em contacto@webazul.pt",
+    "title": "Briefing do Projeto",
+    "welcome": "Olá {{name}}! Preencha as informações abaixo para podermos criar a sua landing page.",
+    "successTitle": "Briefing enviado com sucesso!",
+    "successMessage": "Obrigado! Vamos analisar as suas respostas e entraremos em contacto em breve.",
+    "error": "Erro ao enviar. Tente novamente.",
+    "back": "Voltar",
+    "next": "Seguinte",
+    "submit": "Enviar Briefing",
+    "submitting": "A enviar...",
+    "yes": "Sim",
+    "no": "Não",
+    "needOne": "Preciso de um",
+    "useStock": "Usar imagens de stock",
+    "uploading": "A enviar...",
+    "uploadError": "Erro ao enviar ficheiro. Tente novamente.",
+    "dropzoneText": "Clique para enviar ficheiros",
+    "steps": {
+      "business": "O Negócio",
+      "product": "O Produto",
+      "identity": "Identidade Visual",
+      "content": "Conteúdo",
+      "technical": "Detalhes Técnicos"
+    },
+    "businessDesc": "Conte-nos sobre o seu negócio para entendermos o contexto.",
+    "productDesc": "Informações sobre o produto que vai vender na landing page.",
+    "identityDesc": "Ajude-nos a entender a identidade visual que deseja para o projeto.",
+    "contentDesc": "Informações sobre o conteúdo que será utilizado no site.",
+    "technicalDesc": "Detalhes técnicos e preferências para a construção do projeto.",
+    "fields": {
+      "businessName": "Nome do negócio",
+      "businessDescription": "Descrição do negócio",
+      "targetAudience": "Público-alvo",
+      "currentWebsite": "Website atual (se tiver)",
+      "productName": "Nome do produto",
+      "productPrice": "Preço",
+      "productCurrency": "Moeda",
+      "productDescription": "Descrição do produto",
+      "productPhotos": "Fotos do produto (links)",
+      "logo": "Logótipo",
+      "preferredColors": "Cores preferidas",
+      "referenceUrls": "Sites de referência",
+      "communicationTone": "Tom de comunicação",
+      "hasContent": "Textos para o site",
+      "hasProfessionalPhotos": "Fotos profissionais",
+      "socialMedia": "Redes sociais",
+      "assets": "Outros ficheiros (fotos, documentos, etc.)",
+      "hasTestimonials": "Testemunhos de clientes",
+      "hasDomain": "Já tem domínio?",
+      "domainName": "Nome do domínio",
+      "languages": "Idiomas do site",
+      "deadline": "Prazo desejado",
+      "notes": "Notas adicionais"
+    },
+    "placeholders": {
+      "businessName": "Ex: Padaria do João",
+      "businessDescription": "O que faz o seu negócio? Quais os principais serviços/produtos?",
+      "targetAudience": "Quem são os seus clientes ideais? Idade, localização, interesses...",
+      "productName": "Ex: Curso de Marketing Digital",
+      "productDescription": "Descreva o produto: benefícios, o que inclui, para quem é...",
+      "productPhotos": "Cole aqui os links das fotos (Google Drive, Dropbox, etc.)",
+      "logoUrl": "Link para o ficheiro do logótipo (Google Drive, Dropbox, etc.)",
+      "preferredColors": "Ex: Azul e branco, tons quentes, etc.",
+      "referenceUrls": "Cole links de sites que gosta do visual (um por linha)",
+      "socialMedia": "Cole os links das suas redes sociais (um por linha)",
+      "notes": "Algo mais que queira partilhar connosco?"
+    },
+    "tones": {
+      "formal": "Formal",
+      "informal": "Informal",
+      "friendly": "Amigável",
+      "professional": "Profissional"
+    },
+    "contentOptions": {
+      "ready": "Tenho textos prontos",
+      "partial": "Tenho parte dos textos",
+      "needHelp": "Preciso de ajuda com os textos"
+    },
+    "deadlineOptions": {
+      "select": "Selecione um prazo",
+      "asap": "O mais rápido possível",
+      "2weeks": "2 semanas",
+      "1month": "1 mês",
+      "3months": "3 meses",
+      "flexible": "Flexível"
+    }
   }
 }

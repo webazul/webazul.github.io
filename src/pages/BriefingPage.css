@@ -1,0 +1,650 @@
+.briefing-page {
+  min-height: 100vh;
+  background: #f8f9fb;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.briefing-header {
+  background: #000;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.briefing-header-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.briefing-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.briefing-logo-img {
+  height: 44px;
+  width: auto;
+}
+
+.briefing-lang-switcher {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.briefing-lang-switcher button {
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #aaa;
+  background: transparent;
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.briefing-lang-switcher button.active {
+  color: #fff;
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+/* Main */
+.briefing-main {
+  flex: 1;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* Welcome */
+.briefing-welcome {
+  margin-bottom: 2rem;
+}
+
+.briefing-welcome h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.briefing-subtitle {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Progress */
+.briefing-progress {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25rem;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.briefing-progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 80px;
+  cursor: pointer;
+  position: relative;
+}
+
+.briefing-progress-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: calc(50% + 18px);
+  width: calc(100% - 36px);
+  height: 2px;
+  background: #e2e8f0;
+  transition: background 0.3s;
+}
+
+.briefing-progress-step.done:not(:last-child)::after {
+  background: #2563eb;
+}
+
+.briefing-progress-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: #e2e8f0;
+  color: #94a3b8;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.briefing-progress-step.active .briefing-progress-dot {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.briefing-progress-step.done .briefing-progress-dot {
+  background: #2563eb;
+  color: #fff;
+}
+
+.briefing-progress-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #94a3b8;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.briefing-progress-step.active .briefing-progress-label {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.briefing-progress-step.done .briefing-progress-label {
+  color: #0f172a;
+}
+
+/* Form Card */
+.briefing-form-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e8ecf1;
+}
+
+/* Section */
+.briefing-section h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.briefing-section-desc {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Fields */
+.briefing-field {
+  margin-bottom: 1.25rem;
+}
+
+.briefing-field label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.4rem;
+}
+
+.briefing-field input[type="text"],
+.briefing-field input[type="url"],
+.briefing-field textarea,
+.briefing-field select {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: #0f172a;
+  background: #f8fafc;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.briefing-field input:focus,
+.briefing-field textarea:focus,
+.briefing-field select:focus {
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.briefing-field textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.briefing-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Radio & Checkbox */
+.briefing-radio-group,
+.briefing-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.briefing-radio,
+.briefing-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #f8fafc;
+  position: relative;
+}
+
+.briefing-radio:hover,
+.briefing-checkbox:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.briefing-radio input,
+.briefing-checkbox input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.briefing-radio:has(input:checked),
+.briefing-checkbox:has(input:checked) {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.briefing-radio span,
+.briefing-checkbox span {
+  font-size: 0.85rem;
+  color: #334155;
+  font-weight: 500;
+}
+
+.briefing-radio:has(input:checked) span,
+.briefing-checkbox:has(input:checked) span {
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+/* Actions */
+.briefing-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e8ecf1;
+}
+
+.briefing-btn-back,
+.briefing-btn-next,
+.briefing-btn-submit {
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.briefing-btn-back {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.briefing-btn-back:hover {
+  background: #e2e8f0;
+}
+
+.briefing-btn-next {
+  background: #0f172a;
+  color: #fff;
+  margin-left: auto;
+}
+
+.briefing-btn-next:hover {
+  background: #1e293b;
+}
+
+.briefing-btn-submit {
+  background: #2563eb;
+  color: #fff;
+  margin-left: auto;
+}
+
+.briefing-btn-submit:hover {
+  background: #1d4ed8;
+}
+
+.briefing-btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Loading */
+.briefing-loading,
+.briefing-error,
+.briefing-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.briefing-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.briefing-error-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fef2f2;
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.briefing-error h2 {
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.briefing-error p {
+  color: #64748b;
+}
+
+.briefing-success-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.briefing-success h2 {
+  font-size: 1.5rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.briefing-success p {
+  color: #64748b;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+/* File Upload / Dropzone */
+.briefing-dropzone {
+  border: 2px dashed #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #f8fafc;
+}
+
+.briefing-dropzone:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.briefing-dropzone.uploading {
+  border-color: #2563eb;
+  background: #eff6ff;
+  cursor: wait;
+}
+
+.briefing-dropzone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.briefing-dropzone-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.briefing-spinner-small {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #e2e8f0;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.briefing-file-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.briefing-file-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.8rem;
+}
+
+.briefing-file-thumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.briefing-file-icon {
+  font-size: 1.2rem;
+}
+
+.briefing-file-name {
+  color: #334155;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.briefing-file-remove {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  padding: 0;
+}
+
+.briefing-file-remove:hover {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* Footer */
+.briefing-footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  border-top: 1px solid #e8ecf1;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .briefing-header-content {
+    padding: 0 1rem;
+  }
+
+  .briefing-logo-img {
+    height: 34px;
+  }
+
+  .briefing-main {
+    padding: 1.25rem 0.75rem 3rem;
+  }
+
+  .briefing-welcome {
+    margin-bottom: 1.25rem;
+  }
+
+  .briefing-welcome h1 {
+    font-size: 1.3rem;
+  }
+
+  .briefing-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .briefing-form-card {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .briefing-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .briefing-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Progress - dots only, no labels */
+  .briefing-progress {
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .briefing-progress-label {
+    display: none;
+  }
+
+  .briefing-progress-dot {
+    width: 28px;
+    height: 28px;
+    font-size: 0.7rem;
+  }
+
+  .briefing-progress-step {
+    min-width: 50px;
+  }
+
+  .briefing-progress-step:not(:last-child)::after {
+    left: calc(50% + 12px);
+    width: calc(100% - 24px);
+  }
+
+  /* Radio/checkbox - stack vertically */
+  .briefing-radio-group,
+  .briefing-checkbox-group {
+    flex-direction: column;
+  }
+
+  .briefing-radio,
+  .briefing-checkbox {
+    width: 100%;
+  }
+
+  /* File upload */
+  .briefing-dropzone {
+    padding: 1rem;
+  }
+
+  .briefing-file-list {
+    flex-direction: column;
+  }
+
+  .briefing-file-item {
+    width: 100%;
+  }
+
+  .briefing-file-name {
+    max-width: calc(100% - 80px);
+  }
+
+  /* Actions */
+  .briefing-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .briefing-btn-back,
+  .briefing-btn-next,
+  .briefing-btn-submit {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}

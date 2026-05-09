@@ -4,7 +4,7 @@ import './ProductsSection.css'
 
 const productIcons = {
   webgym: null, // uses image
-  webgympersonal: null, // uses image
+  arcanuns: null, // uses image
   webagenda: null, // uses image
   webpaper: null, // uses image
   webcontas: FaFileInvoice,
@@ -13,7 +13,7 @@ const productIcons = {
 
 const productImages = {
   webgym: '/webgym.png',
-  webgympersonal: '/webgym.png',
+  arcanuns: '/assets/products/arcanuns-icon.png',
   webpaper: '/webpaper.png',
   webagenda: '/webagenda.png',
   datun: '/datun.png',
@@ -21,23 +21,22 @@ const productImages = {
 
 const productColors = {
   webgym: '#6366f1',
-  webgympersonal: '#0d9488',
+  arcanuns: '#6B7F39',
   webagenda: '#8b5cf6',
   webpaper: '#3b82f6',
   webcontas: '#f59e0b',
   datun: '#059669',
 }
 
-const globalProducts = new Set(['webpaper', 'datun'])
+const globalProducts = new Set(['webpaper', 'datun', 'arcanuns'])
 
 const productRegions = {
   webgym: ['🇵🇹 Portugal'],
-  webgympersonal: ['🇵🇹 Portugal'],
   webagenda: ['🇪🇺 Europa'],
   webcontas: ['🇵🇹 Portugal'],
 }
 
-const productKeys = ['webgym', 'webagenda', 'webpaper', 'datun', 'webgympersonal', 'webcontas']
+const productKeys = ['webgym', 'webagenda', 'webpaper', 'datun', 'arcanuns', 'webcontas']
 
 function ProductsSection() {
   const { t } = useTranslation()

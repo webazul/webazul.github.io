@@ -11,6 +11,8 @@ Modern and professional landing page for WebAzul Creative Studio, a Portuguese w
 - **Icons**: React Icons
 - **Build Tool**: Vite
 - **Deployment**: GitHub Actions → GitHub Pages
+- **Database**: Firestore (GCP project `webazul`, region `europe-west1`, free tier)
+- **Firebase**: SDK for client-side Firestore access (`src/firebase.js`)
 
 ## 📁 Project Structure
 ```
@@ -34,9 +36,16 @@ webazul.pt/
 │   │   ├── i18n.js           # i18next configuration
 │   │   └── locales/          # Translation files
 │   │       └── pt.json       # Portuguese (default)
-│   ├── App.jsx               # Main component
+│   ├── pages/
+│   │   ├── BriefingPage.jsx   # Client briefing form (lazy loaded)
+│   │   └── BriefingPage.css   # Briefing styles
+│   ├── firebase.js            # Firebase/Firestore config
+│   ├── App.jsx               # Main component + routing
 │   ├── App.css               # Global styles
 │   └── main.jsx              # Entry point
+├── scripts/
+│   └── create-briefing.js    # Script to create briefings in Firestore
+├── firestore.rules           # Firestore security rules
 ├── package.json              # Dependencies & scripts
 ├── vite.config.js           # Vite configuration
 └── .gitignore               # Git ignore rules
@@ -115,11 +124,38 @@ npm run typecheck   # Run TypeScript checks
 - Verification system with "Verificado" badges
 - Project metrics (duration, results)
 
+## 📝 Client Briefing System
+- **Route**: `/briefing/:id` — multi-step form for clients to fill project requirements
+- **Steps**: Business → Product (Stripe) → Visual Identity → Content → Technical Details
+- **Storage**: Firestore collection `briefings` (GCP project `webazul`)
+- **Languages**: PT, EN, ES, FR (switcher in header)
+- **Security**: Read open (link-based access), write restricted to `responses`, `status`, `submittedAt` fields
+- **Create briefings**: `node scripts/create-briefing.js "Client Name" "email" "project-type"`
+- **Or via REST**: Use gcloud auth token + Firestore REST API to create docs in `briefings` collection
+
+### Firestore Structure
+```
+briefings/{id}
+├── clientName: string        # Pre-filled by admin
+├── clientEmail: string       # Pre-filled by admin
+├── projectType: string       # "landing-page", "landing-page-produto", etc.
+├── status: "pending" | "submitted"
+├── createdAt: string (ISO)
+├── submittedAt: string | null
+└── responses: {              # Filled by client
+      businessName, businessDescription, targetAudience, currentWebsite,
+      productName, productPrice, productCurrency, productDescription, productPhotos,
+      hasLogo, logoUrl, preferredColors, referenceUrls, communicationTone,
+      hasContent, hasProfessionalPhotos, socialMedia, hasTestimonials,
+      hasDomain, domainName, languages[], deadline, notes
+    }
+```
+
 ## 🌐 Internationalization
 - **Default Language**: Portuguese (pt)
 - **Fallback**: Portuguese
 - **Framework**: i18next with react-i18next
-- **Future**: Prepared for multi-language expansion
+- **Supported**: PT, EN, ES, FR
 
 ## 📊 Performance & SEO
 - Vite for fast builds and HMR

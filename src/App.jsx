@@ -1,7 +1,10 @@
 import './App.css'
 import './i18n/i18n'
+import { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HeroSection from './components/HeroSection'
+
+const BriefingPage = lazy(() => import('./pages/BriefingPage'))
 import StatsSection from './components/StatsSection'
 import ProductsSection from './components/ProductsSection'
 import ContactForm from './components/ContactForm'
@@ -36,6 +39,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/briefing/:id" element={<Suspense fallback={null}><BriefingPage /></Suspense>} />
         </Routes>
       </div>
     </Router>
