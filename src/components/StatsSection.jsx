@@ -38,7 +38,7 @@ function AnimatedNumber({ target, suffix = '', duration = 2000 }) {
 }
 
 const stats = [
-  { key: 'users', target: 500, suffix: '+', icon: FaUsers, color: '#6366f1' },
+  { key: 'users', target: 5000, suffix: '+', icon: FaUsers, color: '#6366f1' },
   { key: 'businesses', target: 50, suffix: '+', icon: FaBuilding, color: '#2563eb' },
   { key: 'documents', target: 10000, suffix: '+', icon: FaFileAlt, color: '#059669' },
 ]
