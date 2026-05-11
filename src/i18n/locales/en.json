@@ -475,7 +475,7 @@
       "notes": "Additional notes"
     },
     "placeholders": {
-      "businessName": "E.g.: John's Bakery",
+      "businessName": "Your company or brand name",
       "businessDescription": "What does your business do? What are the main services/products?",
       "targetAudience": "Who are your ideal customers? Age, location, interests...",
       "productName": "E.g.: Digital Marketing Course",

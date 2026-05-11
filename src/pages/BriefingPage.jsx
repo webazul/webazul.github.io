@@ -6,7 +6,11 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
 import { db, storage } from '../firebase'
 import './BriefingPage.css'
 
-const STEPS = ['business', 'product', 'identity', 'content', 'technical']
+const STEPS_BY_TYPE = {
+  'landing-page-produto': ['business', 'product', 'identity', 'content', 'technical'],
+  'landing-page': ['business', 'identity', 'content', 'technical'],
+}
+const DEFAULT_STEPS = ['business', 'identity', 'content', 'technical']
 
 function FileUpload({ label, fieldName, briefingId, files, onUpload, onRemove, accept, multiple = true, t }) {
   const inputRef = useRef()
@@ -138,6 +142,10 @@ function BriefingPage() {
           if (data.status === 'submitted') {
             setSubmitted(true)
           }
+          setForm(prev => ({
+            ...prev,
+            businessName: data.clientName || prev.businessName
+          }))
           if (data.responses) {
             const { uploadedFiles, ...rest } = data.responses
             setForm(prev => ({ ...prev, ...rest }))
@@ -199,9 +207,11 @@ function BriefingPage() {
     }
   }
 
-  const nextStep = () => setCurrentStep(prev => Math.min(prev + 1, STEPS.length - 1))
+  const steps = briefing ? (STEPS_BY_TYPE[briefing.projectType] || DEFAULT_STEPS) : DEFAULT_STEPS
+  const currentStepName = steps[currentStep]
+  const nextStep = () => setCurrentStep(prev => Math.min(prev + 1, steps.length - 1))
   const prevStep = () => setCurrentStep(prev => Math.max(prev - 1, 0))
-  const isLastStep = currentStep === STEPS.length - 1
+  const isLastStep = currentStep === steps.length - 1
 
   const changeLang = (lng) => {
     i18n.changeLanguage(lng)
@@ -275,7 +285,7 @@ function BriefingPage() {
         </div>
 
         <div className="briefing-progress">
-          {STEPS.map((step, i) => (
+          {steps.map((step, i) => (
             <div
               key={step}
               className={`briefing-progress-step ${i === currentStep ? 'active' : ''} ${i < currentStep ? 'done' : ''}`}
@@ -292,7 +302,7 @@ function BriefingPage() {
         </div>
 
         <div className="briefing-form-card">
-          {currentStep === 0 && (
+          {currentStepName === 'business' && (
             <section className="briefing-section">
               <h2>{t('briefing.steps.business')}</h2>
               <p className="briefing-section-desc">{t('briefing.businessDesc')}</p>
@@ -343,7 +353,7 @@ function BriefingPage() {
             </section>
           )}
 
-          {currentStep === 1 && (
+          {currentStepName === 'product' && (
             <section className="briefing-section">
               <h2>{t('briefing.steps.product')}</h2>
               <p className="briefing-section-desc">{t('briefing.productDesc')}</p>
@@ -409,7 +419,7 @@ function BriefingPage() {
             </section>
           )}
 
-          {currentStep === 2 && (
+          {currentStepName === 'identity' && (
             <section className="briefing-section">
               <h2>{t('briefing.steps.identity')}</h2>
               <p className="briefing-section-desc">{t('briefing.identityDesc')}</p>
@@ -462,7 +472,7 @@ function BriefingPage() {
             </section>
           )}
 
-          {currentStep === 3 && (
+          {currentStepName === 'content' && (
             <section className="briefing-section">
               <h2>{t('briefing.steps.content')}</h2>
               <p className="briefing-section-desc">{t('briefing.contentDesc')}</p>
@@ -541,7 +551,7 @@ function BriefingPage() {
             </section>
           )}
 
-          {currentStep === 4 && (
+          {currentStepName === 'technical' && (
             <section className="briefing-section">
               <h2>{t('briefing.steps.technical')}</h2>
               <p className="briefing-section-desc">{t('briefing.technicalDesc')}</p>

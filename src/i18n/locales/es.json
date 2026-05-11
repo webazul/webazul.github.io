@@ -475,7 +475,7 @@
       "notes": "Notas adicionales"
     },
     "placeholders": {
-      "businessName": "Ej: Panadería de Juan",
+      "businessName": "Nombre de su empresa o marca",
       "businessDescription": "¿Qué hace su negocio? ¿Cuáles son los principales servicios/productos?",
       "targetAudience": "¿Quiénes son sus clientes ideales? Edad, ubicación, intereses...",
       "productName": "Ej: Curso de Marketing Digital",
